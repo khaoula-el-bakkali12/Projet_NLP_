@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# pytest
+.pytest_cache/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Index binaires (régénérables avec le pipeline)
+data/indexes/faiss_index.bin
+data/indexes/bm25_index.pkl
+data/indexes/index_metadata.json
+
+# OS
+Thumbs.db
+.DS_Store
