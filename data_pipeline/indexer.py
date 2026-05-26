@@ -414,6 +414,9 @@ def run_pipeline():
     logger.info("PIPELINE DE PREPROCESSING & INDEXATION — ONCOLOGIE")
     logger.info("=" * 60)
 
+    # Assurer que le dossier d'indexes existe
+    DATA_IDX.mkdir(parents=True, exist_ok=True)
+
     # --- 1. Chargement ---
     data = load_json(JSON_PATH)
 

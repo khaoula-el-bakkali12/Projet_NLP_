@@ -99,6 +99,8 @@ def remove_accents(text: str) -> str:
     Supprime les accents/diacritiques (accent aigus, graves, etc.)
     Exemple: "épidémiologie" → "epidemiologie"
     """
+    # Traduire les ligatures françaises courantes avant normalisation
+    text = text.replace("œ", "oe").replace("Œ", "Oe").replace("æ", "ae").replace("Æ", "Ae")
     nfkd = unicodedata.normalize("NFKD", text)
     return "".join(c for c in nfkd if unicodedata.category(c) != "Mn")
 
@@ -116,11 +118,34 @@ def detect_language(text: str) -> str:
     if arabic_count > latin_count:
         return "arabic"
     elif latin_count > arabic_count:
-        # Distinguer français et anglais par certains mots clés
-        text_lower = text.lower()
-        fr_markers = ["qu'", "ç", "œ", "œuvre", "généralt", "spécifique", "traitement"]
-        fr_score = sum(1 for marker in fr_markers if marker in text_lower)
-        return "french" if fr_score > 0 else "english"
+        # Distinguer français, anglais, et mixed
+        text_cleaned = clean_text(text).lower()
+        words = text_cleaned.split()
+        
+        common_overlap = {"a", "me", "cancer", "positive"}
+        french_vocab = (FRENCH_STOPWORDS | {"sein", "traitement", "chimiotherapie", "radiotherapie", "immunotherapie", "hormonotherapie", "metastase", "maladie"}) - common_overlap
+        english_vocab = (ENGLISH_STOPWORDS | {"breast", "treatment", "chemotherapy", "radiation", "immunotherapy", "hormonotherapy", "metastasis", "disease"}) - common_overlap
+        
+        # Check substrings/markers for French (e.g. "qu'", "ç", "œ")
+        has_french_markers = any(m in text.lower() for m in ["qu'", "ç", "œ", "œuvre"])
+        
+        french_score = sum(1 for w in words if w in french_vocab)
+        if has_french_markers:
+            french_score += 1
+            
+        english_score = sum(1 for w in words if w in english_vocab)
+        
+        if french_score > 0 and english_score > 0:
+            return "mixed"
+        elif french_score > 0:
+            return "french"
+        elif english_score > 0:
+            return "english"
+        else:
+            # Fallback: utiliser des marqueurs spécifiques
+            fr_markers = ["qu'", "ç", "œ", "œuvre", "généralt", "spécifique", "traitement"]
+            fr_score = sum(1 for marker in fr_markers if marker in text.lower())
+            return "french" if fr_score > 0 else "english"
     else:
         return "mixed"
 
@@ -225,14 +250,14 @@ GENERAL_QUESTION_PATTERNS = {
 CLINICAL_QUESTION_PATTERNS = {
     # Traitement
     r"traitement|treatment|علاج",
-    r"thérapie|therapy|cure|thérapeutique",
-    r"chimiothérapie|chemo|chemotherapy|كيماوي",
-    r"radiothérapie|radiation|rayons",
-    r"immunothérapie|immuno|immunotherapy",
-    r"hormonothérapie|hormone|hormonal",
+    r"therapie|therapy|cure|therapeutique",
+    r"chimiotherapie|chemo|chemotherapy|كيماوي",
+    r"radiotherapie|radiation|rayons",
+    r"immunotherapie|immuno|immunotherapy",
+    r"hormonotherapie|hormone|hormonal",
     
     # Diagnostic/Staging
-    r"diagnostic|diagnosis|diagnosis|تشخيص",
+    r"diagnost|diagnosis|تشخيص",
     r"stade|stage|grading|classement",
     r"scanner|irm|ct|mri|pet",
     r"biopsy|biopsie|فحص",
@@ -240,20 +265,21 @@ CLINICAL_QUESTION_PATTERNS = {
     # Protocole
     r"protocole|protocol|protocolle",
     r"dosage|dose|جرعة",
-    r"schéma|regimen|نظام",
+    r"schema|regimen|نظام",
     r"taux.*survie|survival",
     
     # Symptômes/Effets
-    r"symptôm|symptom|علامة",
+    r"symptom|symptom|علامة",
     r"effet.*secondaire|side effect|الآثار الجانبية",
-    r"toxicité|toxicity|complications",
+    r"toxicite|toxicity|complications",
     r"prognosis|pronostic|توقعات",
+    r"metastase|metastasis|نقيل",
     
     # Patient specifics
-    r"her2|hormone.*receptor|récepteur",
+    r"her2|hormone.*receptor|recepteur",
     r"grade|grading|histology|histologie",
     r"mutation|brca|p53|tp53",
-    r"score|index|grade.*malignité",
+    r"score|index|grade.*malignite",
 }
 
 def classify_intent(query: str) -> Dict[str, Any]:

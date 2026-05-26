@@ -1,0 +1,420 @@
+{
+  "evaluation_timestamp": "2026-05-26 18:52:45",
+  "duration_seconds": 37.35,
+  "num_test_questions": 17,
+  "top_k_evaluated": 5,
+  "best_alpha": 0.1,
+  "sweep_results": [
+    {
+      "alpha": 0.0,
+      "hit_rate": 0.9411764705882353,
+      "mrr": 0.9117647058823529,
+      "precision_at_k": 0.18823529411764706
+    },
+    {
+      "alpha": 0.1,
+      "hit_rate": 1.0,
+      "mrr": 0.9235294117647058,
+      "precision_at_k": 0.2
+    },
+    {
+      "alpha": 0.2,
+      "hit_rate": 1.0,
+      "mrr": 0.9235294117647058,
+      "precision_at_k": 0.2
+    },
+    {
+      "alpha": 0.3,
+      "hit_rate": 0.9411764705882353,
+      "mrr": 0.9019607843137254,
+      "precision_at_k": 0.18823529411764706
+    },
+    {
+      "alpha": 0.4,
+      "hit_rate": 0.9411764705882353,
+      "mrr": 0.8970588235294118,
+      "precision_at_k": 0.18823529411764706
+    },
+    {
+      "alpha": 0.5,
+      "hit_rate": 0.8823529411764706,
+      "mrr": 0.8823529411764706,
+      "precision_at_k": 0.17647058823529416
+    },
+    {
+      "alpha": 0.6,
+      "hit_rate": 0.8823529411764706,
+      "mrr": 0.8823529411764706,
+      "precision_at_k": 0.17647058823529416
+    },
+    {
+      "alpha": 0.7,
+      "hit_rate": 0.8823529411764706,
+      "mrr": 0.8823529411764706,
+      "precision_at_k": 0.17647058823529416
+    },
+    {
+      "alpha": 0.8,
+      "hit_rate": 0.8823529411764706,
+      "mrr": 0.784313725490196,
+      "precision_at_k": 0.17647058823529416
+    },
+    {
+      "alpha": 0.9,
+      "hit_rate": 0.8823529411764706,
+      "mrr": 0.696078431372549,
+      "precision_at_k": 0.17647058823529416
+    },
+    {
+      "alpha": 1.0,
+      "hit_rate": 0.8823529411764706,
+      "mrr": 0.6509803921568628,
+      "precision_at_k": 0.17647058823529416
+    }
+  ],
+  "detailed_results": [
+    {
+      "id": "Q01",
+      "question": "Quels sont les critères diagnostiques du cancer du sein HER2+ ?",
+      "expected_id": "ONC-001",
+      "category": "diagnostic",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-001",
+        "ONC-006",
+        "ONC-064",
+        "ONC-056",
+        "ONC-010"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 0.9821
+    },
+    {
+      "id": "Q02",
+      "question": "Quel est le protocole de chimiothérapie néoadjuvante standard pour un cancer du sein HER2+ ?",
+      "expected_id": "ONC-002",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-002",
+        "ONC-SYN-029",
+        "ONC-SYN-027",
+        "ONC-SYN-026",
+        "ONC-007"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 0.9637
+    },
+    {
+      "id": "Q03",
+      "question": "Quelle est la stratégie thérapeutique post-néoadjuvante en cas de résidu tumoral (non-pCR) après traitement néoadjuvant d'un cancer du sein HER2+ ?",
+      "expected_id": "ONC-003",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-003",
+        "ONC-SYN-026",
+        "ONC-SYN-027",
+        "ONC-008",
+        "PROTO-001"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q04",
+      "question": "Quel est le schéma de désescalade thérapeutique de Tolaney pour les petites tumeurs HER2 positives ?",
+      "expected_id": "ONC-004",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-004",
+        "ONC-SYN-026",
+        "EXT-SYN-007",
+        "PROTO-001",
+        "EXT-SYN-001"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q05",
+      "question": "Quelles sont les modalités de surveillance cardiaque et de suivi post-traitement pour un cancer du sein HER2+ ?",
+      "expected_id": "ONC-005",
+      "category": "suivi",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-005",
+        "ONC-SYN-050",
+        "ONC-SYN-027",
+        "ONC-SYN-026",
+        "ONC-002"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q06",
+      "question": "Quels sont les critères diagnostiques du cancer du sein triple négatif (TNBC) ?",
+      "expected_id": "ONC-006",
+      "category": "diagnostic",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-006",
+        "ONC-001",
+        "PROTO-002",
+        "ONC-064",
+        "ONC-SYN-027"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q07",
+      "question": "En quoi consiste le protocole Keynote-522 pour le traitement néoadjuvant du cancer du sein triple négatif ?",
+      "expected_id": "ONC-007",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-006",
+        "ONC-007",
+        "ONC-SYN-031",
+        "PROTO-002",
+        "ONC-SYN-027"
+      ],
+      "hit": true,
+      "rank": 2,
+      "mrr": 0.5,
+      "top_doc_score": 0.953
+    },
+    {
+      "id": "Q08",
+      "question": "Quelles sont les options de traitement adjuvant de rattrapage en cas de non-pCR pour le cancer du sein triple négatif ?",
+      "expected_id": "ONC-008",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-006",
+        "ONC-SYN-027",
+        "PROTO-002",
+        "ONC-003",
+        "ONC-008"
+      ],
+      "hit": true,
+      "rank": 5,
+      "mrr": 0.2,
+      "top_doc_score": 0.9506
+    },
+    {
+      "id": "Q09",
+      "question": "Quel est le schéma standard d'hormonothérapie adjuvante selon le statut ménopausique pour le cancer du sein RH+/HER2- ?",
+      "expected_id": "ONC-009",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-009",
+        "EXT-SYN-007",
+        "ONC-SYN-034",
+        "ONC-SYN-033",
+        "ONC-010"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q10",
+      "question": "Dans quels cas utilise-t-on les inhibiteurs de CDK4/6 en adjuvant pour le cancer du sein RH+ HER2- à haut risque ?",
+      "expected_id": "ONC-010",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-010",
+        "PROTO-015",
+        "ONC-SYN-043",
+        "EXT-SYN-003",
+        "SMC-013"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q11",
+      "question": "Quel est le traitement standard de première ligne pour le cancer du sein HER2 positif métastatique (CLEOPATRA) ?",
+      "expected_id": "ONC-011",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-011",
+        "ONC-SYN-043",
+        "ONC-001",
+        "EXT-SYN-003",
+        "ONC-SYN-027"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 0.9838
+    },
+    {
+      "id": "Q12",
+      "question": "Quels examens et biomarqueurs font partie du bilan diagnostique des cancers épithéliaux de l'ovaire ?",
+      "expected_id": "ONC-012",
+      "category": "diagnostic",
+      "cancer_type": "ovaire",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-012",
+        "PDF-010",
+        "ONC-041",
+        "ONC-013",
+        "EXT-SYN-009"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 0.989
+    },
+    {
+      "id": "Q13",
+      "question": "Quel est le protocole de chimiothérapie standard de première ligne pour le cancer de l'ovaire avancé ?",
+      "expected_id": "ONC-013",
+      "category": "traitement",
+      "cancer_type": "ovaire",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-013",
+        "ONC-014",
+        "ONC-033",
+        "ONC-034",
+        "ONC-012"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 0.97
+    },
+    {
+      "id": "Q14",
+      "question": "Quel est le protocole de radio-chimiothérapie concomitante standard pour le cancer du col de l'utérus localement avancé ?",
+      "expected_id": "ONC-014",
+      "category": "traitement",
+      "cancer_type": "col_uterin",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-014",
+        "ONC-057",
+        "PROTO-009",
+        "ONC-037",
+        "ONC-062"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q15",
+      "question": "Quels sont les biomarqueurs moléculaires obligatoires à rechercher avant de traiter un cancer colorectal métastatique ?",
+      "expected_id": "ONC-015",
+      "category": "diagnostic",
+      "cancer_type": "colorectal",
+      "lang": "fr",
+      "retrieved_ids": [
+        "ONC-015",
+        "DIAG-001",
+        "SMC-013",
+        "ONC-SYN-042",
+        "ONC-028"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 0.994
+    },
+    {
+      "id": "Q16",
+      "question": "ما هو بروتوكول العلاج الكيميائي قبل الجراحة لسرطان الثدي HER2+ ؟",
+      "expected_id": "ONC-AR-001",
+      "category": "traitement",
+      "cancer_type": "sein",
+      "lang": "ar",
+      "retrieved_ids": [
+        "ONC-AR-001",
+        "ONC-AR-007",
+        "ONC-AR-003",
+        "ONC-AR-006",
+        "ONC-AR-008"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    },
+    {
+      "id": "Q17",
+      "question": "ما هي الفحوصات الجزيئية الإلزامية قبل البدء في علاج سرطان الرئة غير صغير الخلايا (CBNPC)؟",
+      "expected_id": "ONC-AR-002",
+      "category": "diagnostic",
+      "cancer_type": "poumon",
+      "lang": "ar",
+      "retrieved_ids": [
+        "ONC-AR-002",
+        "ONC-AR-010",
+        "ONC-AR-009",
+        "ONC-AR-008",
+        "ONC-AR-005"
+      ],
+      "hit": true,
+      "rank": 1,
+      "mrr": 1.0,
+      "top_doc_score": 1.0
+    }
+  ],
+  "prompt_comparison_details": {
+    "representative_question": "Quel est le protocole de chimiothérapie néoadjuvante standard pour un cancer du sein HER2+ ?",
+    "strategies": {
+      "zero_shot": {
+        "prompt": "Tu es un assistant médical expert spécialisé en oncologie. Tu réponds aux questions médicales en te basant strictement sur le contexte fourni ci-dessous. Si l'information n'est pas disponible dans le contexte, indique-le clairement.\n\n### Contexte :\n📄 Document 1 — ONC-002 (Score: 0.964)\n   Titre : Protocole néoadjuvant EC → Docetaxel + double blocage HER2\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2 positif\n   Stade : II-III (néoadjuvant)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 42 ans, cancer du sein HER2+ stade IIIA (T3 N2 M0). Débute EC100 x4 cycles, puis Docetaxel + Trastuzumab + Pertuzumab x4 cycles. Évaluation après 4 cycles : réduction tumorale de 70%. Chirurgie programmée 3 semaines après la fin du traitement.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n📄 Document 2 — ONC-SYN-029 (Score: 0.788)\n   Titre : Protocole néoadjuvant EC → Docetaxel + double blocage HER2\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2+ métastatique osseux\n   Stade : IV (métastatique osseux)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 62 ans, rechute métastatique osseuse 3 ans après traitement adjuvant HER2+. 1ère ligne métastatique : Pertuzumab + Trastuzumab + Docetaxel x6, puis maintenance HP. Acide zolédronique mensuel pour les métastases osseuses. Stabilité à 18 mois.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n📄 Document 3 — ONC-SYN-027 (Score: 0.750)\n   Titre : Cancer du sein HER2+ inflammatoire — triple traitement néoadjuvant\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2 positif\n   Stade : III (T4b N2)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 55 ans, cancer du sein inflammatoire HER2+, peau d'orange, masse T4b N2. 4 cycles EC100 puis 4 cycles Docetaxel + Trastuzumab SC + Pertuzumab. pCR atteinte. Mastectomie totale. Poursuite Trastuzumab + Pertuzumab 14 cycles. Pas de rechute à 2 ans.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n### Question :\nQuel est le protocole de chimiothérapie néoadjuvante standard pour un cancer du sein HER2+ ?\n\n### Réponse :",
+        "length": 7510,
+        "estimated_tokens": 1877
+      },
+      "few_shot": {
+        "prompt": "Tu es un assistant médical expert spécialisé en oncologie. Tu réponds aux questions médicales en te basant sur le contexte fourni. Voici des exemples de questions-réponses pour illustrer le format et le niveau de détail attendu.\n\n### Exemple 1 :\n**Question** : Quels sont les principaux effets secondaires de la chimiothérapie dans le traitement du cancer colorectal ?\n**Réponse** : Les principaux effets secondaires de la chimiothérapie dans le cancer colorectal varient selon le protocole utilisé :\n\n**Protocoles à base de 5-FU (FOLFOX, FOLFIRI) :**\n• Nausées et vomissements\n• Mucite (inflammation des muqueuses)\n• Diarrhée\n• Neutropénie (baisse des globules blancs)\n\n**Spécifiques à l'Oxaliplatine (FOLFOX) :**\n• Neuropathie périphérique (engourdissements, fourmillements)\n• Sensibilité au froid\n\n**Spécifiques à l'Irinotécan (FOLFIRI) :**\n• Diarrhée retardée (potentiellement sévère)\n• Syndrome cholinergique aigu\n\nUne surveillance régulière de la NFS (Numération Formule Sanguine) est indispensable pendant le traitement.\n\n### Exemple 2 :\n**Question** : Quel est le traitement de première ligne pour un cancer du sein HER2+ métastatique ?\n**Réponse** : Le traitement de première ligne du cancer du sein HER2+ métastatique repose sur la double inhibition de HER2 combinée à une chimiothérapie :\n• Association de Trastuzumab (anti-HER2), Pertuzumab (anti-HER2) et un Taxane (généralement le Docétaxel).\n• Ce protocole (CLEOPATRA) a démontré une amélioration significative de la survie globale.\n• Une évaluation de la fonction cardiaque (fraction d'éjection ventriculaire gauche) est obligatoire avant et tous les 3 mois pendant le traitement par Trastuzumab/Pertuzumab.\n\n---\n\nMaintenant, réponds à la question suivante en utilisant le même format détaillé que les exemples ci-dessus.\n\n### Contexte :\n📄 Document 1 — ONC-002 (Score: 0.964)\n   Titre : Protocole néoadjuvant EC → Docetaxel + double blocage HER2\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2 positif\n   Stade : II-III (néoadjuvant)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 42 ans, cancer du sein HER2+ stade IIIA (T3 N2 M0). Débute EC100 x4 cycles, puis Docetaxel + Trastuzumab + Pertuzumab x4 cycles. Évaluation après 4 cycles : réduction tumorale de 70%. Chirurgie programmée 3 semaines après la fin du traitement.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n📄 Document 2 — ONC-SYN-029 (Score: 0.788)\n   Titre : Protocole néoadjuvant EC → Docetaxel + double blocage HER2\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2+ métastatique osseux\n   Stade : IV (métastatique osseux)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 62 ans, rechute métastatique osseuse 3 ans après traitement adjuvant HER2+. 1ère ligne métastatique : Pertuzumab + Trastuzumab + Docetaxel x6, puis maintenance HP. Acide zolédronique mensuel pour les métastases osseuses. Stabilité à 18 mois.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n📄 Document 3 — ONC-SYN-027 (Score: 0.750)\n   Titre : Cancer du sein HER2+ inflammatoire — triple traitement néoadjuvant\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2 positif\n   Stade : III (T4b N2)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 55 ans, cancer du sein inflammatoire HER2+, peau d'orange, masse T4b N2. 4 cycles EC100 puis 4 cycles Docetaxel + Trastuzumab SC + Pertuzumab. pCR atteinte. Mastectomie totale. Poursuite Trastuzumab + Pertuzumab 14 cycles. Pas de rechute à 2 ans.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n### Question :\nQuel est le protocole de chimiothérapie néoadjuvante standard pour un cancer du sein HER2+ ?\n\n### Réponse :",
+        "length": 9065,
+        "estimated_tokens": 2266
+      },
+      "chain_of_thought": {
+        "prompt": "Tu es un assistant médical expert spécialisé en oncologie. Tu dois répondre à la question posée en te basant strictement sur le contexte fourni.\n\n**Important** : Avant de donner ta réponse finale, raisonne étape par étape en suivant cette démarche :\n1. Identifier les informations clés présentes dans le contexte\n2. Relier ces informations à la question posée\n3. Évaluer la pertinence et la complétude des informations\n4. Formuler une réponse structurée et complète\n\n### Contexte :\n📄 Document 1 — ONC-002 (Score: 0.964)\n   Titre : Protocole néoadjuvant EC → Docetaxel + double blocage HER2\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2 positif\n   Stade : II-III (néoadjuvant)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 42 ans, cancer du sein HER2+ stade IIIA (T3 N2 M0). Débute EC100 x4 cycles, puis Docetaxel + Trastuzumab + Pertuzumab x4 cycles. Évaluation après 4 cycles : réduction tumorale de 70%. Chirurgie programmée 3 semaines après la fin du traitement.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n📄 Document 2 — ONC-SYN-029 (Score: 0.788)\n   Titre : Protocole néoadjuvant EC → Docetaxel + double blocage HER2\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2+ métastatique osseux\n   Stade : IV (métastatique osseux)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 62 ans, rechute métastatique osseuse 3 ans après traitement adjuvant HER2+. 1ère ligne métastatique : Pertuzumab + Trastuzumab + Docetaxel x6, puis maintenance HP. Acide zolédronique mensuel pour les métastases osseuses. Stabilité à 18 mois.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n📄 Document 3 — ONC-SYN-027 (Score: 0.750)\n   Titre : Cancer du sein HER2+ inflammatoire — triple traitement néoadjuvant\n   Catégorie : traitement | Type cancer : sein\n   Sous-type : HER2 positif\n   Stade : III (T4b N2)\n   Contenu : En situation néoadjuvante pour les cancers du sein HER2+ à partir du stade II, le double blocage anti-HER2 (Trastuzumab + Pertuzumab) associé à la chimiothérapie est le standard. Les anti-HER2 ne doivent jamais être administrés en même temps que les anthracyclines (risque cardiotoxique). Ils sont introduits dès le premier cycle de Docetaxel. L'objectif est d'obtenir une réponse histologique complète (pCR) qui conditionne le traitement post-chirurgical.\n   Protocole : {'nom': 'EC100 → Docetaxel + Trastuzumab + Pertuzumab', 'sequence': [{'phase': 'Phase 1 (anthracyclines)', 'medicaments': [{'nom': 'Épirubicine', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Cyclophosphamide', 'dose': '500 mg/m²', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}, {'phase': 'Phase 2 (taxane + anti-HER2)', 'medicaments': [{'nom': 'Docetaxel', 'dose': '100 mg/m²', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Trastuzumab', 'dose': '8 mg/kg (1er cycle) puis 6 mg/kg', 'voie': 'IV', 'jour': 'J1'}, {'nom': 'Pertuzumab', 'dose': '840 mg (1er cycle) puis 420 mg', 'voie': 'IV', 'jour': 'J1'}], 'frequence': 'Toutes les 21 jours', 'cycles': '3 à 4 cycles'}], 'duree_totale': '6 à 8 cycles au total', 'remarques': 'Anti-HER2 débutés au 1er cycle de Docetaxel uniquement. Chirurgie dans les 3 semaines après fin de chimio.'}\n   Scénario patient : Femme de 55 ans, cancer du sein inflammatoire HER2+, peau d'orange, masse T4b N2. 4 cycles EC100 puis 4 cycles Docetaxel + Trastuzumab SC + Pertuzumab. pCR atteinte. Mastectomie totale. Poursuite Trastuzumab + Pertuzumab 14 cycles. Pas de rechute à 2 ans.\n   Effets secondaires : neutropénie fébrile, alopécie, nausées/vomissements, cardiotoxicité (surveillance FEVG), neuropathie périphérique\n   Métastase : Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.\n   Mots-clés : sein, HER2, EC100, Docetaxel, Trastuzumab, Pertuzumab, néoadjuvant, double blocage\n   Référence : Guide AMFROM 2024, p.13-14\n\n### Question :\nQuel est le protocole de chimiothérapie néoadjuvante standard pour un cancer du sein HER2+ ?\n\n### Raisonnement étape par étape :\n\n**Étape 1 — Informations clés identifiées :**\n[Extraire les éléments pertinents du contexte]\n\n**Étape 2 — Lien avec la question :**\n[Relier les informations à ce qui est demandé]\n\n**Étape 3 — Évaluation :**\n[Évaluer si le contexte couvre entièrement la question]\n\n**Étape 4 — Synthèse :**\n[Construire la réponse finale]\n\n### Réponse finale :",
+        "length": 8107,
+        "estimated_tokens": 2026
+      }
+    }
+  }
+}
