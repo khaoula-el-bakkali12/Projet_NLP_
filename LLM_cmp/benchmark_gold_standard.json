@@ -1,0 +1,162 @@
+[
+  {
+    "id": "Q01",
+    "question": "Quel est le protocole AC pour le cancer du sein ?",
+    "gold_standard": "Le protocole AC associe Doxorubicine 60 mg/m² et Cyclophosphamide 600 mg/m² en IV J1, toutes les 3 semaines, pour 4 cycles. Il est utilisé en situation adjuvante ou néoadjuvante selon le stade.",
+    "categorie": "traitement",
+    "type_cancer": "sein",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q02",
+    "question": "Quels sont les effets secondaires courants de la chimiothérapie ?",
+    "gold_standard": "Les effets secondaires fréquents de la chimiothérapie incluent nausées, vomissements, alopécie, fatigue, myélosuppression et mucites. Une prise en charge symptomatique est essentielle tout au long du traitement.",
+    "categorie": "suivi",
+    "type_cancer": "general",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q03",
+    "question": "Comment se déroule le diagnostic d'un cancer du sein ?",
+    "gold_standard": "Le diagnostic du cancer du sein repose sur l'examen clinique, la mammographie, l'échographie mammaire, et la biopsie avec analyse anatomopathologique. La classification TNM détermine le stade et guide la stratégie thérapeutique.",
+    "categorie": "diagnostic",
+    "type_cancer": "sein",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q04",
+    "question": "Quelle est la différence entre chimiothérapie adjuvante et néoadjuvante ?",
+    "gold_standard": "La chimiothérapie néoadjuvante est administrée avant la chirurgie pour réduire la taille tumorale. La chimiothérapie adjuvante est donnée après la chirurgie pour éliminer les cellules résiduelles et réduire le risque de récidive.",
+    "categorie": "traitement",
+    "type_cancer": "general",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q05",
+    "question": "Patient de 55 ans, cancer du poumon non à petites cellules stade IIIA, ECOG 1. Quel protocole recommandez-vous selon le guide marocain ?",
+    "gold_standard": "Pour un CBNPC stade IIIA avec bon état général (ECOG 1), le guide AMFROM recommande une radio-chimiothérapie concomitante à base de cisplatine et étoposide ou carboplatine/paclitaxel, suivie d'une immunothérapie de consolidation si pas de progression.",
+    "categorie": "traitement",
+    "type_cancer": "poumon",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q06",
+    "question": "Quels sont les critères de réponse RECIST utilisés en oncologie ?",
+    "gold_standard": "Les critères RECIST évaluent la réponse tumorale : réponse complète (disparition totale des lésions), réponse partielle (réduction ≥30%), maladie stable (ni réponse partielle ni progression), progression (augmentation ≥20% ou nouvelles lésions).",
+    "categorie": "suivi",
+    "type_cancer": "general",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q07",
+    "question": "Comment gérer une neutropénie fébrile sous chimiothérapie ?",
+    "gold_standard": "Une neutropénie fébrile est une urgence oncologique. La prise en charge inclut une hospitalisation, hémocultures, antibiothérapie large spectre en urgence (souvent pipéracilline-tazobactam ou carbapénème si haut risque), et évaluation du facteur de risque.",
+    "categorie": "suivi",
+    "type_cancer": "general",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q08",
+    "question": "Quel est le protocole FOLFOX pour le cancer colorectal ?",
+    "gold_standard": "Le protocole FOLFOX associe oxaliplatine 85 mg/m² J1, leucovorin 400 mg/m² J1, 5-FU 400 mg/m² bolus J1 puis 2400 mg/m² en perfusion continue 46h, toutes les 2 semaines.",
+    "categorie": "traitement",
+    "type_cancer": "colorectal",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q09",
+    "question": "Qu'est-ce que la radiothérapie stéréotaxique et quand est-elle indiquée ?",
+    "gold_standard": "La radiothérapie stéréotaxique délivre de fortes doses de rayonnement de façon très précise en peu de séances. Elle est indiquée pour les tumeurs cérébrales, les métastases pulmonaires ou hépatiques limitées, et certains cancers primitifs localisés non opérables.",
+    "categorie": "traitement",
+    "type_cancer": "general",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q10",
+    "question": "Patiente de 42 ans, triple négatif, stade II. Quelle est la stratégie thérapeutique recommandée ?",
+    "gold_standard": "Pour un cancer du sein triple négatif stade II, la stratégie recommandée inclut une chimiothérapie néoadjuvante (ex. AC x4 suivi de paclitaxel x12) puis chirurgie. En cas de résidu tumoral, le capécitabine est recommandé en adjuvant selon les données récentes.",
+    "categorie": "traitement",
+    "type_cancer": "sein",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q11",
+    "question": "Comment se fait le suivi d'un patient traité pour un lymphome de Hodgkin ?",
+    "gold_standard": "Le suivi du lymphome de Hodgkin comprend un examen clinique régulier, une imagerie (TEP-TDM en fin de traitement puis TDM tous les 6 mois pendant 2 ans), une surveillance des toxicités tardives (cardiotoxicité, hypothyroïdie) et un bilan NFS.",
+    "categorie": "suivi",
+    "type_cancer": "lymphome",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q12",
+    "question": "Quels sont les marqueurs biologiques utilisés pour le cancer de la prostate ?",
+    "gold_standard": "Le principal marqueur est le PSA (antigène prostatique spécifique). Le PSA total, le ratio PSA libre/PSA total et la vélocité du PSA sont utilisés pour le dépistage, le diagnostic et le suivi. La biopsie prostatique reste nécessaire pour confirmer le diagnostic.",
+    "categorie": "diagnostic",
+    "type_cancer": "prostate",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q13",
+    "question": "Qu'est-ce que l'immunothérapie anti-PD1 et dans quels cancers est-elle utilisée ?",
+    "gold_standard": "Les anti-PD1 (pembrolizumab, nivolumab) bloquent le point de contrôle immunitaire PD-1, restaurant l'activité cytotoxique des lymphocytes T contre les cellules tumorales. Ils sont utilisés dans les mélanomes, cancers du poumon CBNPC, cancers urologiques, lymphomes de Hodgkin réfractaires et autres.",
+    "categorie": "traitement",
+    "type_cancer": "general",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q14",
+    "question": "Comment expliquer le parcours de soins à un patient nouvellement diagnostiqué ?",
+    "gold_standard": "Le parcours de soins débute par la consultation d'annonce, suivie de bilans complémentaires et d'une réunion de concertation pluridisciplinaire (RCP) pour décider du traitement. Le patient est ensuite pris en charge par l'équipe soignante avec des consultations régulières, un suivi psychologique et social si nécessaire.",
+    "categorie": "suivi",
+    "type_cancer": "general",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q15",
+    "question": "Quelles sont les indications de la greffe de moelle osseuse en oncohématologie ?",
+    "gold_standard": "La greffe de moelle osseuse (allogreffe ou autogreffe) est indiquée dans les leucémies aiguës en rémission, les lymphomes récidivants chimiosensibles, le myélome multiple, et certains syndromes myélodysplasiques à haut risque. Le choix dépend du type de pathologie, de l'âge et du donneur disponible.",
+    "categorie": "traitement",
+    "type_cancer": "hématologique",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q16",
+    "question": "Quel est le rôle des soins palliatifs en oncologie ?",
+    "gold_standard": "Les soins palliatifs visent à améliorer la qualité de vie des patients atteints de cancer avancé. Ils incluent la prise en charge de la douleur, la gestion des symptômes, le soutien psychologique, social et spirituel, et peuvent être débutés dès le diagnostic en parallèle du traitement curatif.",
+    "categorie": "suivi",
+    "type_cancer": "general",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q17",
+    "question": "Comment interpréter un résultat de biopsie avec score de Gleason 7 ?",
+    "gold_standard": "Un score de Gleason 7 (3+4 ou 4+3) correspond à un cancer de la prostate de grade intermédiaire. Le 4+3 est considéré plus agressif que le 3+4. Ce résultat nécessite une discussion en RCP pour décider entre surveillance active renforcée, prostatectomie radicale ou radiothérapie selon les comorbidités.",
+    "categorie": "diagnostic",
+    "type_cancer": "prostate",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q18",
+    "question": "Quels sont les risques de la radiothérapie pelvienne ?",
+    "gold_standard": "La radiothérapie pelvienne peut entraîner des toxicités aiguës (diarrhée, cystite radique, fatigue) et tardives (fibrose rectale, sténose urétrale, lymphœdème, troubles sexuels). Un suivi gynécologique ou urologique régulier est recommandé après traitement.",
+    "categorie": "suivi",
+    "type_cancer": "general",
+    "difficulte": "generale"
+  },
+  {
+    "id": "Q19",
+    "question": "Patient sous bevacizumab présente une hypertension artérielle. Quelle conduite tenir ?",
+    "gold_standard": "L'hypertension artérielle est un effet de classe des anti-VEGF comme le bevacizumab. La conduite inclut la mesure régulière de la TA, l'introduction d'un antihypertenseur (IEC ou inhibiteur calcique de préférence), et la suspension du traitement si HTA sévère ou non contrôlée.",
+    "categorie": "suivi",
+    "type_cancer": "general",
+    "difficulte": "clinique"
+  },
+  {
+    "id": "Q20",
+    "question": "Quelle est la place de la chirurgie dans le traitement du cancer du rectum localement avancé ?",
+    "gold_standard": "Pour le cancer du rectum localement avancé (T3-T4 ou N+), le traitement standard est une radiochimiothérapie néoadjuvante (5-FU ou capécitabine + radiothérapie 45-50 Gy), suivie d'une chirurgie d'exérèse totale du mésorectum (ETM) après 6 à 8 semaines de délai.",
+    "categorie": "traitement",
+    "type_cancer": "colorectal",
+    "difficulte": "clinique"
+  }
+]

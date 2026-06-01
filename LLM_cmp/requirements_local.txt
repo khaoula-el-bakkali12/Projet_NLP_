@@ -1,0 +1,30 @@
+# requirements_local.txt
+# Local LLM module — Person 4 (Oncology RAG Benchmarking)
+# Install with: pip install -r requirements_local.txt
+
+# ── Core inference ──────────────────────────────────────────────────────────
+torch>=2.2.0                   # GPU/CPU tensor ops — install CUDA build if GPU available
+                               # CUDA 12.1 build: pip install torch --index-url https://download.pytorch.org/whl/cu121
+transformers>=4.41.0           # HuggingFace model loading
+accelerate>=0.30.0             # device_map="auto", mixed precision, model offloading
+sentencepiece>=0.2.0           # tokenizer for T5 / multilingual models
+protobuf>=4.25.0               # required by some HF tokenizers
+
+# ── Evaluation metrics ──────────────────────────────────────────────────────
+rouge-score>=0.1.2             # ROUGE-L
+nltk>=3.8.1                    # BLEU + tokenization
+bert-score>=0.3.13             # BERTScore (multilingual)
+
+# ── Pipeline utilities ──────────────────────────────────────────────────────
+tqdm>=4.66.0                   # progress bars during model download
+
+# ── Optional but recommended ────────────────────────────────────────────────
+bitsandbytes>=0.43.0           # INT8/INT4 quantization (reduces VRAM by 50-75%)
+                               # enables Model B (phi-2) on GPU with 4 GB VRAM
+scipy>=1.12.0                  # dependency for some HF utilities
+
+# ── Already present in your project (do not reinstall) ──────────────────────
+# fastapi        — Person 5
+# sentence-transformers — Person 1 (embeddings)
+# rank-bm25      — Person 1 (BM25 index)
+# faiss-cpu      — Person 1 (vector index)
