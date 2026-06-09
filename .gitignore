@@ -31,3 +31,33 @@ data/indexes/index_metadata.json
 # OS
 Thumbs.db
 .DS_Store
+
+# HuggingFace model cache — never inside this project, but just in case
+*.bin
+*.safetensors
+*.gguf
+models/
+
+# Frontend build output and dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Python env
+*.env
+.env
+
+# ── Runtime data — DO NOT COMMIT (private: accounts, chat history, uploads) ──
+data/users.json
+data/oncologia.db
+data/history.json
+data/uploads/
+
+# ── Generated benchmark outputs (regenerable from the Benchmark page) ──
+llm_benchmark_results.json
+llm_benchmark_full.json
+
+# ── Not for distribution ──
+IMPLEMENTATION_GUIDE.html
+Mini-projects-NLP.pdf
+PROJECT_STATUS.md
+PROJECT_STATUS_EN.md

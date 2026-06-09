@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar          { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track    { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb    { @apply bg-slate-200 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-300; }
+}
+
+@layer components {
+  /* Flat enterprise card: white, thin border, small radius, barely-there shadow */
+  .glass-card {
+    @apply bg-white border border-slate-200 rounded-xl shadow-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg
+           font-semibold text-sm bg-medical-600 text-white
+           hover:bg-medical-700 active:bg-medical-800
+           transition-colors duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .msg-user {
+    @apply bg-medical-600 text-white
+           rounded-2xl rounded-tr-sm px-4 py-3 max-w-[80%] self-end font-medium;
+  }
+
+  .msg-ai {
+    @apply bg-white text-slate-800 rounded-2xl rounded-tl-sm px-4 py-3
+           max-w-[90%] self-start border border-slate-200 shadow-sm leading-relaxed;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md
+           text-[11px] font-semibold
+           border border-slate-200 bg-slate-50 text-slate-600;
+  }
+
+  /* Was a 3-colour gradient — now a solid, serious heading colour */
+  .gradient-text {
+    @apply text-slate-900 font-semibold;
+    font-family: 'Outfit', system-ui, sans-serif;
+  }
+
+  /* animated blobs for landing */
+  @keyframes blob {
+    0%   { transform: translate(0,0) scale(1); }
+    33%  { transform: translate(30px,-50px) scale(1.1); }
+    66%  { transform: translate(-20px,20px) scale(0.9); }
+    100% { transform: translate(0,0) scale(1); }
+  }
+  .animate-blob          { animation: blob 7s infinite; }
+  .animation-delay-2000  { animation-delay: 2s; }
+  .animation-delay-4000  { animation-delay: 4s; }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee 25s linear infinite; }
+
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50%      { transform: translateY(-20px); }
+  }
+  .animate-float { animation: float 6s ease-in-out infinite; }
+
+  @keyframes floatDelayed {
+    0%,100% { transform: translateY(0); }
+    50%      { transform: translateY(-15px); }
+  }
+  .animate-float-delayed { animation: floatDelayed 7s ease-in-out infinite 2s; }
+}

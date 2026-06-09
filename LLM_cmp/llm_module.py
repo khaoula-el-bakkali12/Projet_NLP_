@@ -123,8 +123,10 @@ def build_context(top_k_docs: list[Document], max_chars: int = 1800) -> str:
     total: int = 0
 
     for doc in top_k_docs:
-        # Build the full chunk for this document — never truncate mid-chunk
-        lines = [f"[{doc.categorie.upper()}] {doc.contenu}"]
+        # Build the full chunk for this document — never truncate mid-chunk.
+        # No "[CATEGORIE]" prefix: extractive models (flan) copied that tag
+        # verbatim into answers (e.g. a reply starting with "[SUIVI] …").
+        lines = [doc.contenu]
         if doc.protocole:
             lines.append(f"Protocole : {doc.protocole}")
         if doc.source_reference:
@@ -144,15 +146,26 @@ def build_context(top_k_docs: list[Document], max_chars: int = 1800) -> str:
 
     if not parts:
         # Edge case: even the first document is larger than max_chars.
-        # Include its first 300 chars with an ellipsis rather than empty context.
+        # Give as much of the doc as the budget allows (NOT a hardcoded 300 —
+        # that cut the context mid-word and the model copied the truncation,
+        # e.g. "…Ils sont in"). Build the full chunk, trim to max_chars, then
+        # back off to the last sentence boundary so it never ends mid-word.
         if top_k_docs:
             first = top_k_docs[0]
-            fallback = f"[{first.categorie.upper()}] {first.contenu[:300]}…"
+            lines = [first.contenu]
+            if first.protocole:
+                lines.append(f"Protocole : {first.protocole}")
+            chunk = "\n".join(lines)
+            if len(chunk) > max_chars:
+                chunk = chunk[:max_chars]
+                cut = max(chunk.rfind(". "), chunk.rfind(".\n"), chunk.rfind("\n"))
+                if cut > max_chars // 2:
+                    chunk = chunk[:cut + 1]
             logger.warning(
-                f"All documents exceed max_chars={max_chars}. "
-                "Using truncated fallback for first document."
+                f"First document exceeds max_chars={max_chars}; "
+                "using a sentence-bounded slice."
             )
-            return fallback
+            return chunk
         return "(aucun contexte disponible)"
 
     return "\n\n---\n\n".join(parts)
@@ -160,11 +173,11 @@ def build_context(top_k_docs: list[Document], max_chars: int = 1800) -> str:
 
 def prompt_zero_shot(question: str, context: str) -> str:
     return (
-        "Tu es un assistant médical spécialisé en oncologie au Maroc. "
-        "Réponds uniquement sur la base du contexte fourni. "
-        "N'émets jamais de diagnostic direct.\n\n"
         f"CONTEXTE:\n{context}\n\n"
-        f"QUESTION: {question}\n\n"
+        f"INSTRUCTION: Réponds en 3-4 phrases maximum en utilisant UNIQUEMENT les informations du CONTEXTE. "
+        f"Copie les noms de médicaments, doses et protocoles EXACTEMENT tels qu'ils apparaissent dans le CONTEXTE. "
+        f"N'ajoute aucune information extérieure. Sois concis.\n\n"
+        f"QUESTION: {question}\n"
         "RÉPONSE:"
     )
 
@@ -183,25 +196,22 @@ def prompt_few_shot(question: str, context: str) -> str:
         "tout au long du traitement.\n\n"
     )
     return (
-        "Tu es un assistant médical spécialisé en oncologie au Maroc. "
-        "Voici des exemples de réponses appropriées :\n\n"
         f"{examples}"
         f"CONTEXTE:\n{context}\n\n"
-        f"QUESTION: {question}\n\n"
+        f"INSTRUCTION: Réponds uniquement à partir du CONTEXTE. Copie les noms de médicaments et doses EXACTEMENT.\n\n"
+        f"QUESTION: {question}\n"
         "RÉPONSE:"
     )
 
 
 def prompt_chain_of_thought(question: str, context: str) -> str:
     return (
-        "Tu es un assistant médical spécialisé en oncologie au Maroc. "
-        "Raisonne étape par étape avant de formuler ta réponse finale.\n\n"
         f"CONTEXTE:\n{context}\n\n"
+        f"INSTRUCTION: Utilise UNIQUEMENT le CONTEXTE. Copie les noms de médicaments et doses EXACTEMENT.\n\n"
         f"QUESTION: {question}\n\n"
-        "Étape 1 — Identifier le type de question (diagnostic / traitement / suivi) :\n"
-        "Étape 2 — Extraire les informations pertinentes du contexte :\n"
-        "Étape 3 — Formuler une réponse claire et pédagogique :\n\n"
-        "RÉPONSE FINALE:"
+        "Étape 1 — Informations clés du contexte:\n"
+        "Étape 2 — Réponse finale:\n"
+        "RÉPONSE:"
     )
 
 
@@ -253,6 +263,28 @@ def apply_safety_filter(response: str) -> tuple[str, bool]:
 
 
 # ─────────────────────────────────────────────
+# ─────────────────────────────────────────────
+# Output post-processing for causal LMs
+# ─────────────────────────────────────────────
+_STOP_PATTERNS = _re.compile(
+    r'\n(?:Question|QUESTION|Question\s*:|Q\s*:|\bQ\b\s*:|CONTEXTE|Contexte|INSTRUCTION)',
+    _re.IGNORECASE
+)
+
+def _clean_causal_output(text: str) -> str:
+    """Truncate causal LM output at the first sign of a new Q&A generation."""
+    text = text.strip()
+    m = _STOP_PATTERNS.search(text)
+    if m:
+        text = text[:m.start()].strip()
+    # Also strip trailing incomplete sentence (ends without . ? !)
+    if text and text[-1] not in '.?!»"':
+        last = max(text.rfind('.'), text.rfind('?'), text.rfind('!'))
+        if last > len(text) // 2:
+            text = text[:last + 1].strip()
+    return text
+
+
 # Model registry — loaded ONCE at import time
 # ─────────────────────────────────────────────
 class ModelRegistry:
@@ -278,8 +310,8 @@ class ModelRegistry:
         or set HF_HUB_OFFLINE=1 after first download for fully offline use.
     """
 
-    MODEL_A_ID = "google/flan-t5-base"          # seq2seq
-    MODEL_B_ID = "microsoft/phi-2"              # causal — swap to mistralai/Mistral-7B-Instruct-v0.3 if VRAM allows
+    MODEL_A_ID = "google/flan-t5-base"               # seq2seq
+    MODEL_B_ID = "Qwen/Qwen2.5-1.5B-Instruct"       # causal, 1.5B, CPU-friendly
     MODEL_C_ID = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"  # causal lightweight
 
     def __init__(self):
@@ -299,17 +331,13 @@ class ModelRegistry:
         )
         if DEVICE == "cpu":
             model = model.to("cpu")
-        gen_pipeline = pipeline(
-            "text2text-generation",
-            model=model,
-            tokenizer=tokenizer,
-            device=0 if DEVICE == "cuda" else -1,
-            max_new_tokens=512,
-        )
-        self._pipelines[name] = ("seq2seq", gen_pipeline)
+        # transformers 5.x removed "text2text-generation" as a pipeline task and
+        # also removed Text2TextGenerationPipeline from the public API.
+        # Store model+tokenizer directly and call model.generate() in generate().
+        self._pipelines[name] = ("seq2seq_raw", (tokenizer, model))
         logger.info(f"  ✓ {name} ready.")
 
-    def _load_causal(self, model_id: str, name: str, max_new_tokens: int = 512):
+    def _load_causal(self, model_id: str, name: str, max_new_tokens: int = 300):
         logger.info(f"Loading {name} ({model_id}) — causal LM …")
         tokenizer = AutoTokenizer.from_pretrained(
             model_id,
@@ -328,12 +356,24 @@ class ModelRegistry:
                 tokenizer.pad_token = tokenizer.eos_token
                 tokenizer.padding_side = "left"   # required when pad==eos
 
+        # ── phi-2 (model_b) needs 4-bit quantisation to fit in 4 GB VRAM ──
+        # bitsandbytes quantisation halves the effective model size:
+        # phi-2 at float16 ≈ 5.5 GB → 4-bit ≈ 1.7 GB, comfortably within GTX 1050.
+        # Models A and C are small enough to load without quantisation.
+        if name == "model_b" and DEVICE == "cuda":
+            from transformers import BitsAndBytesConfig
+            quantization_config = BitsAndBytesConfig(load_in_4bit=True)
+            logger.info(f"  ↳ Applying 4-bit quantisation for {name} (GTX 1050 / 4 GB VRAM)")
+        else:
+            quantization_config = None
+
         model = AutoModelForCausalLM.from_pretrained(
             model_id,
             torch_dtype=torch.float16 if DEVICE == "cuda" else torch.float32,
             device_map="auto",          # handles multi-GPU / CPU offload automatically
             trust_remote_code=True,
             low_cpu_mem_usage=True,
+            quantization_config=quantization_config,
         )
         gen_pipeline = pipeline(
             "text-generation",
@@ -341,31 +381,80 @@ class ModelRegistry:
             tokenizer=tokenizer,
             max_new_tokens=max_new_tokens,
             do_sample=True,
-            temperature=0.3,           # low temp for medical factuality
+            temperature=0.3,
             top_p=0.9,
+            # 1.2 was too aggressive for medical vocab — the model mangled drug
+            # names (Carboplatine → "Carboplate") to avoid repeating tokens.
+            # Qwen's own recommended value is 1.05; 1.1 is a safe middle ground.
             repetition_penalty=1.1,
             pad_token_id=tokenizer.pad_token_id,
-            return_full_text=False,    # return only the generated part
+            return_full_text=False,
         )
         self._pipelines[name] = ("causal", gen_pipeline)
         logger.info(f"  ✓ {name} ready.")
 
+    # Model metadata — used for lazy loading
+    _MODEL_META = {
+        "model_a": (None, "seq2seq"),   # model_id filled in __init__
+        "model_b": (None, "causal"),
+        "model_c": (None, "causal"),
+    }
+
     def _load_all(self):
-        """Load all three models. Errors are caught so one failure doesn't block others."""
-        loaders = [
-            (self.MODEL_A_ID, "model_a", "seq2seq"),
-            (self.MODEL_B_ID, "model_b", "causal"),
-            (self.MODEL_C_ID, "model_c", "causal"),
-        ]
-        for model_id, name, kind in loaders:
-            try:
-                if kind == "seq2seq":
-                    self._load_seq2seq(model_id, name)
-                else:
-                    self._load_causal(model_id, name)
-            except Exception as e:
-                logger.error(f"Failed to load {name} ({model_id}): {e}")
-                self._pipelines[name] = ("error", str(e))
+        """Register model metadata. Models are loaded lazily on first generate() call."""
+        self._MODEL_META = {
+            "model_a": (self.MODEL_A_ID, "seq2seq"),
+            "model_b": (self.MODEL_B_ID, "causal"),
+            "model_c": (self.MODEL_C_ID, "causal"),
+        }
+        # Mark all as "unloaded" (not "error") so generate() knows to load them
+        for name in self._MODEL_META:
+            self._pipelines[name] = ("unloaded", None)
+        logger.info("ModelRegistry: lazy mode — models load on first use.")
+
+    def _evict_others(self, keep: str):
+        """Free VRAM held by every loaded model except `keep`.
+
+        This hardware (GTX 1050, 4 GB) cannot hold more than one LLM plus the
+        SBERT retrieval model at once. Since the API serves one model per
+        request, we keep only the active LLM resident and unload the rest.
+        Evicted models return to "unloaded" and reload on next use.
+        """
+        import gc
+        for other, (kind, pipe) in list(self._pipelines.items()):
+            if other == keep or kind in ("unloaded", "error"):
+                continue
+            logger.info(f"Evicting {other} to free VRAM for {keep}.")
+            self._pipelines[other] = ("unloaded", None)
+            del pipe
+        gc.collect()
+        if DEVICE == "cuda":
+            torch.cuda.empty_cache()
+
+    def _ensure_loaded(self, name: str):
+        """Load a model the first time it is requested."""
+        if self._pipelines.get(name, (None,))[0] not in ("unloaded",):
+            return  # already loaded or errored
+        # On a small GPU, free the other models' VRAM before loading this one.
+        if DEVICE == "cuda":
+            self._evict_others(keep=name)
+        model_id, kind = self._MODEL_META[name]
+        try:
+            if kind == "seq2seq":
+                self._load_seq2seq(model_id, name)
+            else:
+                # Qwen (model_b): 320 — chain_of_thought prints reasoning steps
+                #   and needs the room; with the chat template + tuned rep penalty
+                #   it no longer rambles.
+                # TinyLlama (model_c): 160 — at 1.1B it nails the grounded content
+                #   then invents (e.g. a fake "carboplatine 100 mg/m² oral" dose)
+                #   once it runs out of facts. Capping it short keeps it on the
+                #   grounded answer; _clean_causal_output trims any partial tail.
+                tokens = 320 if name == "model_b" else 160
+                self._load_causal(model_id, name, max_new_tokens=tokens)
+        except Exception as e:
+            logger.error(f"Failed to load {name} ({model_id}): {e}")
+            self._pipelines[name] = ("error", str(e))
 
     # ── public generate ───────────────────────
 
@@ -375,6 +464,7 @@ class ModelRegistry:
         Returns (response_text, latency_seconds).
         Raises RuntimeError if model failed to load.
         """
+        self._ensure_loaded(name)
         entry = self._pipelines.get(name)
         if entry is None:
             raise RuntimeError(f"Model '{name}' not registered.")
@@ -383,22 +473,92 @@ class ModelRegistry:
             raise RuntimeError(f"Model '{name}' failed to load: {pipe}")
 
         t0 = time.perf_counter()
-        if kind == "seq2seq":
+        if kind == "seq2seq_raw":
+            # Direct model.generate() — works with all transformers versions
+            tokenizer, model = pipe
+            inputs = tokenizer(
+                prompt, return_tensors="pt", truncation=True, max_length=512
+            )
+            if DEVICE == "cuda":
+                inputs = {k: v.cuda() for k, v in inputs.items()}
+            with torch.no_grad():
+                # flan-t5-base decoding fixes:
+                #  - num_beams=4: beam search >> greedy for flan-t5 QA quality.
+                #    Greedy was producing empty ("les suivantes :") and circular
+                #    ("Cette méthode est le protocole…") answers on broad questions.
+                #  - min_new_tokens=24: stop it returning a one-line non-answer.
+                #  - no_repeat_ngram_size=3: kill loops without a heavy penalty.
+                #  - repetition_penalty 1.3 → 1.15: 1.3 over-penalised and
+                #    suppressed real content (same bug class as Qwen at 1.2).
+                output_ids = model.generate(
+                    **inputs,
+                    # 350 was the real cause of the mid-word cut-offs ("Ils sont
+                    # in…"): flan-t5's multilingual tokenizer splits French medical
+                    # terms into many sub-tokens, so 350 tokens ≈ only ~50 words.
+                    # 512 lets these answers finish; early_stopping=True returns the
+                    # first EOS-terminated beam, so it ends on a complete sentence.
+                    max_new_tokens=512,
+                    min_new_tokens=24,
+                    num_beams=4,
+                    no_repeat_ngram_size=3,
+                    repetition_penalty=1.15,
+                    early_stopping=True,
+                    length_penalty=1.0,
+                )
+            text = tokenizer.decode(output_ids[0], skip_special_tokens=True).strip()
+        elif kind == "seq2seq":
             out = pipe(prompt, max_new_tokens=512)
-            # seq2seq pipelines always return "generated_text"
             text = (out[0].get("generated_text") or "").strip()
         else:  # causal
-            out = pipe(prompt)
-            # Some transformers versions use "generated_text", others "text"
-            # return_full_text=False means only the new tokens are returned
+            # Qwen2.5-Instruct / TinyLlama-Chat are INSTRUCT models trained on a
+            # strict chat format (<|im_start|>…). Feeding a raw completion string
+            # runs them off-distribution → garbled drug names + hallucination.
+            # Apply the model's native chat template when it has one.
+            tok = getattr(pipe, "tokenizer", None)
+            chat_prompt = prompt
+            if tok is not None and getattr(tok, "chat_template", None):
+                messages = [
+                    {"role": "system", "content":
+                        "Tu es un assistant médical en oncologie. Tu réponds "
+                        "TOUJOURS et UNIQUEMENT en français — jamais en anglais. "
+                        "Réponds directement à la QUESTION, de façon claire et "
+                        "factuelle, en te basant uniquement sur le CONTEXTE fourni. "
+                        "Lorsque le contexte mentionne des médicaments ou des doses, "
+                        "recopie-les exactement. Ne pose aucun diagnostic."},
+                    {"role": "user", "content": prompt},
+                ]
+                chat_prompt = tok.apply_chat_template(
+                    messages, tokenize=False, add_generation_prompt=True
+                )
+            if name == "model_c":
+                # TinyLlama (1.1B) is English-dominant and drifts to English /
+                # meta-commentary despite the French system message. Priming the
+                # reply forces it to continue in French (models stay in the
+                # language they start in). Beam search keeps it coherent.
+                if tok is not None and getattr(tok, "chat_template", None):
+                    chat_prompt += "Réponse en français : "
+                out = pipe(
+                    chat_prompt,
+                    do_sample=False,
+                    num_beams=4,
+                    no_repeat_ngram_size=3,
+                    repetition_penalty=1.15,
+                )
+            else:
+                out = pipe(chat_prompt)
             raw = out[0].get("generated_text") or out[0].get("text") or ""
-            text = raw.strip()
+            text = _clean_causal_output(raw)
         latency = time.perf_counter() - t0
         return text, latency
 
     @property
     def available_models(self) -> list[str]:
-        return [k for k, v in self._pipelines.items() if v[0] != "error"]
+        return [k for k, v in self._pipelines.items() if v[0] not in ("error", "unloaded")]
+
+    @property
+    def registered_models(self) -> list[str]:
+        """All registered model names, regardless of load state (lazy mode)."""
+        return list(self._MODEL_META.keys())
 
 
 # Singleton — loaded once when the module is imported
@@ -430,8 +590,37 @@ def generate_response(
         GenerationResult dataclass.
     """
     builder = PROMPT_BUILDERS.get(prompt_template, prompt_zero_shot)
-    context = build_context(top_k_docs)
-    prompt = builder(question, context)
+    # flan-t5-base (seq2seq) is a weak 250M model. Given 2+ docs it echoes an
+    # arbitrary context span (often the wrong doc) instead of synthesising.
+    # Feed it ONLY the top-1 retrieved doc so it can't grab a lower-ranked fiche.
+    if model_name == "model_a":
+        # 900 was too small: docs with a long protocole (contenu + protocole
+        # ~1100 chars) overflowed it, triggering the truncated fallback and
+        # feeding flan a context cut mid-word. 1400 fits a full doc (incl. doses)
+        # and still leaves room under flan's 512-token input limit.
+        context = build_context(top_k_docs[:1], max_chars=1400)
+        prompt = (
+            f"Answer in French based only on the context below.\n"
+            f"Context: {context}\n"
+            f"Question: {question}\n"
+            "Detailed answer:"
+        )
+    elif model_name == "model_c":
+        # TinyLlama (1.1B) is too weak to separate task-instructions from the
+        # actual question: when the user turn is mostly instructions it just
+        # echoes/translates them instead of answering. So we put NO instructions
+        # here — they live in the chat-template system message (see generate()).
+        # The user turn carries only context + question, with the question last.
+        # Top-1 doc only: 2 docs make it narrate/compare ("l'article indique…")
+        # instead of answering; one clear doc keeps it on a single answer.
+        context = build_context(top_k_docs[:1], max_chars=900)
+        prompt = (
+            f"Contexte :\n{context}\n\n"
+            f"Question : {question}"
+        )
+    else:
+        context = build_context(top_k_docs)
+        prompt = builder(question, context)
 
     model_ids = {
         "model_a": ModelRegistry.MODEL_A_ID,
@@ -480,7 +669,7 @@ def generate_all_models(
 
     You can override with parallel=True/False explicitly.
     """
-    models = _registry.available_models
+    models = _registry.registered_models
 
     # Auto-detect safest strategy
     if parallel is None:

@@ -18,10 +18,14 @@ bert-score>=0.3.13             # BERTScore (multilingual)
 # ── Pipeline utilities ──────────────────────────────────────────────────────
 tqdm>=4.66.0                   # progress bars during model download
 
-# ── Optional but recommended ────────────────────────────────────────────────
-bitsandbytes>=0.43.0           # INT8/INT4 quantization (reduces VRAM by 50-75%)
-                               # enables Model B (phi-2) on GPU with 4 GB VRAM
 scipy>=1.12.0                  # dependency for some HF utilities
+
+# ── GPU ONLY (optional) ─────────────────────────────────────────────────────
+# bitsandbytes enables 4-bit quantization for Qwen on a small CUDA GPU.
+# It is CUDA-only and has NO macOS/CPU wheel — installing it on Mac/Intel
+# WILL FAIL. The code only uses it when a CUDA GPU is detected, so leave it
+# commented out unless you have an NVIDIA GPU:
+# bitsandbytes>=0.43.0
 
 # ── Already present in your project (do not reinstall) ──────────────────────
 # fastapi        — Person 5
