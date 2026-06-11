@@ -68,7 +68,7 @@ export default function ClassificationPage() {
       </div>
 
       {/* Query card */}
-      <div className="glass-card overflow-hidden max-w-3xl">
+      <div className="glass-card overflow-hidden">
         <div className="px-6 py-4 border-b border-slate-100 flex items-center gap-2">
           <div className="w-7 h-7 rounded-md bg-medical-50 flex items-center justify-center">
             <ScanSearch className="w-3.5 h-3.5 text-medical-600" />
@@ -121,7 +121,7 @@ export default function ClassificationPage() {
 
       {/* Result */}
       {result && !loading && meta && (
-        <div className="max-w-3xl space-y-5 animate-fade-in">
+        <div className="space-y-5 animate-fade-in">
           {/* Main verdict */}
           <div
             className="bg-white border rounded-2xl p-6 shadow-sm flex items-center gap-5"
@@ -199,7 +199,7 @@ export default function ClassificationPage() {
 
       {/* Empty state */}
       {!result && !loading && !error && (
-        <div className="glass-card p-16 text-center max-w-3xl">
+        <div className="glass-card p-16 text-center">
           <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center mx-auto mb-3">
             <Microscope className="w-5 h-5 text-slate-300" />
           </div>

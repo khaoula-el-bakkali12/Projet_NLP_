@@ -26,7 +26,7 @@ const MODELS = [
   { value: 'model_c', label: 'TinyLlama-1.1B', desc: 'Léger · rapide' },
 ]
 
-// Modality pill colors
+// Modality pill colors — kept semantic (each modality has its own meaning)
 const MODALITY_COLORS = {
   'chimiothérapie':  { bg: '#FEF3C7', border: '#FDE68A', text: '#92400E' },
   'radiothérapie':   { bg: '#f0e0cc', border: '#e3cdb4', text: '#6f3e20' },
@@ -40,14 +40,14 @@ const MODALITY_COLORS = {
 function SelectField({ label, value, onChange, options, placeholder }) {
   return (
     <div>
-      <label className="block text-xs font-bold text-[#6b5d4f] uppercase tracking-widest mb-1.5">
+      <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-1.5">
         {label}
       </label>
       <div className="relative">
         <select
           value={value}
           onChange={e => onChange(e.target.value)}
-          className="w-full appearance-none bg-white border border-[#e7ddcf] rounded-xl px-3 py-2.5 text-sm text-[#2b2520] font-medium focus:outline-none focus:border-[#9a7f9b] focus:ring-2 focus:ring-[#9a7f9b]/20 transition-all"
+          className="w-full appearance-none bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-sm text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-medical-500/20 focus:border-medical-500 transition-colors"
         >
           {placeholder && <option value="">{placeholder}</option>}
           {options.map(o => (
@@ -66,7 +66,7 @@ function MarkerCheckboxes({ selected, onChange }) {
 
   return (
     <div>
-      <label className="block text-xs font-bold text-[#6b5d4f] uppercase tracking-widest mb-1.5">
+      <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-1.5">
         Marqueurs moléculaires
       </label>
       <div className="flex flex-wrap gap-1.5">
@@ -77,13 +77,11 @@ function MarkerCheckboxes({ selected, onChange }) {
               key={m}
               type="button"
               onClick={() => toggle(m)}
-              className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-all border"
-              style={{
-                background: active ? '#f4ece0' : '#faf6ef',
-                borderColor: active ? '#9a7f9b' : '#e7ddcf',
-                color: active ? '#7a5230' : '#8a7c6c',
-                boxShadow: active ? '0 0 0 2px rgba(192,132,252,0.20)' : 'none',
-              }}
+              className={`px-2.5 py-1 rounded-lg text-xs font-semibold border transition-colors ${
+                active
+                  ? 'bg-medical-50 border-medical-400 text-medical-700 ring-2 ring-medical-500/20'
+                  : 'bg-slate-50 border-slate-200 text-slate-500 hover:border-medical-300 hover:text-medical-600'
+              }`}
             >
               {m}
             </button>
@@ -110,20 +108,17 @@ function ComorbiditiesInput({ tags, onChange }) {
 
   return (
     <div>
-      <label className="block text-xs font-bold text-[#6b5d4f] uppercase tracking-widest mb-1.5">
+      <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-1.5">
         Comorbidités
       </label>
-      <div
-        className="min-h-[42px] flex flex-wrap gap-1.5 items-center bg-white border border-[#e7ddcf] rounded-xl px-3 py-2 focus-within:border-[#9a7f9b] focus-within:ring-2 focus-within:ring-[#9a7f9b]/20 transition-all"
-      >
+      <div className="min-h-[42px] flex flex-wrap gap-1.5 items-center bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 focus-within:border-medical-500 focus-within:ring-2 focus-within:ring-medical-500/20 transition-colors">
         {tags.map(t => (
           <span
             key={t}
-            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-semibold"
-            style={{ background: '#f4ece0', color: '#6b5d4f', border: '1px solid #e7ddcf' }}
+            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-semibold bg-medical-50 text-medical-700 border border-medical-200"
           >
             {t}
-            <button type="button" onClick={() => remove(t)} className="text-slate-400 hover:text-red-400 transition-colors ml-0.5">×</button>
+            <button type="button" onClick={() => remove(t)} className="text-slate-400 hover:text-red-500 transition-colors ml-0.5">×</button>
           </span>
         ))}
         <input
@@ -131,7 +126,7 @@ function ComorbiditiesInput({ tags, onChange }) {
           onChange={e => setDraft(e.target.value)}
           onKeyDown={addTag}
           placeholder={tags.length === 0 ? 'Tapez et appuyez Entrée (ex: diabète, IRC)' : ''}
-          className="flex-1 min-w-[120px] text-sm text-[#2b2520] bg-transparent focus:outline-none placeholder:text-slate-300"
+          className="flex-1 min-w-[120px] text-sm text-slate-900 bg-transparent focus:outline-none placeholder:text-slate-300"
         />
       </div>
       <p className="text-[10px] text-slate-400 mt-1">Entrée ou virgule pour ajouter</p>
@@ -140,7 +135,7 @@ function ComorbiditiesInput({ tags, onChange }) {
 }
 
 function ModalityPill({ label }) {
-  const c = MODALITY_COLORS[label] || { bg: '#f4ece0', border: '#e7ddcf', text: '#6b5d4f' }
+  const c = MODALITY_COLORS[label] || { bg: '#f1f5f9', border: '#e2e8f0', text: '#64748b' }
   return (
     <span
       className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold border"
@@ -166,25 +161,15 @@ function PlanRenderer({ text }) {
           const heading = lines[0]
           const body = lines.slice(1).join('\n')
           return (
-            <div
-              key={i}
-              className="rounded-xl border overflow-hidden"
-              style={{ borderColor: '#e7ddcf' }}
-            >
-              <div
-                className="px-4 py-2.5 flex items-center gap-2 font-bold text-sm"
-                style={{ background: 'linear-gradient(135deg, #f4ece0 0%, #f0e6d6 100%)', color: '#5a3219' }}
-              >
-                <span
-                  className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-black text-white"
-                  style={{ background: '#7a5230' }}
-                >
+            <div key={i} className="rounded-xl border border-slate-200 overflow-hidden">
+              <div className="px-4 py-2.5 flex items-center gap-2 font-bold text-sm bg-medical-50 text-medical-800">
+                <span className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-black text-white bg-medical-600">
                   {i + 1}
                 </span>
                 {heading}
               </div>
               {body && (
-                <div className="px-4 py-3 text-sm text-[#4a4036] leading-relaxed whitespace-pre-wrap bg-white">
+                <div className="px-4 py-3 text-sm text-slate-600 leading-relaxed whitespace-pre-wrap bg-white">
                   {body}
                 </div>
               )}
@@ -197,7 +182,7 @@ function PlanRenderer({ text }) {
 
   // Fallback: plain pre-formatted text
   return (
-    <pre className="text-sm text-[#4a4036] leading-relaxed whitespace-pre-wrap font-sans">
+    <pre className="text-sm text-slate-600 leading-relaxed whitespace-pre-wrap font-sans">
       {text}
     </pre>
   )
@@ -208,41 +193,34 @@ function SourcesAccordion({ sources }) {
   if (!sources?.length) return null
 
   return (
-    <div className="rounded-xl border overflow-hidden" style={{ borderColor: '#e7ddcf' }}>
+    <div className="rounded-xl border border-slate-200 overflow-hidden">
       <button
         onClick={() => setOpen(v => !v)}
-        className="w-full flex items-center justify-between px-4 py-3 text-sm font-semibold text-[#6b5d4f] hover:bg-slate-50 transition-colors"
-        style={{ background: '#faf6ef' }}
+        className="w-full flex items-center justify-between px-4 py-3 text-sm font-semibold text-slate-600 bg-slate-50 hover:bg-slate-100 transition-colors"
       >
         <span className="flex items-center gap-2">
-          <BookOpen style={{ width: 14, height: 14, color: '#a89a88' }} />
+          <BookOpen className="w-3.5 h-3.5 text-slate-400" />
           {sources.length} source{sources.length > 1 ? 's' : ''} consultée{sources.length > 1 ? 's' : ''}
         </span>
         <ChevronDown
-          style={{
-            width: 14, height: 14, color: '#a89a88',
-            transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
-            transition: 'transform 0.2s',
-          }}
+          className="w-3.5 h-3.5 text-slate-400"
+          style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
         />
       </button>
       {open && (
-        <div className="divide-y divide-[#f4ece0]">
+        <div className="divide-y divide-slate-100">
           {sources.map((s, i) => (
             <div key={i} className="px-4 py-2.5 bg-white">
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0">
-                  <p className="text-xs font-semibold text-[#2b2520] truncate">{s.titre || s.id}</p>
+                  <p className="text-xs font-semibold text-slate-900 truncate">{s.titre || s.id}</p>
                   <p className="text-[11px] text-slate-400 mt-0.5">
                     {s.type_cancer && <span className="mr-2">{s.type_cancer}</span>}
                     {s.categorie && <span className="mr-2">{s.categorie}</span>}
                     {s.reference && <span className="italic">{s.reference}</span>}
                   </p>
                 </div>
-                <span
-                  className="flex-shrink-0 text-[10px] font-bold px-2 py-0.5 rounded-full"
-                  style={{ background: '#f4ece0', color: '#a89a88' }}
-                >
+                <span className="flex-shrink-0 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">
                   {(s.score_final * 100).toFixed(0)}%
                 </span>
               </div>
@@ -289,211 +267,172 @@ export default function HybridPage() {
   }
 
   return (
-    <div className="flex flex-col h-full overflow-hidden" style={{ background: '#f7f1e8' }}>
+    <div className="p-6 md:p-10 w-full h-full overflow-y-auto space-y-8">
 
       {/* ── Header ──────────────────────────────────────────────────────── */}
-      <div
-        className="flex items-center gap-4 px-6 py-3.5 flex-shrink-0 bg-white"
-        style={{ borderBottom: '1px solid #ece3d6', boxShadow: '0 1px 6px rgba(0,0,0,0.05)' }}
-      >
-        <div
-          className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-          style={{
-            background: 'linear-gradient(135deg, #7a5230 0%, #9a7f9b 100%)',
-            boxShadow: '0 4px 14px rgba(124,58,237,0.30)',
-          }}
-        >
-          <FlaskConical style={{ width: 18, height: 18, color: 'white' }} />
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 rounded-lg bg-medical-600 flex items-center justify-center">
+          <FlaskConical className="w-5 h-5 text-white" />
         </div>
         <div>
-          <h2 className="font-bold text-[15px] text-[#2b2520] tracking-tight" style={{ fontFamily: 'Playfair Display, system-ui, sans-serif' }}>
-            Traitement Hybride
+          <h2 className="font-bold text-2xl text-slate-900 tracking-tight font-display">
+            Traitement hybride
           </h2>
-          <p className="text-xs text-[#a89a88] mt-0.5">
+          <p className="text-slate-400 mt-0.5 text-sm">
             Analyse multi-modale · Guide AMFROM 2024
           </p>
         </div>
       </div>
 
       {/* ── Content ─────────────────────────────────────────────────────── */}
-      <div className="flex-1 overflow-y-auto">
-        <div className="max-w-5xl mx-auto px-6 py-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
 
-          {/* ── Form card ─────────────────────────────────────────────── */}
-          <div
-            className="bg-white rounded-2xl p-5 space-y-4"
-            style={{ border: '1px solid #ece3d6', boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}
-          >
+        {/* ── Form card ─────────────────────────────────────────────── */}
+        <div className="glass-card p-5 space-y-4">
+          <div>
+            <h3 className="font-bold text-sm text-slate-900">Profil patient</h3>
+            <p className="text-xs text-slate-400 mt-0.5">
+              Renseignez le profil clinique pour générer un plan thérapeutique multi-modal.
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <SelectField
+              label="Type de cancer *"
+              value={cancerType}
+              onChange={setCancerType}
+              options={CANCER_TYPES}
+              placeholder="Sélectionner…"
+            />
+
+            <SelectField
+              label="Stade"
+              value={stage}
+              onChange={setStage}
+              options={STAGES}
+              placeholder="Non précisé"
+            />
+
+            <MarkerCheckboxes selected={markers} onChange={setMarkers} />
+
+            <ComorbiditiesInput tags={comorbidities} onChange={setComorbidities} />
+
+            {/* Model selector */}
             <div>
-              <h3 className="font-bold text-sm text-[#2b2520]">Profil patient</h3>
-              <p className="text-xs text-[#a89a88] mt-0.5">
-                Renseignez le profil clinique pour générer un plan thérapeutique multi-modal.
-              </p>
-            </div>
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <SelectField
-                label="Type de cancer *"
-                value={cancerType}
-                onChange={setCancerType}
-                options={CANCER_TYPES}
-                placeholder="Sélectionner…"
-              />
-
-              <SelectField
-                label="Stade"
-                value={stage}
-                onChange={setStage}
-                options={STAGES}
-                placeholder="Non précisé"
-              />
-
-              <MarkerCheckboxes selected={markers} onChange={setMarkers} />
-
-              <ComorbiditiesInput tags={comorbidities} onChange={setComorbidities} />
-
-              {/* Model selector */}
-              <div>
-                <label className="block text-xs font-bold text-[#6b5d4f] uppercase tracking-widest mb-1.5">
-                  Modèle LLM
-                </label>
-                <div className="flex gap-2">
-                  {MODELS.map(m => (
+              <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-1.5">
+                Modèle LLM
+              </label>
+              <div className="flex gap-2">
+                {MODELS.map(m => {
+                  const active = modelName === m.value
+                  return (
                     <button
                       key={m.value}
                       type="button"
                       onClick={() => setModelName(m.value)}
-                      className="flex-1 px-3 py-2 rounded-xl border text-left transition-all"
-                      style={{
-                        borderColor: modelName === m.value ? '#9a7f9b' : '#e7ddcf',
-                        background:  modelName === m.value ? '#f4ece0' : 'white',
-                        boxShadow:   modelName === m.value ? '0 0 0 2px rgba(192,132,252,0.20)' : 'none',
-                      }}
+                      className={`flex-1 px-3 py-2 rounded-xl border text-left transition-colors ${
+                        active
+                          ? 'border-medical-400 bg-medical-50 ring-2 ring-medical-500/20'
+                          : 'border-slate-200 bg-white hover:border-medical-300'
+                      }`}
                     >
-                      <p className="text-xs font-bold" style={{ color: modelName === m.value ? '#7a5230' : '#2b2520' }}>
+                      <p className={`text-xs font-bold ${active ? 'text-medical-700' : 'text-slate-900'}`}>
                         {m.label}
                       </p>
                       <p className="text-[10px] text-slate-400 mt-0.5">{m.desc}</p>
                     </button>
-                  ))}
-                </div>
+                  )
+                })}
               </div>
+            </div>
 
-              <button
-                type="submit"
-                disabled={!cancerType || loading}
-                className="w-full py-3 rounded-xl font-bold text-sm text-white transition-all disabled:opacity-40"
-                style={{
-                  background: 'linear-gradient(135deg, #7a5230 0%, #9a7f9b 100%)',
-                  boxShadow: '0 4px 16px rgba(124,58,237,0.35)',
-                }}
-                onMouseEnter={e => { if (!e.currentTarget.disabled) e.currentTarget.style.transform = 'translateY(-1px)' }}
-                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)' }}
-              >
-                {loading
-                  ? <span className="flex items-center justify-center gap-2"><Loader2 style={{ width: 14, height: 14 }} className="animate-spin" /> Analyse en cours…</span>
-                  : 'Analyser le traitement hybride'
-                }
-              </button>
-            </form>
-          </div>
+            <button
+              type="submit"
+              disabled={!cancerType || loading}
+              className="btn-primary w-full justify-center disabled:opacity-50"
+            >
+              {loading
+                ? <><Loader2 className="w-4 h-4 animate-spin" /> Analyse en cours…</>
+                : 'Analyser le traitement hybride'
+              }
+            </button>
+          </form>
+        </div>
 
-          {/* ── Results panel ─────────────────────────────────────────── */}
-          <div className="space-y-4">
+        {/* ── Results panel ─────────────────────────────────────────── */}
+        <div className="space-y-4">
 
-            {/* Loading */}
-            {loading && (
-              <div
-                className="bg-white rounded-2xl p-8 flex flex-col items-center justify-center gap-4 text-center"
-                style={{ border: '1px solid #ece3d6', minHeight: 200 }}
-              >
-                <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, #f4ece0, #f0e6d6)' }}
-                >
-                  <FlaskConical style={{ width: 24, height: 24, color: '#7a5230' }} className="animate-pulse" />
-                </div>
-                <div>
-                  <p className="font-bold text-sm text-[#2b2520]">Analyse multi-modale en cours</p>
-                  <p className="text-xs text-slate-400 mt-1">Récupération des protocoles par modalité…</p>
-                </div>
+          {/* Loading */}
+          {loading && (
+            <div className="glass-card p-8 flex flex-col items-center justify-center gap-4 text-center" style={{ minHeight: 200 }}>
+              <div className="w-14 h-14 rounded-2xl bg-medical-50 flex items-center justify-center">
+                <FlaskConical className="w-6 h-6 text-medical-600 animate-pulse" />
               </div>
-            )}
-
-            {/* Error */}
-            {error && !loading && (
-              <div
-                className="bg-white rounded-2xl p-4 flex items-start gap-3"
-                style={{ border: '1px solid #FECACA' }}
-              >
-                <AlertCircle style={{ width: 16, height: 16, color: '#EF4444', flexShrink: 0, marginTop: 1 }} />
-                <p className="text-sm text-red-600">{error}</p>
+              <div>
+                <p className="font-bold text-sm text-slate-900">Analyse multi-modale en cours</p>
+                <p className="text-xs text-slate-400 mt-1">Récupération des protocoles par modalité…</p>
               </div>
-            )}
+            </div>
+          )}
 
-            {/* Result */}
-            {result && !loading && (
-              <>
-                {/* Modalities found */}
-                {result.modalities_found?.length > 0 && (
-                  <div
-                    className="bg-white rounded-2xl p-4"
-                    style={{ border: '1px solid #ece3d6', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
-                  >
-                    <div className="flex items-center gap-2 mb-3">
-                      <CheckCircle2 style={{ width: 14, height: 14, color: '#10B981' }} />
-                      <span className="text-xs font-bold text-[#2b2520] uppercase tracking-wider">
-                        Modalités identifiées
-                      </span>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {result.modalities_found.map(m => <ModalityPill key={m} label={m} />)}
-                    </div>
-                    <p className="text-[11px] text-slate-400 mt-2.5 flex items-center gap-1">
-                      Modèle : <strong className="text-slate-500">{result.model}</strong>
-                      &nbsp;·&nbsp; Latence : <strong className="text-slate-500">{result.latency}s</strong>
-                    </p>
+          {/* Error */}
+          {error && !loading && (
+            <div className="bg-white border border-red-100 rounded-2xl p-4 flex items-start gap-3 shadow-sm">
+              <AlertCircle className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
+              <p className="text-sm text-red-600">{error}</p>
+            </div>
+          )}
+
+          {/* Result */}
+          {result && !loading && (
+            <>
+              {/* Modalities found */}
+              {result.modalities_found?.length > 0 && (
+                <div className="glass-card p-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                    <span className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+                      Modalités identifiées
+                    </span>
                   </div>
-                )}
-
-                {/* Plan */}
-                {result.plan && (
-                  <div
-                    className="bg-white rounded-2xl p-5"
-                    style={{ border: '1px solid #ece3d6', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
-                  >
-                    <h3 className="font-bold text-sm text-[#2b2520] mb-4 flex items-center gap-2">
-                      <FlaskConical style={{ width: 14, height: 14, color: '#7a5230' }} />
-                      Plan thérapeutique hybride
-                    </h3>
-                    <PlanRenderer text={result.plan} />
+                  <div className="flex flex-wrap gap-2">
+                    {result.modalities_found.map(m => <ModalityPill key={m} label={m} />)}
                   </div>
-                )}
-
-                {/* Sources */}
-                <SourcesAccordion sources={result.sources} />
-              </>
-            )}
-
-            {/* Empty state */}
-            {!loading && !result && !error && (
-              <div
-                className="bg-white rounded-2xl p-8 flex flex-col items-center justify-center gap-3 text-center"
-                style={{ border: '1px solid #ece3d6', minHeight: 200 }}
-              >
-                <div
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center"
-                  style={{ background: '#f4ece0' }}
-                >
-                  <FlaskConical style={{ width: 20, height: 20, color: '#9a7f9b' }} />
+                  <p className="text-[11px] text-slate-400 mt-2.5">
+                    Modèle : <strong className="text-slate-500">{result.model}</strong>
+                    &nbsp;·&nbsp; Latence : <strong className="text-slate-500">{result.latency}s</strong>
+                  </p>
                 </div>
-                <p className="text-sm font-semibold text-[#6b5d4f]">Renseignez le profil patient</p>
-                <p className="text-xs text-slate-400 max-w-xs">
-                  Le système va interroger la base pour chaque modalité thérapeutique et synthétiser un plan hybride.
-                </p>
+              )}
+
+              {/* Plan */}
+              {result.plan && (
+                <div className="glass-card p-5">
+                  <h3 className="font-bold text-sm text-slate-900 mb-4 flex items-center gap-2">
+                    <FlaskConical className="w-3.5 h-3.5 text-medical-600" />
+                    Plan thérapeutique hybride
+                  </h3>
+                  <PlanRenderer text={result.plan} />
+                </div>
+              )}
+
+              {/* Sources */}
+              <SourcesAccordion sources={result.sources} />
+            </>
+          )}
+
+          {/* Empty state */}
+          {!loading && !result && !error && (
+            <div className="glass-card p-8 flex flex-col items-center justify-center gap-3 text-center" style={{ minHeight: 200 }}>
+              <div className="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center">
+                <FlaskConical className="w-5 h-5 text-slate-300" />
               </div>
-            )}
-          </div>
+              <p className="text-sm font-semibold text-slate-500">Renseignez le profil patient</p>
+              <p className="text-xs text-slate-400 max-w-xs">
+                Le système va interroger la base pour chaque modalité thérapeutique et synthétiser un plan hybride.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

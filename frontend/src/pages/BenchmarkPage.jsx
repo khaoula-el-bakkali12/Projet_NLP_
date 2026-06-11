@@ -28,7 +28,7 @@ const STRATEGIES = [
 
 const TABS = [
   { id: 'models',  label: 'Comparaison Modèles', icon: GitCompare },
-  { id: 'prompts', label: 'Prompt Analysis',      icon: LayoutList  },
+  { id: 'prompts', label: 'Analyse des prompts',  icon: LayoutList  },
 ]
 
 export default function BenchmarkPage() {

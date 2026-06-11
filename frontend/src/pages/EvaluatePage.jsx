@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
-  Legend, ReferenceLine, ResponsiveContainer, Dot,
+  Legend, ReferenceLine, ResponsiveContainer,
 } from 'recharts'
 import { getBenchmarkResults } from '../api/client'
-import { TrendingUp, Target, Award } from 'lucide-react'
+import { TrendingUp, Target, Award, BarChart3, AlertTriangle, Loader2 } from 'lucide-react'
 
 const LINE_COLORS = {
   hit_rate:      '#a1683a',
@@ -20,15 +20,18 @@ const LINE_LABELS = {
 
 function StatCard({ icon: Icon, label, value, sub, accent }) {
   return (
-    <div style={{
-      background: '#2b2118', border: '1px solid #3a2d1f',
-      borderRadius: 10, padding: '16px 18px',
-      borderLeft: `3px solid ${accent}`,
-    }}>
-      <Icon size={14} style={{ color: accent, marginBottom: 10 }} />
-      <div style={{ fontSize: 24, fontWeight: 700, color: '#f4ece0', marginBottom: 2 }}>{value}</div>
-      <div style={{ fontSize: 12, color: '#a89a88' }}>{label}</div>
-      {sub && <div style={{ fontSize: 11, color: '#6b5d4f', marginTop: 2 }}>{sub}</div>}
+    <div
+      className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm flex flex-col gap-3"
+      style={{ borderLeft: `3px solid ${accent}` }}
+    >
+      <div className="flex items-center justify-between">
+        <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">{label}</span>
+        <Icon className="w-4 h-4" style={{ color: accent }} />
+      </div>
+      <div>
+        <p className="text-3xl font-bold text-slate-900 tracking-tight leading-none">{value}</p>
+        {sub && <p className="text-xs text-slate-400 mt-1.5 leading-snug">{sub}</p>}
+      </div>
     </div>
   )
 }
@@ -37,17 +40,20 @@ function CustomTooltip({ active, payload, label, bestAlpha }) {
   if (!active || !payload?.length) return null
   const isBest = label === bestAlpha
   return (
-    <div style={{
-      background: '#2b2118', border: `1px solid ${isBest ? '#a1683a' : '#3a2d1f'}`,
-      borderRadius: 8, padding: '10px 14px', minWidth: 160,
-    }}>
-      <div style={{ fontSize: 11, color: isBest ? '#b8824e' : '#8a7c6c', marginBottom: 8, fontWeight: 600 }}>
-        α = {label}{isBest ? ' ★ best' : ''}
+    <div
+      className="bg-white rounded-lg shadow-lg px-3.5 py-2.5"
+      style={{ border: `1px solid ${isBest ? '#a1683a' : '#e2e8f0'}`, minWidth: 160 }}
+    >
+      <div
+        className="text-xs font-semibold mb-2"
+        style={{ color: isBest ? '#a1683a' : '#64748b' }}
+      >
+        α = {label}{isBest ? ' ★ optimal' : ''}
       </div>
       {payload.map(p => (
-        <div key={p.dataKey} style={{ display: 'flex', justifyContent: 'space-between', gap: 16, marginBottom: 4 }}>
-          <span style={{ fontSize: 12, color: p.color }}>{LINE_LABELS[p.dataKey]}</span>
-          <span style={{ fontSize: 12, color: '#e7ddcf', fontWeight: 600 }}>{(p.value * 100).toFixed(1)}%</span>
+        <div key={p.dataKey} className="flex justify-between gap-4 mb-1 last:mb-0">
+          <span className="text-xs" style={{ color: p.color }}>{LINE_LABELS[p.dataKey]}</span>
+          <span className="text-xs font-semibold text-slate-700 tabular-nums">{(p.value * 100).toFixed(1)}%</span>
         </div>
       ))}
     </div>
@@ -59,7 +65,7 @@ function BestDot(props) {
   if (payload.alpha !== bestAlpha) return null
   return (
     <g>
-      <circle cx={cx} cy={cy} r={6} fill={stroke} stroke="#1f160f" strokeWidth={2} />
+      <circle cx={cx} cy={cy} r={6} fill={stroke} stroke="#fff" strokeWidth={2} />
       <circle cx={cx} cy={cy} r={10} fill="none" stroke={stroke} strokeWidth={1} opacity={0.4} />
     </g>
   )
@@ -73,12 +79,12 @@ export default function EvaluatePage() {
   useEffect(() => {
     getBenchmarkResults()
       .then(setData)
-      .catch(e => setError(e.response?.data?.detail || 'Could not load evaluation results'))
+      .catch(e => setError(e.response?.data?.detail || 'Impossible de charger les résultats d\'évaluation'))
       .finally(() => setLoading(false))
   }, [])
 
-  if (loading) return <Centered>Loading evaluation results…</Centered>
-  if (error)   return <Centered error>{error}</Centered>
+  if (loading) return <Centered><Loader2 className="w-5 h-5 animate-spin" /> Chargement des résultats d'évaluation…</Centered>
+  if (error)   return <Centered error><AlertTriangle className="w-5 h-5" /> {error}</Centered>
 
   const sweep     = data.sweep_results ?? []
   const bestAlpha = data.best_alpha ?? 0.1
@@ -87,45 +93,51 @@ export default function EvaluatePage() {
   const topK      = data.top_k_evaluated ?? 5
 
   return (
-    <main style={{ maxWidth: 960, margin: '0 auto', padding: '32px 24px 60px' }}>
+    <div className="p-6 md:p-10 w-full h-full overflow-y-auto space-y-8">
 
-      <div style={{ marginBottom: 28 }}>
-        <h1 style={{ fontSize: 22, fontWeight: 700, color: '#f4ece0', margin: '0 0 4px' }}>Retrieval Evaluation</h1>
-        <p style={{ color: '#8a7c6c', fontSize: 13, margin: 0 }}>
-          Alpha sweep — FAISS vs BM25 weight (α) over {numQ} test questions, top-{topK} retrieval
-        </p>
+      {/* Header */}
+      <div className="flex items-center gap-3">
+        <div className="w-10 h-10 rounded-lg bg-medical-600 flex items-center justify-center">
+          <BarChart3 className="w-5 h-5 text-white" />
+        </div>
+        <div>
+          <h2 className="font-bold text-2xl text-slate-900 tracking-tight font-display">
+            Évaluation du retrieval
+          </h2>
+          <p className="text-slate-400 mt-0.5 text-sm">
+            Balayage alpha — pondération FAISS vs BM25 (α) sur {numQ} questions de test, retrieval top-{topK}
+          </p>
+        </div>
       </div>
 
       {/* Summary stats */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 12, marginBottom: 28 }}>
-        <StatCard icon={Award}     label="Best alpha"       value={`α = ${bestAlpha}`}            sub="optimal FAISS weight"   accent="#a1683a" />
-        <StatCard icon={Target}    label="Hit Rate@5"       value={`${(bestRow.hit_rate * 100).toFixed(0)}%`} sub="at best alpha" accent="#10b981" />
-        <StatCard icon={TrendingUp} label="MRR"             value={`${(bestRow.mrr * 100).toFixed(0)}%`}     sub="Mean Reciprocal Rank" accent="#f59e0b" />
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <StatCard icon={Award}      label="Alpha optimal" value={`α = ${bestAlpha}`}                       sub="pondération FAISS optimale" accent="#a1683a" />
+        <StatCard icon={Target}     label="Hit Rate@5"    value={`${(bestRow.hit_rate * 100).toFixed(0)}%`} sub="à l'alpha optimal"          accent="#10b981" />
+        <StatCard icon={TrendingUp} label="MRR"           value={`${(bestRow.mrr * 100).toFixed(0)}%`}      sub="Mean Reciprocal Rank"       accent="#f59e0b" />
       </div>
 
       {/* Chart */}
-      <div style={{
-        background: '#2b2118', border: '1px solid #3a2d1f',
-        borderRadius: 10, padding: '20px 16px 12px',
-      }}>
-        <div style={{ fontSize: 12, color: '#6b5d4f', marginBottom: 16 }}>
-          Metric scores across alpha values — higher is better
+      <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+        <div className="mb-5">
+          <h3 className="font-bold text-slate-900">Scores des métriques selon alpha</h3>
+          <p className="text-xs text-slate-400 mt-0.5">Plus le score est élevé, mieux c'est</p>
         </div>
-        <ResponsiveContainer width="100%" height={320}>
+        <ResponsiveContainer width="100%" height={340}>
           <LineChart data={sweep} margin={{ top: 4, right: 20, bottom: 4, left: 0 }}>
-            <CartesianGrid stroke="#3a2d1f" strokeDasharray="3 3" vertical={false} />
+            <CartesianGrid stroke="#e2e8f0" strokeDasharray="3 3" vertical={false} />
             <XAxis
               dataKey="alpha"
               tickFormatter={v => v.toFixed(1)}
-              tick={{ fontSize: 11, fill: '#8a7c6c' }}
+              tick={{ fontSize: 11, fill: '#94a3b8' }}
               tickLine={false}
-              axisLine={{ stroke: '#3a2d1f' }}
-              label={{ value: 'Alpha (FAISS weight)', position: 'insideBottomRight', offset: -4, fontSize: 11, fill: '#6b5d4f' }}
+              axisLine={{ stroke: '#e2e8f0' }}
+              label={{ value: 'Alpha (pondération FAISS)', position: 'insideBottomRight', offset: -4, fontSize: 11, fill: '#94a3b8' }}
             />
             <YAxis
               domain={[0, 1]}
               tickFormatter={v => `${(v * 100).toFixed(0)}%`}
-              tick={{ fontSize: 11, fill: '#8a7c6c' }}
+              tick={{ fontSize: 11, fill: '#94a3b8' }}
               tickLine={false}
               axisLine={false}
               width={44}
@@ -133,7 +145,7 @@ export default function EvaluatePage() {
             <Tooltip content={<CustomTooltip bestAlpha={bestAlpha} />} />
             <Legend
               formatter={key => (
-                <span style={{ fontSize: 12, color: '#a89a88' }}>{LINE_LABELS[key]}</span>
+                <span style={{ fontSize: 12, color: '#64748b' }}>{LINE_LABELS[key]}</span>
               )}
             />
             <ReferenceLine
@@ -141,7 +153,7 @@ export default function EvaluatePage() {
               stroke="#a1683a"
               strokeDasharray="4 4"
               strokeOpacity={0.5}
-              label={{ value: `α=${bestAlpha}`, position: 'top', fontSize: 10, fill: '#b8824e' }}
+              label={{ value: `α=${bestAlpha}`, position: 'top', fontSize: 10, fill: '#a1683a' }}
             />
             {Object.entries(LINE_COLORS).map(([key, color]) => (
               <Line
@@ -159,15 +171,12 @@ export default function EvaluatePage() {
       </div>
 
       {/* Raw data table */}
-      <div style={{
-        background: '#2b2118', border: '1px solid #3a2d1f',
-        borderRadius: 10, overflow: 'hidden', marginTop: 12,
-      }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+      <div className="bg-white border border-slate-100 rounded-2xl shadow-sm overflow-hidden">
+        <table className="w-full border-collapse text-sm">
           <thead>
-            <tr style={{ borderBottom: '1px solid #3a2d1f' }}>
+            <tr className="border-b border-slate-100">
               {['Alpha', 'Hit Rate@5', 'MRR', 'Precision@5'].map(h => (
-                <th key={h} style={{ padding: '10px 16px', textAlign: 'left', fontSize: 11, color: '#6b5d4f', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                <th key={h} className="px-4 py-3 text-left text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
                   {h}
                 </th>
               ))}
@@ -177,35 +186,30 @@ export default function EvaluatePage() {
             {sweep.map(row => {
               const isBest = row.alpha === bestAlpha
               return (
-                <tr key={row.alpha} style={{ borderBottom: '1px solid #2b2118', background: isBest ? 'rgba(59,130,246,0.06)' : 'transparent' }}>
-                  <td style={{ padding: '9px 16px', color: isBest ? '#b8824e' : '#e7ddcf', fontWeight: isBest ? 600 : 400 }}>
+                <tr key={row.alpha} className={`border-b border-slate-50 last:border-0 ${isBest ? 'bg-medical-50/50' : ''}`}>
+                  <td className={`px-4 py-2.5 tabular-nums ${isBest ? 'text-medical-700 font-semibold' : 'text-slate-700'}`}>
                     {row.alpha.toFixed(1)}{isBest ? ' ★' : ''}
                   </td>
-                  <td style={{ padding: '9px 16px', color: '#d8ccbb' }}>{(row.hit_rate * 100).toFixed(1)}%</td>
-                  <td style={{ padding: '9px 16px', color: '#d8ccbb' }}>{(row.mrr * 100).toFixed(1)}%</td>
-                  <td style={{ padding: '9px 16px', color: '#d8ccbb' }}>{(row.precision_at_k * 100).toFixed(1)}%</td>
+                  <td className="px-4 py-2.5 text-slate-600 tabular-nums">{(row.hit_rate * 100).toFixed(1)}%</td>
+                  <td className="px-4 py-2.5 text-slate-600 tabular-nums">{(row.mrr * 100).toFixed(1)}%</td>
+                  <td className="px-4 py-2.5 text-slate-600 tabular-nums">{(row.precision_at_k * 100).toFixed(1)}%</td>
                 </tr>
               )
             })}
           </tbody>
         </table>
       </div>
-    </main>
+    </div>
   )
 }
 
 function Centered({ children, error }) {
   return (
-    <main style={{ maxWidth: 960, margin: '0 auto', padding: '80px 24px', textAlign: 'center' }}>
-      <div style={{
-        color: error ? '#fca5a5' : '#6b5d4f',
-        background: error ? 'rgba(239,68,68,0.08)' : 'transparent',
-        border: error ? '1px solid rgba(239,68,68,0.2)' : 'none',
-        borderRadius: error ? 10 : 0, padding: error ? '14px 18px' : 0,
-        display: 'inline-block',
-      }}>
+    <div className="p-6 md:p-10 w-full h-full overflow-y-auto flex items-center justify-center">
+      <div className={`flex items-center gap-2 text-sm font-medium rounded-xl px-5 py-3.5
+        ${error ? 'text-red-600 bg-red-50 border border-red-100' : 'text-slate-500'}`}>
         {children}
       </div>
-    </main>
+    </div>
   )
 }
