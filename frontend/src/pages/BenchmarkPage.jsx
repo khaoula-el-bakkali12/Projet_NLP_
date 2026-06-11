@@ -194,7 +194,7 @@ export default function BenchmarkPage() {
             {comparing && (
               <div className="px-6 pb-6 flex items-center gap-2 text-sm text-slate-500">
                 <Loader2 className="w-4 h-4 animate-spin" />
-                Les 3 modèles génèrent leur réponse sur CPU — cela peut prendre quelques minutes…
+                Les 3 modèles génèrent leur réponse sur GPU — cela peut prendre quelques minutes…
               </div>
             )}
 
@@ -359,7 +359,7 @@ export default function BenchmarkPage() {
             {pRunning && (
               <div className="px-6 pb-6 flex items-center gap-2 text-sm text-slate-500">
                 <Loader2 className="w-4 h-4 animate-spin" />
-                Qwen génère 3 réponses (Zero Shot → Few Shot → Chain of Thought) sur CPU…
+                Qwen génère 3 réponses (Zero Shot → Few Shot → Chain of Thought) sur GPU…
               </div>
             )}
 

@@ -64,3 +64,8 @@ IMPLEMENTATION_GUIDE.html
 Mini-projects-NLP.pdf
 PROJECT_STATUS.md
 PROJECT_STATUS_EN.md
+
+# ── Large media — exceeds GitHub's 100 MB limit, submit separately ──
+*.mp4
+*.mov
+NLP project video.mp4
