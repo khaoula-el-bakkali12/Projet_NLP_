@@ -47,6 +47,7 @@ from backend.routers import ask, retrieve, documents, classify, benchmark
 from backend.routers.auth       import router as auth_router
 from backend.routers.upload_doc import router as upload_router
 from backend.routers.history    import router as history_router
+from backend.routers.hybrid     import router as hybrid_router
 
 app.include_router(ask.router,       prefix="/api")
 app.include_router(retrieve.router,  prefix="/api")
@@ -56,6 +57,7 @@ app.include_router(benchmark.router, prefix="/api")
 app.include_router(auth_router,      prefix="/api")
 app.include_router(upload_router,    prefix="/api")
 app.include_router(history_router,   prefix="/api")
+app.include_router(hybrid_router,    prefix="/api")
 
 
 # ── Health ──────────────────────────────────────────────────────────────────

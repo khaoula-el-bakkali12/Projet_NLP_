@@ -8,18 +8,24 @@ import HistoryPage from './pages/HistoryPage'
 import DocumentsPage from './pages/DocumentsPage'
 import StatisticsPage from './pages/StatisticsPage'
 import BenchmarkPage from './pages/BenchmarkPage'
+import EvaluatePage from './pages/EvaluatePage'
+import ClassificationPage from './pages/ClassificationPage'
+import HybridPage from './pages/HybridPage'
 import JourneyPage from './pages/JourneyPage'
 import ProfilePage from './pages/ProfilePage'
 import { getHealth } from './api/client'
 
 const PAGES = {
-  chat:       ChatPage,
-  history:    HistoryPage,
-  documents:  DocumentsPage,
-  statistics: StatisticsPage,
-  benchmark:  BenchmarkPage,
-  journey:    JourneyPage,
-  profile:    ProfilePage,
+  chat:           ChatPage,
+  classification: ClassificationPage,
+  history:        HistoryPage,
+  documents:      DocumentsPage,
+  statistics:     StatisticsPage,
+  benchmark:      BenchmarkPage,
+  evaluate:       EvaluatePage,
+  hybrid:         HybridPage,
+  journey:        JourneyPage,
+  profile:        ProfilePage,
 }
 
 function MainApp() {
@@ -53,7 +59,7 @@ function MainApp() {
   const availableModels = (health?.available_models ?? []).map(s => s.split(' ')[0])
 
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-50">
+    <div className="flex h-screen overflow-hidden" style={{ background: '#F8FAFC' }}>
       <Sidebar activePage={activePage} onNavigate={setActivePage} health={health} />
       <main className="flex-1 flex flex-col overflow-hidden relative">
         <PageComponent onNavigate={setActivePage} availableModels={availableModels} />

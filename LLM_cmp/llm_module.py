@@ -608,10 +608,13 @@ def generate_response(
         # and still leaves room under flan's 512-token input limit.
         context = build_context(top_k_docs[:1], max_chars=1400)
         prompt = (
-            f"Answer in French based only on the context below.\n"
+            f"Answer in French based only on the context below. "
+            f"If the context does not directly answer the question, "
+            f"respond ONLY with: "
+            f"\"Je n'ai pas d'information sur ce sujet dans ma base de données.\"\n"
             f"Context: {context}\n"
             f"Question: {question}\n"
-            "Detailed answer:"
+            "Answer:"
         )
     elif model_name == "model_c":
         # TinyLlama (1.1B) is too weak to separate task-instructions from the
@@ -887,6 +890,44 @@ def print_comparison_table(summary: dict):
         row += " | ".join(f"{summary[m].get(metric, 0.0):>12.4f}" for m in models)
         row += " |"
         print(row)
+
+
+# ─────────────────────────────────────────────
+# Hybrid treatment helper — pre-built prompt
+# ─────────────────────────────────────────────
+def generate_with_prompt(prompt: str, model_name: str = "model_b") -> dict:
+    """
+    Generate from a fully pre-built prompt string (used by hybrid treatment).
+    model_a (FLAN seq2seq) is not supported here — falls back to model_b.
+    """
+    if model_name == "model_a":
+        model_name = "model_b"
+
+    model_ids = {
+        "model_a": ModelRegistry.MODEL_A_ID,
+        "model_b": ModelRegistry.MODEL_B_ID,
+        "model_c": ModelRegistry.MODEL_C_ID,
+    }
+    try:
+        raw_text, latency = _registry.generate(model_name, prompt)
+        response, safe = apply_safety_filter(raw_text)
+        return {
+            "response": response,
+            "model": model_name,
+            "model_id": model_ids.get(model_name, "unknown"),
+            "latency": round(latency, 3),
+            "safe": safe,
+            "error": None,
+        }
+    except Exception as e:
+        return {
+            "response": "",
+            "model": model_name,
+            "model_id": model_ids.get(model_name, "unknown"),
+            "latency": 0.0,
+            "safe": False,
+            "error": str(e),
+        }
 
 
 # ─────────────────────────────────────────────

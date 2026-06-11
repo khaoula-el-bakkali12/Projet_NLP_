@@ -16,7 +16,7 @@ export function useChat() {
     setLoading(true)
 
     try {
-      const data = await postAsk({ question, model_name: model, prompt_template: strategy, alpha: 0.3 })
+      const data = await postAsk({ query: question, model_name: model, prompt_template: strategy, alpha: 0.3 })
 
       const aiMsg = {
         id:       `a-${Date.now()}`,

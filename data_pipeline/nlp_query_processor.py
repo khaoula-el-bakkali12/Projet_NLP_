@@ -239,12 +239,26 @@ GENERAL_QUESTION_PATTERNS = {
     r"qu'est|what is",
     r"qu'est-ce",
     r"ماهو|ماهى|تعريف",
-    
+
     # Questions générales
     r"donner.*info|general info",
     r"explain",
     r"tell.*about",
     r"شرح|معلومات عامة",
+}
+
+# Patterns pour les questions de type "liste / énumération"
+# → détectées avant les patterns cliniques pour éviter les faux positifs
+LIST_QUESTION_PATTERNS = {
+    r"donner.*type|types.*cancer",
+    r"liste.*cancer|lister.*cancer",
+    r"quels.*types|types.*exist",
+    r"quels.*cancers|cancers.*exist",
+    r"enumere|enumerer|énumère|énumérer",
+    r"cite.*cancer|citer.*cancer",
+    r"type.*cancer.*exist|exist.*type.*cancer",
+    r"أنواع.*سرطان|سرطان.*أنواع",   # arabe : types de cancer
+    r"types of cancer|list.*cancer",
 }
 
 CLINICAL_QUESTION_PATTERNS = {
@@ -297,30 +311,40 @@ def classify_intent(query: str) -> Dict[str, Any]:
       3. Calculer confiance = nombre de patterns matchés
     """
     query_lower = clean_text(query)
-    
+
+    # ── list_types : priorité maximale (questions de type "liste / énumération") ──
+    list_matches = [p for p in LIST_QUESTION_PATTERNS if re.search(p, query_lower, re.IGNORECASE)]
+    if list_matches:
+        return {
+            "intent": "list_types",
+            "confidence": 1.0,
+            "matched_patterns": list_matches,
+            "language": detect_language(query),
+        }
+
     clinical_matches = []
     general_matches = []
-    
+
     # Tester les patterns cliniques
     for pattern in CLINICAL_QUESTION_PATTERNS:
         if re.search(pattern, query_lower, re.IGNORECASE):
             clinical_matches.append(pattern)
-    
+
     # Tester les patterns généraux
     for pattern in GENERAL_QUESTION_PATTERNS:
         if re.search(pattern, query_lower, re.IGNORECASE):
             general_matches.append(pattern)
-    
+
     # Déterminer l'intention
     if clinical_matches and len(clinical_matches) >= len(general_matches):
         intent = "clinical"
-        confidence = min(len(clinical_matches) / 3.0, 1.0)  # normaliser
+        confidence = min(len(clinical_matches) / 3.0, 1.0)
         matches = clinical_matches
     else:
         intent = "general"
         confidence = min(len(general_matches) / 2.0, 1.0) if general_matches else 0.5
         matches = general_matches
-    
+
     return {
         "intent": intent,
         "confidence": confidence,

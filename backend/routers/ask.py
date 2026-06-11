@@ -5,6 +5,7 @@ LLM inference (especially phi-2) can take 10–30 seconds on a GTX 1050.
 The endpoint does not set an explicit timeout; callers should handle their own.
 """
 
+import traceback
 from fastapi import APIRouter, HTTPException
 from backend.models.schemas import AskRequest, AskResponse
 from backend.services.pipeline import run_full_pipeline
@@ -17,4 +18,7 @@ def ask(req: AskRequest):
     try:
         return run_full_pipeline(req)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        tb = traceback.format_exc()
+        print("=== /ask ERROR ===")
+        print(tb)
+        raise HTTPException(status_code=500, detail=tb)

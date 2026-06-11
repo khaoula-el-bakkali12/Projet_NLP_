@@ -157,6 +157,11 @@ class CompareRequest(BaseModel):
     template: str = "zero_shot"
 
 
+class ComparePromptsRequest(BaseModel):
+    question: str
+    reference: Optional[str] = None
+
+
 @router.post("/benchmark/compare")
 def compare_models(req: CompareRequest):
     """
@@ -248,5 +253,77 @@ def compare_models(req: CompareRequest):
         "template": req.template,
         "context_relevance": context_relevance,
         "models": models_out,
+        "sources": sources,
+    }
+
+
+@router.post("/benchmark/compare-prompts")
+def compare_prompts(req: ComparePromptsRequest):
+    """
+    Run a single question through all 3 prompt strategies (zero_shot, few_shot,
+    chain_of_thought) using Qwen2.5-1.5B (model_b) for side-by-side comparison.
+    """
+    question = (req.question or "").strip()
+    if not question:
+        raise HTTPException(status_code=400, detail="Question vide.")
+
+    from data_pipeline.nlp_query_processor import encode_query
+    from data_pipeline.retrieval import retrieve
+    from backend.services.converter import retrieval_dicts_to_documents
+    import llm_module as _llm
+
+    vec = encode_query(question)
+    retrieval = retrieve(query_vector=vec, question=question, top_k=5, alpha=0.3)
+    top_k_raw = retrieval["top_k_docs"]
+    documents = retrieval_dicts_to_documents(top_k_raw)
+
+    context_text = " ".join(d.get("contenu", "") for d in top_k_raw)[:3000]
+    ctx_vec = encode_query(context_text) if context_text.strip() else None
+    context_relevance = round(_cosine(vec, ctx_vec), 4) if ctx_vec is not None else None
+
+    reference = (req.reference or "").strip() or None
+
+    strategies_out = []
+    for strategy in ["zero_shot", "few_shot", "chain_of_thought"]:
+        res = _llm.generate_response(question, documents, model_name="model_b", prompt_template=strategy)
+        item = {
+            "strategy": strategy,
+            "response": res.response,
+            "latency": round(res.latency_seconds, 2),
+            "error": res.error,
+        }
+        ans = (res.response or "").strip()
+        if ans:
+            try:
+                ans_vec = encode_query(ans)
+                item["relevance"] = round(_cosine(ans_vec, vec), 4)
+                if ctx_vec is not None:
+                    item["faithfulness"] = round(_cosine(ans_vec, ctx_vec), 4)
+            except Exception:
+                pass
+        if reference:
+            try:
+                m = _llm.evaluate_result(res, reference)
+                item["bleu"] = m.get("bleu", 0.0)
+                item["rouge_l"] = m.get("rouge_l", 0.0)
+                item["bertscore"] = m.get("bertscore", 0.0)
+            except Exception as exc:
+                item["metric_error"] = str(exc)
+        strategies_out.append(item)
+
+    sources = [
+        {
+            "id": d.get("id", ""),
+            "titre": d.get("titre", ""),
+            "score_final": d.get("score_final", 0.0),
+        }
+        for d in top_k_raw
+    ]
+
+    return {
+        "question": question,
+        "has_reference": reference is not None,
+        "context_relevance": context_relevance,
+        "strategies": strategies_out,
         "sources": sources,
     }

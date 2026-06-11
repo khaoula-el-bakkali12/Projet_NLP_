@@ -3,13 +3,29 @@ import { Bot } from 'lucide-react'
 export default function TypingIndicator() {
   return (
     <div className="flex gap-3 animate-fade-in">
-      <div className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center bg-indigo-100 border border-indigo-200">
-        <Bot className="w-4 h-4 text-indigo-600" />
+      <div
+        className="flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center"
+        style={{
+          background: 'linear-gradient(135deg, #060D1B 0%, #0F2444 100%)',
+          boxShadow: '0 4px 14px rgba(6,13,27,0.28)',
+        }}
+      >
+        <Bot style={{ width: 15, height: 15, color: '#93C5FD' }} />
       </div>
-      <div className="msg-ai flex items-center gap-1.5 py-4">
-        <span className="w-2 h-2 bg-medical-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-        <span className="w-2 h-2 bg-medical-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-        <span className="w-2 h-2 bg-medical-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+
+      <div
+        className="msg-ai flex items-center gap-2 px-5 py-4"
+      >
+        {[0, 160, 320].map(delay => (
+          <span
+            key={delay}
+            className="w-2 h-2 rounded-full animate-dot"
+            style={{
+              background: 'linear-gradient(135deg, #1A56DB, #06B6D4)',
+              animationDelay: `${delay}ms`,
+            }}
+          />
+        ))}
       </div>
     </div>
   )
