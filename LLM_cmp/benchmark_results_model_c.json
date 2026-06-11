@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Quel est le protocole AC pour le cancer du sein ?",
+    "gold_standard": "Le protocole AC associe Doxorubicine 60 mg/m² et Cyclophosphamide 600 mg/m² en IV J1, toutes les 3 semaines, pour 4 cycles. Il est utilisé en situation adjuvante ou néoadjuvante selon le stade.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Le protocole \"AC\" (Adjonction de Cétazolumab) est le référentiel avec une bonne progression globale mise en œuvre pour traiter les patients atteints d'un cancer de la moelle osseuse multi-sites multi-vésiculaire (Hér2+). Le protocole comprend l'administration de cet antibiotique intraveineux (Ceftazidime) à doses de 1000 milligrammes (mg) pour une durée maximale de 6 semaines, suivie d'une évaluation annuelle de la fonction hépato-gastro-renal (HGR) et de l'évalu",
+        "latency_seconds": 127.25,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0159,
+        "rouge_l": 0.1053,
+        "bertscore": 0.6603,
+        "latency_seconds": 127.25,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les effets secondaires courants de la chimiothérapie ?",
+    "gold_standard": "Les effets secondaires fréquents de la chimiothérapie incluent nausées, vomissements, alopécie, fatigue, myélosuppression et mucites. Une prise en charge symptomatique est essentielle tout au long du traitement.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Quelques-uns des effetssecondaires courant de la thérapeutique chimique sont les suivants :\n\n1. Ralentissement de la croissance cellulaire ;\n2. Inhibition de la prolifération ;\n3. Dysfonctionnement des systèmes immunitaires ;\n4. Déclenchement d'une réaction immunitaire ;\n5. Inflammation ;\n6. Changement de la morphologie des cellules tumorales ;\n7. Prolongation de la durée de survie ;\n8. Invasion des tissus extérieurs ;\n9.",
+        "latency_seconds": 126.536,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0121,
+        "rouge_l": 0.0833,
+        "bertscore": 0.658,
+        "latency_seconds": 126.536,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment se déroule le diagnostic d'un cancer du sein ?",
+    "gold_standard": "Le diagnostic du cancer du sein repose sur l'examen clinique, la mammographie, l'échographie mammaire, et la biopsie avec analyse anatomopathologique. La classification TNM détermine le stade et guide la stratégie thérapeutique.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Questions : Comment est-il possible de diagnostiquer un cancer de la peau?\n\nResponses :\n\n1. Qu'est-ce que l'immunohématologie (IH)?\n2. Quels sont les signes et les symptômes à atténuer?\n3. Quel est le score IHC?\n4. Quelle est la confirmation IH?\n5. Pourquoi est-ce nécessaire de confirmer l'IH par Hybridation In-Situ (HIS) ou Cytoscan?\n6. Que signifie un score de 0/1+?\n7.",
+        "latency_seconds": 82.368,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0068,
+        "rouge_l": 0.1121,
+        "bertscore": 0.618,
+        "latency_seconds": 82.368,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quelle est la différence entre chimiothérapie adjuvante et néoadjuvante ?",
+    "gold_standard": "La chimiothérapie néoadjuvante est administrée avant la chirurgie pour réduire la taille tumorale. La chimiothérapie adjuvante est donnée après la chirurgie pour éliminer les cellules résiduelles et réduire le risque de récidive.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Définition :\n- Chimiothérapeutique : traitement médical par injection d'une substance chimique dans le système nerveux central ou l'organisme.\n- Adjuvant : substance ajoutée à une autre substance pour augmenter leur efficacité ou leur durée d'action.\n\nDifférence :\nLe chimiotherapeutique ajouté à l'adjudant est appelé adjuvance.\nL'adjuvant est utilisé après la chimioterapie pour améliorer son efficacités ou sa durée.",
+        "latency_seconds": 79.743,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0152,
+        "rouge_l": 0.1468,
+        "bertscore": 0.6989,
+        "latency_seconds": 79.743,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Patient de 55 ans, cancer du poumon non à petites cellules stade IIIA, ECOG 1. Quel protocole recommandez-vous selon le guide marocain ?",
+    "gold_standard": "Pour un CBNPC stade IIIA avec bon état général (ECOG 1), le guide AMFROM recommande une radio-chimiothérapie concomitante à base de cisplatine et étoposide ou carboplatine/paclitaxel, suivie d'une immunothérapie de consolidation si pas de progression.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Le protocole recommandé est le suivant selon le Guide de médecine du Maroc (GMM) :\n\n- Protocole d'intervention chirurgicale (PIC) pour le traitement de la tumeur pulmonaire non à petite cellule (TPNAC)\n\nNote : Le GMM est un guide de référence pour la pratique médicale dans le Maroc. Il est réglementé par l'Organisation mondiale de la santé (OMS) et a été approuvé par le Conseil national de l'assurance maladie (CNAM).\n\nSource : https://www.gmm.gov.",
+        "latency_seconds": 259.476,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0121,
+        "rouge_l": 0.1,
+        "bertscore": 0.6338,
+        "latency_seconds": 259.476,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les critères de réponse RECIST utilisés en oncologie ?",
+    "gold_standard": "Les critères RECIST évaluent la réponse tumorale : réponse complète (disparition totale des lésions), réponse partielle (réduction ≥30%), maladie stable (ni réponse partielle ni progression), progression (augmentation ≥20% ou nouvelles lésions).",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Quelques-uns des critères utilisés pour déterminer la réponse à la réévaluation de l'oncologie sont les suivants :\n\n1. Meilleure qualité de vie (QoL)\n2. Progression de la maladie\n3. Décroissance de la tumeur\n4. Amélioration des symptômes\n5. Incrementation de la durée de survie\n6. Augmentation du taux de remboursement d'indemnités médicales\n7.",
+        "latency_seconds": 100.418,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0182,
+        "rouge_l": 0.1731,
+        "bertscore": 0.6678,
+        "latency_seconds": 100.418,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment gérer une neutropénie fébrile sous chimiothérapie ?",
+    "gold_standard": "Une neutropénie fébrile est une urgence oncologique. La prise en charge inclut une hospitalisation, hémocultures, antibiothérapie large spectre en urgence (souvent pipéracilline-tazobactam ou carbapénème si haut risque), et évaluation du facteur de risque.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Questions :\n\n1. Quelle est la description du contexte?\n\nLe contexte concernant cette question est la neutrophilic fever (neutrophilie faible), qui est un état dangereux survenant dans le traitement d'un cancer.\n\n2. Qu'est-ce qu'une neutrophile, et quelle est sa fonction dans le système immunitaire?\n\nNeutrophiles sont des cellules de l'immunité. Elles sont responsables de la défense contre les microorganismes pathogènes, notamment les virus et les bactéries.",
+        "latency_seconds": 105.159,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0164,
+        "rouge_l": 0.087,
+        "bertscore": 0.6195,
+        "latency_seconds": 105.159,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quel est le protocole FOLFOX pour le cancer colorectal ?",
+    "gold_standard": "Le protocole FOLFOX associe oxaliplatine 85 mg/m² J1, leucovorin 400 mg/m² J1, 5-FU 400 mg/m² bolus J1 puis 2400 mg/m² en perfusion continue 46h, toutes les 2 semaines.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Le protocole d'administration de Foldox pour le cancérologie colo-réctale est associé à une thérapeutique cible (Foliforine ou Folirix, si le cancer est muté RAS ou BRAF et le colon gauche).\n\nLa révision évaluative de la sécurité est effectuée tous les quatre à six cycles à l'aide d'une RCP oncologique chirugique.",
+        "latency_seconds": 61.983,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0149,
+        "rouge_l": 0.0889,
+        "bertscore": 0.6683,
+        "latency_seconds": 61.983,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Qu'est-ce que la radiothérapie stéréotaxique et quand est-elle indiquée ?",
+    "gold_standard": "La radiothérapie stéréotaxique délivre de fortes doses de rayonnement de façon très précise en peu de séances. Elle est indiquée pour les tumeurs cérébrales, les métastases pulmonaires ou hépatiques limitées, et certains cancers primitifs localisés non opérables.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Le traitement d'une métastase cérébrale symptomatique négative doit être effectué en premier lieu par la radiochimie stérée ou la thérapie panencephale associée au traitement à une dose élevée de radionucléides. Pour contrôler systématiquement les localissements pulmonaires et hépatobiliaires multiples dans le système nerveux périphérique, le traitement combiné avec le conjugué anticorps Saccituzumab (Troglycan) est suggéré dans la deuxième ligne thérapeutique métastatique ou plus tardivement.",
+        "latency_seconds": 76.824,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0086,
+        "rouge_l": 0.146,
+        "bertscore": 0.7259,
+        "latency_seconds": 76.824,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Patiente de 42 ans, triple négatif, stade II. Quelle est la stratégie thérapeutique recommandée ?",
+    "gold_standard": "Pour un cancer du sein triple négatif stade II, la stratégie recommandée inclut une chimiothérapie néoadjuvante (ex. AC x4 suivi de paclitaxel x12) puis chirurgie. En cas de résidu tumoral, le capécitabine est recommandé en adjuvant selon les données récentes.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Pourquoi ne pose pas de diagnostic lorsqu'il y a un contexte fourni?\n\nLe contexte indique que les patients atteintes de cancers du sein précoces luminal sont fragiles et présentent une évaluation de risque élevé. Le diagnostic est nécessaire pour déterminer la nature de la maladie et la réponse à la chimiotherapie. Si le diagnostic n'est pas posé, il ne s'agirait pas d'une réponse appropriée au traitement.\n\nEn tant qu'assistant médical, tu es obligé de répondre à la question directement en faisant référence à la contextualisation fournie.",
+        "latency_seconds": 96.839,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0152,
+        "rouge_l": 0.1757,
+        "bertscore": 0.6696,
+        "latency_seconds": 96.839,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment se fait le suivi d'un patient traité pour un lymphome de Hodgkin ?",
+    "gold_standard": "Le suivi du lymphome de Hodgkin comprend un examen clinique régulier, une imagerie (TEP-TDM en fin de traitement puis TDM tous les 6 mois pendant 2 ans), une surveillance des toxicités tardives (cardiotoxicité, hypothyroïdie) et un bilan NFS.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Questions :\n\n1. Comment est-il suivi un patient atteint d’un cancer de l’immunobiologie?\n\n2. Quels sont les principaux sujets de suivi du patient?\n  \n3. Quelle est la méthode utilisée pour suivre le patient dans le traitement?\n   \n4. Quelles sont les modalités d’évaluation du suivi?\n    \n5. Qu'est-ce qui est suivi dans le cas d’une récidive du cancer?\n     \n6. Quel est le rôle de la pharmacothérapie dans la prise en charge du patient après son traitement pour le cancer?",
+        "latency_seconds": 99.414,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0115,
+        "rouge_l": 0.1061,
+        "bertscore": 0.6166,
+        "latency_seconds": 99.414,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les marqueurs biologiques utilisés pour le cancer de la prostate ?",
+    "gold_standard": "Le principal marqueur est le PSA (antigène prostatique spécifique). Le PSA total, le ratio PSA libre/PSA total et la vélocité du PSA sont utilisés pour le dépistage, le diagnostic et le suivi. La biopsie prostatique reste nécessaire pour confirmer le diagnostic.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Quelques marques de biologie utilisées pour le cancérologie du prostate :\n\n1. Prostate-specific antigen (PSA)\n2. Prostatic acid phosphatase (PAP)\n3. Androgen receptor (AR)\n4. Cyclin-dependent kinase inhibitor (CDK) 4/6\n5. P-glycoprotein (P-gp)\n6. Breast cancer resistance protein (BCRP)\n7. Membrane-type 1 matrix metalloproteinase (MT1-MMP)\n8. Transforming growth factor β (TGF-β)\n9.",
+        "latency_seconds": 89.212,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0132,
+        "rouge_l": 0.0561,
+        "bertscore": 0.6348,
+        "latency_seconds": 89.212,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Qu'est-ce que l'immunothérapie anti-PD1 et dans quels cancers est-elle utilisée ?",
+    "gold_standard": "Les anti-PD1 (pembrolizumab, nivolumab) bloquent le point de contrôle immunitaire PD-1, restaurant l'activité cytotoxique des lymphocytes T contre les cellules tumorales. Ils sont utilisés dans les mélanomes, cancers du poumon CBNPC, cancers urologiques, lymphomes de Hodgkin réfractaires et autres.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Le terme \"immunotherapie\" désigne une thérapie médicale qui utilise les cellules immunitaires pour combattre les maladies. Dans le cas d'un cancer, il s'agit d'utiliser une molécule appelée \"anti-CD137\" ou \"PD-1\" pour inhiber la prolifération des cellules tumorales.",
+        "latency_seconds": 92.2,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0406,
+        "rouge_l": 0.1489,
+        "bertscore": 0.698,
+        "latency_seconds": 92.2,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment expliquer le parcours de soins à un patient nouvellement diagnostiqué ?",
+    "gold_standard": "Le parcours de soins débute par la consultation d'annonce, suivie de bilans complémentaires et d'une réunion de concertation pluridisciplinaire (RCP) pour décider du traitement. Le patient est ensuite pris en charge par l'équipe soignante avec des consultations régulières, un suivi psychologique et social si nécessaire.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Le SMCO souligne la nécessité d'une intégration prématurée des soin palliativistes dans le traitement palliatif de tous les patients atteints de cancer métastasique ou insurmontable. La recommandation est d'éviter la différance de traitement à la fin du traitement actif (phase terminale), mais de la lier à la thérapie actives (chimie, thérapeutiques cibles).",
+        "latency_seconds": 85.506,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0187,
+        "rouge_l": 0.1391,
+        "bertscore": 0.6782,
+        "latency_seconds": 85.506,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quelles sont les indications de la greffe de moelle osseuse en oncohématologie ?",
+    "gold_standard": "La greffe de moelle osseuse (allogreffe ou autogreffe) est indiquée dans les leucémies aiguës en rémission, les lymphomes récidivants chimiosensibles, le myélome multiple, et certains syndromes myélodysplasiques à haut risque. Le choix dépend du type de pathologie, de l'âge et du donneur disponible.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Quelques-uns des indications suivantes sont définies dans le texte :\n\n1. Traitement de la maladie de Burkitt ou de l'acute myélodysplasie.\n2. Résistance à l'immunotherapeutique.\n3. Maladie d'Hodgkin ou d'Ewing.\n4. Cancer de la moelle épinière.\n5. Tumeurs du sein.\n6. Rétrovirus HIV.\n7. Cancers de la peau.\n8. Tumour de la thyroïde.\n9. Cancérologie de la prostate.\n10.",
+        "latency_seconds": 74.323,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0086,
+        "rouge_l": 0.1333,
+        "bertscore": 0.6483,
+        "latency_seconds": 74.323,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quel est le rôle des soins palliatifs en oncologie ?",
+    "gold_standard": "Les soins palliatifs visent à améliorer la qualité de vie des patients atteints de cancer avancé. Ils incluent la prise en charge de la douleur, la gestion des symptômes, le soutien psychologique, social et spirituel, et peuvent être débutés dès le diagnostic en parallèle du traitement curatif.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "La question souleve le rôle de la prise en charge palliative dans l'oncologie, c'est-à-dire les soins destinés à améliorer la qualité de vie des patients atteints de maladies cancéreuses. Dans ce contexte, il s'agit d'aider les patients et leurs familles à survivre aux complications de la maladie et à maintenir leur autonomie et leur capacité à vivre leur vie quotidienne en toute sécurité.\n\nLorsque la question est posée en français, elle se base sur le contenu fourni dans le texte original.",
+        "latency_seconds": 72.258,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.157,
+        "rouge_l": 0.2695,
+        "bertscore": 0.7313,
+        "latency_seconds": 72.258,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment interpréter un résultat de biopsie avec score de Gleason 7 ?",
+    "gold_standard": "Un score de Gleason 7 (3+4 ou 4+3) correspond à un cancer de la prostate de grade intermédiaire. Le 4+3 est considéré plus agressif que le 3+4. Ce résultat nécessite une discussion en RCP pour décider entre surveillance active renforcée, prostatectomie radicale ou radiothérapie selon les comorbidités.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Quelques lignes de texte :\n\n1. Le diagnostic de cancer du sein repose essentiellement sur la prise en charge des biopsiques prostatiques.\n\n2. Les biomarqueurs de prostate, tels que l'échographie intra-artérielle (EIA) ou l'imagerie par résonance magnétique (IRM), sont utilisés pour déterminer la localisation et l'étendue de l'invasion du cancer dans le pénis ou le bladéroïde, avant de réaliser les biopsoques.\n3.",
+        "latency_seconds": 117.549,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0094,
+        "rouge_l": 0.1504,
+        "bertscore": 0.6602,
+        "latency_seconds": 117.549,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les risques de la radiothérapie pelvienne ?",
+    "gold_standard": "La radiothérapie pelvienne peut entraîner des toxicités aiguës (diarrhée, cystite radique, fatigue) et tardives (fibrose rectale, sténose urétrale, lymphœdème, troubles sexuels). Un suivi gynécologique ou urologique régulier est recommandé après traitement.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Quelques-uns des risques liés à la radiochirurgie pélvienne sont :\n\n- Le risque d'un cancer du sein (cancer de la moelle osseuse) ;\n- L'incapacité à rétablir l'équilibre sexuel (dysfonction érectile, dyspareunie, etc.);\n- Un risque plus élevé de complications graves, tels que des infections, des maladies respiratoires, des troubles digestifs ou des troubles cardiaques.",
+        "latency_seconds": 87.192,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0095,
+        "rouge_l": 0.1224,
+        "bertscore": 0.7269,
+        "latency_seconds": 87.192,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Patient sous bevacizumab présente une hypertension artérielle. Quelle conduite tenir ?",
+    "gold_standard": "L'hypertension artérielle est un effet de classe des anti-VEGF comme le bevacizumab. La conduite inclut la mesure régulière de la TA, l'introduction d'un antihypertenseur (IEC ou inhibiteur calcique de préférence), et la suspension du traitement si HTA sévère ou non contrôlée.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "Quel conduit tenir?\n\nPour cette question, la réponse est :\n\nNe pose pas de diagnostic ni de question concernant les médications ou les doses. Recopiez exactement le contenu du contexte.",
+        "latency_seconds": 63.174,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0102,
+        "rouge_l": 0.1412,
+        "bertscore": 0.6278,
+        "latency_seconds": 63.174,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quelle est la place de la chirurgie dans le traitement du cancer du rectum localement avancé ?",
+    "gold_standard": "Pour le cancer du rectum localement avancé (T3-T4 ou N+), le traitement standard est une radiochimiothérapie néoadjuvante (5-FU ou capécitabine + radiothérapie 45-50 Gy), suivie d'une chirurgie d'exérèse totale du mésorectum (ETM) après 6 à 8 semaines de délai.",
+    "results": [
+      {
+        "model_name": "model_c",
+        "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+        "response": "La place du traitement chirugique dans le Traitement du cancérologue localisé au rectum avalancé est décrite dans le Contexte.\n\nLien vers le texte original : https://www.amfrom.org/chapitre-iii-cancer-du-rectum/\n\nEn anglais :\n\nThe place of surgery in the treatment of cancer of the rectum localized is described in the context. The link to the original text is provided.",
+        "latency_seconds": 80.181,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_c": {
+        "bleu": 0.0159,
+        "rouge_l": 0.1053,
+        "bertscore": 0.6103,
+        "latency_seconds": 80.181,
+        "safe": true,
+        "error": null
+      }
+    }
+  }
+]

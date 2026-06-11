@@ -3,6 +3,7 @@ import sys
 import json
 import uuid
 from datetime import datetime
+from typing import List, Optional, Set
 from fastapi import APIRouter, UploadFile, File, HTTPException
 
 router = APIRouter(tags=["upload"])
@@ -71,7 +72,7 @@ def _get_dataset_light():
         return []
 
 
-def _sync_documents_router(new_entries: list[dict] | None = None, removed_ids: set | None = None):
+def _sync_documents_router(new_entries: Optional[List[dict]] = None, removed_ids: Optional[Set[str]] = None):
     """Keep documents.py module-level cache in sync after upload/delete."""
     try:
         import backend.routers.documents as _docs

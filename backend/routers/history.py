@@ -86,10 +86,17 @@ def get_history(username: str):
 def save_history_item(req: SaveHistoryRequest):
     """Persist one Q&A item for a user (idempotent by id)."""
     item = req.item
-    sources_json = json.dumps(
-        [s.model_dump(exclude_none=True) for s in item.sources],
-        ensure_ascii=False,
-    )
+    # Accept either Pydantic models or plain dicts for sources.
+    def _normalize_source(s):
+        if hasattr(s, 'model_dump'):
+            return s.model_dump(exclude_none=True)
+        if isinstance(s, dict):
+            return {k: v for k, v in s.items() if v is not None}
+        return s
+
+    sources_json = json.dumps([
+        _normalize_source(s) for s in (item.sources or [])
+    ], ensure_ascii=False)
     with _get_conn() as conn:
         conn.execute(
             """

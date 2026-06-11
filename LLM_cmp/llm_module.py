@@ -129,8 +129,12 @@ def build_context(top_k_docs: list[Document], max_chars: int = 1800) -> str:
         lines = [doc.contenu]
         if doc.protocole:
             lines.append(f"Protocole : {doc.protocole}")
+        # B2 citation grounding: tag the reference with [SOURCE] so the citation
+        # instruction in prompt templates can point the LLM to a concrete label.
         if doc.source_reference:
-            lines.append(f"Référence : {doc.source_reference}")
+            lines.append(f"[SOURCE] {doc.source_reference}")
+        elif doc.id:
+            lines.append(f"[SOURCE] {doc.id}")
         chunk = "\n".join(lines)
 
         if total + len(chunk) + 7 <= max_chars:   # +7 for the separator
@@ -176,9 +180,11 @@ def prompt_zero_shot(question: str, context: str) -> str:
         f"CONTEXTE:\n{context}\n\n"
         f"INSTRUCTION: Réponds en 3-4 phrases maximum en utilisant UNIQUEMENT les informations du CONTEXTE. "
         f"Copie les noms de médicaments, doses et protocoles EXACTEMENT tels qu'ils apparaissent dans le CONTEXTE. "
+        f"Après chaque affirmation médicale, cite la source entre parenthèses en utilisant la balise [SOURCE] "
+        f"du contexte, par exemple : (Guide AMFROM 2024 p.13). "
         f"N'ajoute aucune information extérieure. Sois concis.\n\n"
         f"QUESTION: {question}\n"
-        "RÉPONSE:"
+        "RÉPONSE (avec citations):"
     )
 
 
@@ -198,19 +204,21 @@ def prompt_few_shot(question: str, context: str) -> str:
     return (
         f"{examples}"
         f"CONTEXTE:\n{context}\n\n"
-        f"INSTRUCTION: Réponds uniquement à partir du CONTEXTE. Copie les noms de médicaments et doses EXACTEMENT.\n\n"
+        f"INSTRUCTION: Réponds uniquement à partir du CONTEXTE. Copie les noms de médicaments et doses EXACTEMENT. "
+        f"Cite la source [SOURCE] du contexte après chaque affirmation, au format (Guide AMFROM 2024 p.XX).\n\n"
         f"QUESTION: {question}\n"
-        "RÉPONSE:"
+        "RÉPONSE (avec citations):"
     )
 
 
 def prompt_chain_of_thought(question: str, context: str) -> str:
     return (
         f"CONTEXTE:\n{context}\n\n"
-        f"INSTRUCTION: Utilise UNIQUEMENT le CONTEXTE. Copie les noms de médicaments et doses EXACTEMENT.\n\n"
+        f"INSTRUCTION: Utilise UNIQUEMENT le CONTEXTE. Copie les noms de médicaments et doses EXACTEMENT. "
+        f"Cite la source [SOURCE] après chaque fait au format (Guide AMFROM 2024 p.XX).\n\n"
         f"QUESTION: {question}\n\n"
         "Étape 1 — Informations clés du contexte:\n"
-        "Étape 2 — Réponse finale:\n"
+        "Étape 2 — Réponse finale (avec citations [SOURCE]):\n"
         "RÉPONSE:"
     )
 
@@ -656,9 +664,10 @@ def generate_all_models(
     top_k_docs: list[Document],
     prompt_template: str = "zero_shot",
     parallel: bool = None,           # None = auto-detect based on device
+    models_filter: list[str] = None, # e.g. ["model_a"] to run only one model
 ) -> list[GenerationResult]:
     """
-    Run all three models and return one GenerationResult per model.
+    Run all three models (or a subset) and return one GenerationResult per model.
 
     Parallelism strategy:
       - GPU  → sequential (parallel=False forced) to avoid VRAM OOM.
@@ -668,8 +677,14 @@ def generate_all_models(
               Full parallelism on CPU just causes thrashing.
 
     You can override with parallel=True/False explicitly.
+    models_filter: if provided, only the named models run (e.g. ["model_a"]).
     """
-    models = _registry.registered_models
+    all_models = _registry.registered_models
+    models = (
+        [m for m in all_models if m in models_filter]
+        if models_filter
+        else all_models
+    )
 
     # Auto-detect safest strategy
     if parallel is None:
@@ -762,16 +777,18 @@ def run_benchmark(
     retrieval_fn,
     prompt_template: str = "zero_shot",
     output_path: str = "benchmark_results.json",
+    models: list[str] = None,
 ) -> list[BenchmarkEntry]:
     """
-    Run the full benchmark across all models.
+    Run the benchmark across all models (or a subset).
 
     Args:
         test_set:       List of dicts with keys "question" and "gold_standard".
-        retrieval_fn:   Callable(question: str) -> list[Document]
-                        (provided by Person 3's retrieval module).
+        retrieval_fn:   Callable(question: str) -> list[Document].
         prompt_template: Prompt strategy to use for this benchmark run.
         output_path:    Where to save the JSON results.
+        models:         Optional list of model names to run, e.g. ["model_a"].
+                        If None (default), all three models run.
 
     Returns:
         List of BenchmarkEntry objects with metrics filled in.
@@ -786,8 +803,12 @@ def run_benchmark(
         # Retrieve documents via Person 3's module
         top_k_docs: list[Document] = retrieval_fn(question)
 
-        # Generate with all models in parallel
-        results = generate_all_models(question, top_k_docs, prompt_template=prompt_template)
+        # Generate with selected models
+        results = generate_all_models(
+            question, top_k_docs,
+            prompt_template=prompt_template,
+            models_filter=models,
+        )
 
         # Compute metrics per model
         metrics = {}

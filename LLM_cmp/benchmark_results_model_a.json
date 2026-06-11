@@ -1,0 +1,502 @@
+[
+  {
+    "question": "Quel est le protocole AC pour le cancer du sein ?",
+    "gold_standard": "Le protocole AC associe Doxorubicine 60 mg/m² et Cyclophosphamide 600 mg/m² en IV J1, toutes les 3 semaines, pour 4 cycles. Il est utilisé en situation adjuvante ou néoadjuvante selon le stade.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "CLEOPATRA + bisphosphonate (sé HER2+ métastatique multi-site) [SOURCE] Guide AMFROM 2024, Chapitre I – Cancers du sein IV.B – Maladie métastatictique",
+        "latency_seconds": 9.111,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0071,
+        "rouge_l": 0.0702,
+        "bertscore": 0.649,
+        "latency_seconds": 9.111,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les effets secondaires courants de la chimiothérapie ?",
+    "gold_standard": "Les effets secondaires fréquents de la chimiothérapie incluent nausées, vomissements, alopécie, fatigue, myélosuppression et mucites. Une prise en charge symptomatique est essentielle tout au long du traitement.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Les métastases cérébrales dans les cancers de son HER2+ sont fréquentes (20-30% des cas métastatiques). La prise en charge combine le traitement local (radiochirurgie stéréotaxique pour 4 lesions, irradiation encéphalique totale pour les lésions multiples) et le traitement systémique. Le Trastuzumab deruxtecan (T-DXd) ainsi que le Tucatinib + Trestusmab + Capécitabine ont démontré une activité sur les métastades ceres dans les essais récentes. [SOURCE] Guide AMFROM 2024, Chapitre I – Seine métastatique",
+        "latency_seconds": 22.228,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0218,
+        "rouge_l": 0.1356,
+        "bertscore": 0.6447,
+        "latency_seconds": 22.228,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment se déroule le diagnostic d'un cancer du sein ?",
+    "gold_standard": "Le diagnostic du cancer du sein repose sur l'examen clinique, la mammographie, l'échographie mammaire, et la biopsie avec analyse anatomopathologique. La classification TNM détermine le stade et guide la stratégie thérapeutique.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Le diagnostic repose sur l'immunohistochimie (IHC) : une score 3+ est directement positif. Une score 2+ nécessite une confirmation par hybridation in situ (FISH ou CISH). Une score 0 ou 1+ est considéré négatif. Le ciblage thérapeutique de HER2 par Trastuzumab a transformé le prognosis de cette maladie autrefois redoutable. [SOURCE] Guide AMFROM 2024, Chapitre I – Cancers du sein",
+        "latency_seconds": 16.765,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0194,
+        "rouge_l": 0.1616,
+        "bertscore": 0.6889,
+        "latency_seconds": 16.765,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quelle est la différence entre chimiothérapie adjuvante et néoadjuvante ?",
+    "gold_standard": "La chimiothérapie néoadjuvante est administrée avant la chirurgie pour réduire la taille tumorale. La chimiothérapie adjuvante est donnée après la chirurgie pour éliminer les cellules résiduelles et réduire le risque de récidive.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Après chirurgicale curative d'un cancer du côlon stade III (envahissement ganglionaire), une chimiothérapie adjuvante est indiqué pendant 6 mois. Les deux normes sont FOLFOX (Oxaliplatine + Leucovorine + 5-FU IV bimensuel) ou CAPOX (oxaloplétine + Capécitabine orale, toutes 3 semaines). CA POX pendant 3 mois est une option pour les stades III de faible risque (T1-3 N1)",
+        "latency_seconds": 21.933,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0259,
+        "rouge_l": 0.1346,
+        "bertscore": 0.6948,
+        "latency_seconds": 21.933,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Patient de 55 ans, cancer du poumon non à petites cellules stade IIIA, ECOG 1. Quel protocole recommandez-vous selon le guide marocain ?",
+    "gold_standard": "Pour un CBNPC stade IIIA avec bon état général (ECOG 1), le guide AMFROM recommande une radio-chimiothérapie concomitante à base de cisplatine et étoposide ou carboplatine/paclitaxel, suivie d'une immunothérapie de consolidation si pas de progression.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Le patient de 55 ans, cancer du poumon non à petites cellules stade IIIA, ECOG 1. Quelle protocole recommandez-vous selon le guide marocain ?",
+        "latency_seconds": 5.312,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0236,
+        "rouge_l": 0.1875,
+        "bertscore": 0.6771,
+        "latency_seconds": 5.312,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les critères de réponse RECIST utilisés en oncologie ?",
+    "gold_standard": "Les critères RECIST évaluent la réponse tumorale : réponse complète (disparition totale des lésions), réponse partielle (réduction ≥30%), maladie stable (ni réponse partielle ni progression), progression (augmentation ≥20% ou nouvelles lésions).",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Les critères de réponse RECIST utilisés en oncologie sont les suivants : [SOURCE] Guide AMFROM 2024, Chapitre III – Cancer du rectum",
+        "latency_seconds": 5.295,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0143,
+        "rouge_l": 0.1613,
+        "bertscore": 0.6629,
+        "latency_seconds": 5.295,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment gérer une neutropénie fébrile sous chimiothérapie ?",
+    "gold_standard": "Une neutropénie fébrile est une urgence oncologique. La prise en charge inclut une hospitalisation, hémocultures, antibiothérapie large spectre en urgence (souvent pipéracilline-tazobactam ou carbapénème si haut risque), et évaluation du facteur de risque.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Les patients à haut risque (MASCC  21) doivent être hospitalisés d'urgence pour une antibiothérapie intraveineuse à large spectre (ex. Pipéracilline-Tazobactam ou Céfépime). Les patients au bas risque (masc >= 21) peuvent être pris en charge à domicile par antibioterapia orale (Ciprofloxacine + Amoxicilline-Acide clavulanique) sous surveillance stricte. [SOURCE] SMCO 2023",
+        "latency_seconds": 15.525,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0242,
+        "rouge_l": 0.234,
+        "bertscore": 0.721,
+        "latency_seconds": 15.525,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quel est le protocole FOLFOX pour le cancer colorectal ?",
+    "gold_standard": "Le protocole FOLFOX associe oxaliplatine 85 mg/m² J1, leucovorin 400 mg/m² J1, 5-FU 400 mg/m² bolus J1 puis 2400 mg/m² en perfusion continue 46h, toutes les 2 semaines.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "chimiothérapie intensive (FOLFOX ou FOLFIRI) associée à une thérapie ciblée (Bevacizumab si RAS muté, Cétuximab se RAS/BRAF sauvage et côlon gauche) est utilisé. L'évaluation de la résécabilité est réévaluée toutes les 4-6 cycles par une RCP chirurgico-oncologique. [SOURCE] Guide AMFROM 2024, Chapitre III – Colorectal métastatique",
+        "latency_seconds": 18.044,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0153,
+        "rouge_l": 0.087,
+        "bertscore": 0.6547,
+        "latency_seconds": 18.044,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Qu'est-ce que la radiothérapie stéréotaxique et quand est-elle indiquée ?",
+    "gold_standard": "La radiothérapie stéréotaxique délivre de fortes doses de rayonnement de façon très précise en peu de séances. Elle est indiquée pour les tumeurs cérébrales, les métastases pulmonaires ou hépatiques limitées, et certains cancers primitifs localisés non opérables.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Les métastases cérébrales symptomatiques doivent être traitées en priorité par radiothérapie stéréotaxique ou panencéphalique (selon le nombre de lesions) associée à un corticothérapie à forte dose.",
+        "latency_seconds": 9.951,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0242,
+        "rouge_l": 0.1839,
+        "bertscore": 0.7457,
+        "latency_seconds": 9.951,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Patiente de 42 ans, triple négatif, stade II. Quelle est la stratégie thérapeutique recommandée ?",
+    "gold_standard": "Pour un cancer du sein triple négatif stade II, la stratégie recommandée inclut une chimiothérapie néoadjuvante (ex. AC x4 suivi de paclitaxel x12) puis chirurgie. En cas de résidu tumoral, le capécitabine est recommandé en adjuvant selon les données récentes.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Les patients de plus de 70 ans fragiles avec une cancer de son précoce luminal (RH+, HER2-, pT1, pN0), la désescalade thérapeutique est recommandée. La chimiothérapie adjuvante est généralement omise. La radiothérapie après chirurgie conservatrice peut également être oisée (étude PRIME II) si la patient s'engage à prendre une hormonothérapie adjuncte par inhibiteur de l'aromatase ou Tamoxifène pour 5 ans. L'objectif est d'éviter quotidiennes déplacements et les toxicités cutanées locales chez des patients dépendantes. Protocole : Hormonothérapie exclusive (Désescaxe) [SOURCE] Guide AMFROM 2024, Chapitre I Questionnaire: Patient de 42 ans, triple négatif, stade II. Quelle est la stratégie thérapéutique recommandée?",
+        "latency_seconds": 32.442,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.015,
+        "rouge_l": 0.1379,
+        "bertscore": 0.7042,
+        "latency_seconds": 32.442,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment se fait le suivi d'un patient traité pour un lymphome de Hodgkin ?",
+    "gold_standard": "Le suivi du lymphome de Hodgkin comprend un examen clinique régulier, une imagerie (TEP-TDM en fin de traitement puis TDM tous les 6 mois pendant 2 ans), une surveillance des toxicités tardives (cardiotoxicité, hypothyroïdie) et un bilan NFS.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Le traitement d'un patient traité pour un lymphoma de Hodgkin nécessite une adaptation posologique du protocole standard R-CHOP pour limiter la cardiotoxicité de la Doxorubicine et la myélosuppression sévère. Le schéma R-miniCHOP (comprenant des doses réduites de moitié de DoxORubicine, cyclophosphamide, and Vincristine, tout en maintenant la standard dose of the anticorps Rituximab and Prednisolone) permet de obtenir des taux de rémission complètes (>50%) avec une tolerable toxicité and a reduction significative de hospitalisations for familial neutropénie.",
+        "latency_seconds": 24.854,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0139,
+        "rouge_l": 0.1221,
+        "bertscore": 0.7137,
+        "latency_seconds": 24.854,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les marqueurs biologiques utilisés pour le cancer de la prostate ?",
+    "gold_standard": "Le principal marqueur est le PSA (antigène prostatique spécifique). Le PSA total, le ratio PSA libre/PSA total et la vélocité du PSA sont utilisés pour le dépistage, le diagnostic et le suivi. La biopsie prostatique reste nécessaire pour confirmer le diagnostic.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "FOLFIRI-Cetuximab (CCR RAS WT métastatique) [SOURCE] Guide AMFROM 2024, Chapitre III – Cancer colorectal II.B – 1ère ligne métastatic",
+        "latency_seconds": 7.606,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0054,
+        "rouge_l": 0.0,
+        "bertscore": 0.614,
+        "latency_seconds": 7.606,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Qu'est-ce que l'immunothérapie anti-PD1 et dans quels cancers est-elle utilisée ?",
+    "gold_standard": "Les anti-PD1 (pembrolizumab, nivolumab) bloquent le point de contrôle immunitaire PD-1, restaurant l'activité cytotoxique des lymphocytes T contre les cellules tumorales. Ils sont utilisés dans les mélanomes, cancers du poumon CBNPC, cancers urologiques, lymphomes de Hodgkin réfractaires et autres.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Pembrolizumab (immunothérapie anti-PD1 à chimiothérapie) est devenue le standard néoadjuvant pour les TNBC de stade II et III.",
+        "latency_seconds": 12.426,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.006,
+        "rouge_l": 0.1791,
+        "bertscore": 0.7108,
+        "latency_seconds": 12.426,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment expliquer le parcours de soins à un patient nouvellement diagnostiqué ?",
+    "gold_standard": "Le parcours de soins débute par la consultation d'annonce, suivie de bilans complémentaires et d'une réunion de concertation pluridisciplinaire (RCP) pour décider du traitement. Le patient est ensuite pris en charge par l'équipe soignante avec des consultations régulières, un suivi psychologique et social si nécessaire.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "La SMCO insiste sur l'intégration précoce de soins palliatifs dans le cadre de guérison de tous les patients atteints d'une cancer métastatique ou incurable. Il est recommandé de ne pas différer la prise en charge pallier à la phase terminale, mais de s'associer aux traitements oncologiques actives (chimiothérapie, traitements ciblées) dès le diagnostic de phase avancée. Les objectifs sont le contrôle optimale des symptomatiques (douleur, dyspnée, occlusion, troubles neuropsychiques) et la psycho-socialisation du patient and de son famille, en collaboration avec les associations nationales des soins pallieraires. [SOURCE] SM CO 2023",
+        "latency_seconds": 28.092,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0142,
+        "rouge_l": 0.15,
+        "bertscore": 0.6669,
+        "latency_seconds": 28.092,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quelles sont les indications de la greffe de moelle osseuse en oncohématologie ?",
+    "gold_standard": "La greffe de moelle osseuse (allogreffe ou autogreffe) est indiquée dans les leucémies aiguës en rémission, les lymphomes récidivants chimiosensibles, le myélome multiple, et certains syndromes myélodysplasiques à haut risque. Le choix dépend du type de pathologie, de l'âge et du donneur disponible.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "En cas de métastases osseuses dans un CBNPC EGFR muté, le traitement oncologique par Osimertinib est associée à une prise en charge des complications osseus. Une biphosphonate (Acide zolédronique) ou le Denosumab est recommandé pour réduire le risque de complications squelettiques. La radiothérapie palliative est indiquée pour douleurs réfractaires ou les fractures pathologiques. La surveillance par TEP-TDM ou scintigraphie osseure permet d'évaluer la réponse. Protocole : Osisertinyb + Acidezoléronique [SOURCE] Guide AMFROM 2024, Chapitre IV – CBNCP",
+        "latency_seconds": 22.424,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0163,
+        "rouge_l": 0.1333,
+        "bertscore": 0.6595,
+        "latency_seconds": 22.424,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quel est le rôle des soins palliatifs en oncologie ?",
+    "gold_standard": "Les soins palliatifs visent à améliorer la qualité de vie des patients atteints de cancer avancé. Ils incluent la prise en charge de la douleur, la gestion des symptômes, le soutien psychologique, social et spirituel, et peuvent être débutés dès le diagnostic en parallèle du traitement curatif.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Quel est le rôle des soins palliatifs dans les oncologies? [SOURCE] Guide AMFROM 2024, Chapitre III – Colorectal métastatique",
+        "latency_seconds": 4.782,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0093,
+        "rouge_l": 0.0556,
+        "bertscore": 0.6342,
+        "latency_seconds": 4.782,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Comment interpréter un résultat de biopsie avec score de Gleason 7 ?",
+    "gold_standard": "Un score de Gleason 7 (3+4 ou 4+3) correspond à un cancer de la prostate de grade intermédiaire. Le 4+3 est considéré plus agressif que le 3+4. Ce résultat nécessite une discussion en RCP pour décider entre surveillance active renforcée, prostatectomie radicale ou radiothérapie selon les comorbidités.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Le Gleason/Grade Group guide la décision thérapeutique. [SOURCE] Guide AMFROM 2024, Chapitre VII – Cancer de la prostate",
+        "latency_seconds": 4.572,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0304,
+        "rouge_l": 0.1282,
+        "bertscore": 0.6816,
+        "latency_seconds": 4.572,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quels sont les risques de la radiothérapie pelvienne ?",
+    "gold_standard": "La radiothérapie pelvienne peut entraîner des toxicités aiguës (diarrhée, cystite radique, fatigue) et tardives (fibrose rectale, sténose urétrale, lymphœdème, troubles sexuels). Un suivi gynécologique ou urologique régulier est recommandé après traitement.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "L'indication des traitements adjuvants (curiethérapie vaginale, radiothérapie externe, chimiothérapie) est dictée par la classification de risque de l'ESGO/ESTRO/ESP 2021 intégrant les moléculaires (mutation POLE, statut MMR/MSI, statut TP53). [SOURCE] FMCGO 2024",
+        "latency_seconds": 10.309,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0241,
+        "rouge_l": 0.0706,
+        "bertscore": 0.6892,
+        "latency_seconds": 10.309,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Patient sous bevacizumab présente une hypertension artérielle. Quelle conduite tenir ?",
+    "gold_standard": "L'hypertension artérielle est un effet de classe des anti-VEGF comme le bevacizumab. La conduite inclut la mesure régulière de la TA, l'introduction d'un antihypertenseur (IEC ou inhibiteur calcique de préférence), et la suspension du traitement si HTA sévère ou non contrôlée.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "Bevacizumab (anti-VEGF) majore la résistance vasculaire systémique et induit fréquemment une HTA. Une HTA non contrôlée expose à des risques majeurs : crise hypertensive, encéphalopathie hypertenses, hémorragie tumorale ou cérébrale, retard de cicatrisation, protéine de grade > 2. [SOURCE] Guide AMFROM 2024, Chapitre III – Colorectal métastatique",
+        "latency_seconds": 17.092,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0193,
+        "rouge_l": 0.1835,
+        "bertscore": 0.716,
+        "latency_seconds": 17.092,
+        "safe": true,
+        "error": null
+      }
+    }
+  },
+  {
+    "question": "Quelle est la place de la chirurgie dans le traitement du cancer du rectum localement avancé ?",
+    "gold_standard": "Pour le cancer du rectum localement avancé (T3-T4 ou N+), le traitement standard est une radiochimiothérapie néoadjuvante (5-FU ou capécitabine + radiothérapie 45-50 Gy), suivie d'une chirurgie d'exérèse totale du mésorectum (ETM) après 6 à 8 semaines de délai.",
+    "results": [
+      {
+        "model_name": "model_a",
+        "model_id": "google/flan-t5-base",
+        "response": "La chirurgie est une exérèse totale du mésorectum (TME). Les chimiothérapies d'induction (FOLFIRINOX, FOLFOX) précédant la RCC sont en évaluation. [SOURCE] Guide AMFROM 2024, Chapitre III – Cancer du rectum",
+        "latency_seconds": 10.719,
+        "safe": true,
+        "prompt_template": "zero_shot",
+        "error": null
+      }
+    ],
+    "metrics": {
+      "model_a": {
+        "bleu": 0.0876,
+        "rouge_l": 0.2299,
+        "bertscore": 0.7167,
+        "latency_seconds": 10.719,
+        "safe": true,
+        "error": null
+      }
+    }
+  }
+]

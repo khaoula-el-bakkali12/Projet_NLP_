@@ -53,6 +53,14 @@ from .prompt_builder import (
     format_documents,
     compare_prompts,
     get_available_strategies,
+    protocol_explanation_prompt,
+    format_citation,
+)
+
+from .cancer_classifier import (
+    classify_cancer_type,
+    CANCER_LABELS,
+    SBERT_CONFIDENCE_THRESHOLD,
 )
 
 __all__ = [
@@ -68,5 +76,8 @@ __all__ = [
     # Retrieval
     "retrieve", "load_retrieval_resources", "evaluate_alpha_range",
     # Prompt builder
-    "build_prompt", "format_documents", "compare_prompts", "get_available_strategies",
+    "build_prompt", "format_documents", "compare_prompts",
+    "get_available_strategies", "protocol_explanation_prompt", "format_citation",
+    # Cancer classifier (B3)
+    "classify_cancer_type", "CANCER_LABELS", "SBERT_CONFIDENCE_THRESHOLD",
 ]

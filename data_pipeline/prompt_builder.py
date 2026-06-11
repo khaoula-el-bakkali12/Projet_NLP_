@@ -35,12 +35,36 @@ logger = logging.getLogger("prompt_builder")
 # 1. STRATÉGIES DISPONIBLES
 # ============================================================================
 
-AVAILABLE_STRATEGIES = ["zero_shot", "few_shot", "chain_of_thought"]
+AVAILABLE_STRATEGIES = ["zero_shot", "few_shot", "chain_of_thought", "protocol_explanation"]
 
 
 def get_available_strategies() -> List[str]:
     """Retourne la liste des stratégies de prompt disponibles."""
     return list(AVAILABLE_STRATEGIES)
+
+
+# ============================================================================
+# B2 — CITATION HELPER
+# ============================================================================
+
+def format_citation(doc: Dict[str, Any]) -> str:
+    """
+    Extracts a short citation string from a document dict.
+
+    Precedence:
+      1. ``reference`` field (already formatted, e.g. "Guide AMFROM 2024 p.13")
+      2. ``id`` as a fallback identifier
+
+    Returns a string suitable for inline use: "(Guide AMFROM 2024 p.13)"
+    or "(ONC-042)" if no reference is available.
+    """
+    ref = (doc.get("reference") or "").strip()
+    if ref:
+        return f"({ref})"
+    doc_id = (doc.get("id") or "").strip()
+    if doc_id:
+        return f"({doc_id})"
+    return "(source inconnue)"
 
 
 # ============================================================================
@@ -116,10 +140,12 @@ def format_documents(documents: List[Dict[str, Any]], max_docs: int = 5) -> str:
         if mots_cles:
             lines.append(f"   Mots-clés : {', '.join(mots_cles)}")
 
-        # Référence
+        # Référence — tagged [SOURCE] so citation instructions can point to it
         reference = doc.get("reference", "")
         if reference:
-            lines.append(f"   Référence : {reference}")
+            lines.append(f"   [SOURCE] {reference}")
+        elif doc.get("id"):
+            lines.append(f"   [SOURCE] {doc['id']}")
 
         blocks.append("\n".join(lines))
 
@@ -584,17 +610,22 @@ def _build_zero_shot_prompt(question: str, context: str) -> str:
 
     Approche minimaliste — le LLM répond directement à partir du
     contexte fourni, sans exemples ni instructions de raisonnement.
+    B2 : chaque affirmation doit être citée avec sa référence [SOURCE].
     """
     prompt = (
         "Tu es un assistant médical expert spécialisé en oncologie. "
-        "Tu réponds aux questions médicales en te basant strictement "
+        "Tu réponds aux questions médicales en te basant STRICTEMENT "
         "sur le contexte fourni ci-dessous. Si l'information n'est pas "
         "disponible dans le contexte, indique-le clairement.\n\n"
+        "RÈGLE IMPÉRATIVE : chaque affirmation médicale doit être suivie "
+        "de sa référence au format (Guide AMFROM 2024 p.XX) en utilisant "
+        "la balise [SOURCE] du document correspondant. "
+        "N'invente aucune information absente du contexte.\n\n"
         "### Contexte :\n"
         f"{context}\n\n"
         "### Question :\n"
         f"{question}\n\n"
-        "### Réponse :"
+        "### Réponse (avec citations) :"
     )
     return prompt
 
@@ -631,11 +662,15 @@ def _build_few_shot_prompt(
         "---\n\n"
         "Maintenant, réponds à la question suivante en utilisant le même "
         "format détaillé que les exemples ci-dessus.\n\n"
+        "RÈGLE IMPÉRATIVE : cite chaque fait médical avec sa référence "
+        "en utilisant la balise [SOURCE] du contexte, au format "
+        "(Guide AMFROM 2024 p.XX) ou (ID du document). "
+        "N'invente aucune information absente du contexte.\n\n"
         "### Contexte :\n"
         f"{context}\n\n"
         "### Question :\n"
         f"{question}\n\n"
-        "### Réponse :"
+        "### Réponse (avec citations) :"
     )
     return prompt
 
@@ -671,8 +706,82 @@ def _build_chain_of_thought_prompt(question: str, context: str) -> str:
         "**Étape 3 — Évaluation :**\n"
         "[Évaluer si le contexte couvre entièrement la question]\n\n"
         "**Étape 4 — Synthèse :**\n"
-        "[Construire la réponse finale]\n\n"
-        "### Réponse finale :"
+        "[Construire la réponse finale avec une citation (Guide AMFROM 2024 p.XX) "
+        "pour chaque affirmation, en utilisant la balise [SOURCE] du contexte]\n\n"
+        "RÈGLE IMPÉRATIVE : cite la référence [SOURCE] après chaque fait médical. "
+        "N'invente aucune information absente du contexte.\n\n"
+        "### Réponse finale (avec citations) :"
+    )
+    return prompt
+
+
+# ============================================================================
+# B4. PROTOCOL EXPLANATION PROMPT
+# ============================================================================
+
+def protocol_explanation_prompt(
+    question: str,
+    documents: List[Dict[str, Any]],
+    max_docs: int = 5,
+) -> str:
+    """
+    Génère un prompt structuré pour l'explication étape par étape d'un
+    protocole médical oncologique.
+
+    Le LLM est contraint de produire une réponse dans le format suivant :
+      NOM DU PROTOCOLE : …
+      PRÉPARATION      : …
+      PHASE 1          : …
+      PHASE 2          : …
+      SURVEILLANCE     : …
+      RÉFÉRENCES       : … (Guide AMFROM 2024 p.XX)
+
+    Chaque section doit être ancrée dans les documents récupérés (RAG)
+    et citée avec la balise [SOURCE] correspondante — aucune hallucination
+    de doses, fréquences ou médicaments n'est tolérée.
+
+    Args:
+        question : Question de l'utilisateur (ex. "Expliquer le protocole FOLFOX")
+        documents: Documents récupérés depuis retrieval.py
+        max_docs : Nombre max de documents à inclure dans le contexte
+
+    Returns:
+        Prompt complet prêt à être envoyé au LLM.
+    """
+    context = format_documents(documents, max_docs=max_docs)
+
+    prompt = (
+        "Tu es un assistant médical expert spécialisé en oncologie. "
+        "Tu dois expliquer un protocole médical de façon structurée, "
+        "claire et pédagogique, en te basant UNIQUEMENT sur le contexte fourni.\n\n"
+        "RÈGLE IMPÉRATIVE : utilise EXCLUSIVEMENT les informations présentes "
+        "dans le contexte ci-dessous. Pour chaque section, cite la source "
+        "entre parenthèses au format (Guide AMFROM 2024 p.XX) en t'appuyant "
+        "sur la balise [SOURCE] du document. N'invente aucune donnée médicale "
+        "(dose, fréquence, médicament) absente du contexte.\n\n"
+        "### Contexte médical :\n"
+        f"{context}\n\n"
+        "### Question :\n"
+        f"{question}\n\n"
+        "### Explication structurée du protocole :\n\n"
+        "Réponds OBLIGATOIREMENT dans ce format exact (complète chaque section "
+        "avec les informations du contexte ou indique 'Information non disponible') :\n\n"
+        "**NOM DU PROTOCOLE :** [Nom officiel du protocole et indication]\n\n"
+        "**PRÉPARATION :** [Bilan pré-thérapeutique, contre-indications, "
+        "conditions d'administration, prémédications requises]\n\n"
+        "**PHASE 1 :** [Premier cycle ou première phase du traitement — "
+        "médicaments, doses exactes en mg/m², voie et rythme d'administration]\n\n"
+        "**PHASE 2 :** [Cycles suivants ou deuxième phase — modifications "
+        "de doses, durée totale du traitement, nombre de cycles]\n\n"
+        "**SURVEILLANCE :** [Toxicités à surveiller, examens biologiques "
+        "recommandés, critères d'arrêt ou de réduction de dose]\n\n"
+        "**RÉFÉRENCES :** [Citer toutes les sources [SOURCE] utilisées au "
+        "format : Guide AMFROM 2024 p.XX ou identifiant du document]"
+    )
+
+    logger.info(
+        "protocol_explanation_prompt | Docs: %d | Longueur: %d chars",
+        min(len(documents), max_docs), len(prompt),
     )
     return prompt
 
@@ -709,6 +818,10 @@ def build_prompt(
             f"Stratégie inconnue : '{strategy}'. "
             f"Choisir parmi : {AVAILABLE_STRATEGIES}"
         )
+
+    # protocol_explanation has its own context-building logic
+    if strategy == "protocol_explanation":
+        return protocol_explanation_prompt(question, documents, max_docs=max_docs)
 
     # Formater les documents en contexte
     context = format_documents(documents, max_docs=max_docs)

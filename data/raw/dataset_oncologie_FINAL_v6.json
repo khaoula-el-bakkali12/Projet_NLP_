@@ -11111,223 +11111,571 @@
   },
   {
     "id": "ONC-SYN-121",
-    "categorie": "diagnostic",
+    "categorie": "traitement",
     "type_cancer": "sein",
-    "sous_type": "adénocarcinome",
-    "stade": "Stade IV (multiples métastases)",
-    "titre": "Cancer du sein avec métastases multiples - sites variés",
-    "contenu": "Le cancer du sein en présentation avec métastases multiples (foie, poumon, os) implique une stratégie palliative agressive. La chimiothérapie systémique combinée au traitement symptomatique offre le meilleur compromis.",
-    "protocole": null,
+    "sous_type": "HER2+ métastatique",
+    "stade": "stade IV",
+    "titre": "Cancer du sein HER2+ avec métastases hépatiques, osseuses et pulmonaires multiples",
+    "contenu": "Le cancer du sein HER2+ en situation métastatique multi-viscérale (foie, os, poumon) requiert une double inhibition HER2 de première ligne. Le schéma Trastuzumab + Pertuzumab + Docétaxel (protocole CLEOPATRA) est la référence avec un gain de survie globale démontré. Les métastases osseuses multiples imposent l'adjonction d'acide zolédronique (4 mg IV/28 j) ou dénosumab (120 mg SC/28 j) pour prévenir les événements osseux. En cas d'atteinte hépatique symptomatique (bili > 3N), réduire la dose de Docétaxel de 25% et surveiller la fonction hépatique toutes les 2 semaines. L'atteinte pulmonaire requiert la surveillance de la DLCO tous les 3 mois.",
+    "protocole": {
+      "nom": "CLEOPATRA + bisphosphonate (sein HER2+ métastatique multi-site)",
+      "medicaments": [
+        {
+          "nom": "Trastuzumab",
+          "dose": "8 mg/kg J1 puis 6 mg/kg",
+          "voie": "IV",
+          "jour": "J1/21j"
+        },
+        {
+          "nom": "Pertuzumab",
+          "dose": "840 mg J1 puis 420 mg",
+          "voie": "IV",
+          "jour": "J1/21j"
+        },
+        {
+          "nom": "Docétaxel",
+          "dose": "75 mg/m²",
+          "voie": "IV",
+          "jour": "J1/21j"
+        },
+        {
+          "nom": "Acide Zolédronique",
+          "dose": "4 mg",
+          "voie": "IV",
+          "jour": "J1/28j"
+        }
+      ],
+      "frequence": "Toutes les 21 jours (Trastuzumab/Pertuzumab/Docétaxel), 28 j (AZ)",
+      "cycles": "6 cycles avec Docétaxel puis entretien Trastuzumab+Pertuzumab",
+      "remarques": "Surveillance FEVG (écho J0, M3, M6). Bilan hépatique avant chaque cycle. DFG avant AZ."
+    },
     "effets_secondaires": [
-      "À définir"
+      "diarrhée",
+      "neutropénie",
+      "neuropathie",
+      "cardiotoxicité",
+      "ostéonécrose de la mâchoire"
     ],
     "mots_cles": [
       "sein",
-      "adénocarcinome"
+      "HER2",
+      "métastases",
+      "foie",
+      "os",
+      "poumon",
+      "CLEOPATRA",
+      "Trastuzumab",
+      "Pertuzumab",
+      "bisphosphonate"
     ],
-    "scenario_patient": "Patient(e) diagnostiqué(e) avec cancer du sein stade IV avec foyers métastatiques multiples dans foie, poumons et os. Bilan d'extension complet effectué.",
-    "reference": "Guide AMFROM 2024, p.150-155",
+    "scenario_patient": "Femme de 54 ans, cancer du sein HER2+ diagnostiqué en 2021, traitée par chimiothérapie adjuvante AC×4 puis Docétaxel+Trastuzumab. Rechute métastatique à 18 mois : scanner révèle 4 localisations hépatiques (max 3 cm), 3 lyses osseuses vertébrales et une opacité pulmonaire péri-hilaire droite. Performance status ECOG 1. FEVG 62%. Indication CLEOPATRA + acide zolédronique débuté en J1.",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein IV.B – Maladie métastatique",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Métastases multiples hépatiques, pulmonaires et osseuses."
+    "date_creation": "2026-06-10T21:48:23.219316",
+    "metastase": "Métastases hépatiques multiples, osseuses vertébrales et lésion pulmonaire péri-hilaire droite"
   },
   {
     "id": "ONC-SYN-122",
-    "categorie": "diagnostic",
+    "categorie": "traitement",
     "type_cancer": "poumon",
-    "sous_type": "carcinome",
-    "stade": "Stade IV (multiples métastases)",
-    "titre": "Cancer pulmonaire avec métastases multiples - sites variés",
-    "contenu": "Le cancer pulmonaire en présentation avec métastases multiples (foie, poumon, os) implique une stratégie palliative agressive. La chimiothérapie systémique combinée au traitement symptomatique offre le meilleur compromis.",
-    "protocole": null,
+    "sous_type": "CBNPC EGFR+ métastatique",
+    "stade": "stade IV",
+    "titre": "CBNPC EGFR-muté stade IV avec métastases cérébrales et hépatiques — traitement par Osimertinib",
+    "contenu": "L'adénocarcinome pulmonaire EGFR-muté (exon 19 del ou L858R) stade IV avec métastases cérébrales est traité en première ligne par Osimertinib (80 mg/j PO), inhibiteur de 3ème génération qui franchit la barrière hémato-encéphalique avec une efficacité cérébrale démontrée (FLAURA : réduction de 82% du risque de progression cérébrale). Les métastases hépatiques concomitantes ne modifient pas le traitement systémique si bili < 3N ; au-delà, réduire à 40 mg/j. La durée médiane de réponse est de 18,9 mois. Lors de progression, identifier la mutation T790M secondaire par re-biopsie ou ADN tumoral circulant.",
+    "protocole": {
+      "nom": "Osimertinib 1ère ligne (CBNPC EGFR+ IV avec métastases cérébrales)",
+      "medicaments": [
+        {
+          "nom": "Osimertinib",
+          "dose": "80 mg/j",
+          "voie": "PO",
+          "jour": "continu"
+        }
+      ],
+      "frequence": "Prise quotidienne continue",
+      "cycles": "Jusqu'à progression ou toxicité inacceptable",
+      "remarques": "IRM cérébrale baseline puis tous les 3 mois. Scanner TAP tous les 2 cycles. Echocardiographie si QTc > 480 ms. Surveillance pneumopathie interstitielle (toux sèche, dyspnée)."
+    },
     "effets_secondaires": [
-      "À définir"
+      "pneumopathie interstitielle",
+      "allongement QTc",
+      "rashs cutanés",
+      "diarrhée",
+      "fatigue"
     ],
     "mots_cles": [
       "poumon",
-      "carcinome"
+      "CBNPC",
+      "EGFR",
+      "Osimertinib",
+      "métastases cérébrales",
+      "foie",
+      "FLAURA"
     ],
-    "scenario_patient": "Patient(e) diagnostiqué(e) avec cancer pulmonaire stade IV avec foyers métastatiques multiples dans foie, poumons et os. Bilan d'extension complet effectué.",
-    "reference": "Guide AMFROM 2024, p.150-155",
+    "scenario_patient": "Femme de 61 ans, non-fumeuse, dyspnée progressive sur 2 mois. TDM thoracique : masse pulmonaire droite 4,5 cm + 3 adénopathies médiastinales. IRM cérébrale : 2 métastases (1,5 cm et 0,8 cm, asymptomatiques). TDM abdominale : 2 localisations hépatiques <2 cm. Biopsie : adénocarcinome, délétion exon 19 EGFR. ECOG 1. Osimertinib 80 mg/j débuté en J1. Réponse partielle à M3 (réduction 45% masse pulmonaire, disparition métastases cérébrales sur IRM M3).",
+    "reference": "Guide AMFROM 2024, Chapitre II – CBNPC – III.A Thérapies ciblées EGFR",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Métastases multiples hépatiques, pulmonaires et osseuses."
+    "date_creation": "2026-06-10T21:48:23.219326",
+    "metastase": "Métastases cérébrales bilatérales et localisations hépatiques"
   },
   {
     "id": "ONC-SYN-123",
-    "categorie": "diagnostic",
-    "type_cancer": "foie",
-    "sous_type": "lymphome",
-    "stade": "Stade IV (multiples métastases)",
-    "titre": "Cancer hépatique avec métastases multiples - sites variés",
-    "contenu": "Le cancer hépatique en présentation avec métastases multiples (foie, poumon, os) implique une stratégie palliative agressive. La chimiothérapie systémique combinée au traitement symptomatique offre le meilleur compromis.",
-    "protocole": null,
+    "categorie": "traitement",
+    "type_cancer": "colorectal",
+    "sous_type": "CCR KRAS sauvage métastatique",
+    "stade": "stade IV",
+    "titre": "Cancer colorectal KRAS/RAS sauvage avec métastases hépatiques et péritonéales — FOLFIRI-Cetuximab",
+    "contenu": "Le cancer colorectal RAS/BRAF sauvage avec métastases hépatiques et péritonéales est traité en première ligne par FOLFIRI + Cétuximab (1ère ligne gauche colon / RAS WT). La carcinose péritonéale (IP = 6 sur 39) contre-indique la chirurgie d'emblée mais ne contre-indique pas la chimiothérapie systémique. La conversion vers résécabilité hépatique est possible après 6–8 cycles (critères : >30% de réduction volumique). Réaction d'hypersensibilité au Cétuximab (grade 3) : arrêt définitif, switch Panitumumab. Surveillance ACE et imagerie tous les 2 cycles.",
+    "protocole": {
+      "nom": "FOLFIRI-Cetuximab (CCR RAS WT métastatique)",
+      "medicaments": [
+        {
+          "nom": "Irinotécan",
+          "dose": "180 mg/m²",
+          "voie": "IV 90 min",
+          "jour": "J1"
+        },
+        {
+          "nom": "Leucovorine",
+          "dose": "400 mg/m²",
+          "voie": "IV 2h",
+          "jour": "J1"
+        },
+        {
+          "nom": "5-FU bolus",
+          "dose": "400 mg/m²",
+          "voie": "IV bolus",
+          "jour": "J1"
+        },
+        {
+          "nom": "5-FU continu",
+          "dose": "2400 mg/m²",
+          "voie": "IV 46h",
+          "jour": "J1-J2"
+        },
+        {
+          "nom": "Cétuximab",
+          "dose": "400 mg/m² J1 puis 250 mg/m²/sem",
+          "voie": "IV",
+          "jour": "J1"
+        }
+      ],
+      "frequence": "FOLFIRI toutes les 2 semaines, Cétuximab hebdomadaire",
+      "cycles": "8–12 cycles d'induction puis évaluation chirurgicale",
+      "remarques": "UGT1A1 : si *28/*28 réduire Irinotécan à 150 mg/m². Prémédiquer Cétuximab (antihistaminique IV)."
+    },
     "effets_secondaires": [
-      "À définir"
+      "diarrhée grade 3-4",
+      "rash acnéiforme",
+      "hypokaliémie",
+      "neutropénie",
+      "mucite"
     ],
     "mots_cles": [
-      "foie",
-      "lymphome"
+      "colorectal",
+      "KRAS",
+      "RAS",
+      "FOLFIRI",
+      "Cetuximab",
+      "métastases hépatiques",
+      "carcinose péritonéale"
     ],
-    "scenario_patient": "Patient(e) diagnostiqué(e) avec cancer hépatique stade IV avec foyers métastatiques multiples dans foie, poumons et os. Bilan d'extension complet effectué.",
-    "reference": "Guide AMFROM 2024, p.150-155",
+    "scenario_patient": "Homme de 58 ans, cancer du côlon gauche sigmoïde réséqué 2 ans avant. Rechute métastatique : 5 localisations hépatiques bilatérales (max 4 cm), carcinose péritonéale limitée (IP=6). RAS/BRAF sauvage. ACE = 485 ng/mL. ECOG 1. Sous FOLFIRI+Cétuximab : réponse partielle à M4 (3 localisations hépatiques résiduelles <2 cm). Rash acnéiforme grade 2 géré par tétracycline topique.",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer colorectal II.B – 1ère ligne métastatique",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Métastases multiples hépatiques, pulmonaires et osseuses."
+    "date_creation": "2026-06-10T21:48:23.219329",
+    "metastase": "Métastases hépatiques bilatérales multiples et carcinose péritonéale limitée"
   },
   {
     "id": "ONC-SYN-124",
-    "categorie": "diagnostic",
-    "type_cancer": "côlon",
-    "sous_type": "adénocarcinome",
-    "stade": "Stade IV (multiples métastases)",
-    "titre": "Cancer colique avec métastases multiples - sites variés",
-    "contenu": "Le cancer colique en présentation avec métastases multiples (foie, poumon, os) implique une stratégie palliative agressive. La chimiothérapie systémique combinée au traitement symptomatique offre le meilleur compromis.",
-    "protocole": null,
-    "effets_secondaires": [
-      "À définir"
-    ],
-    "mots_cles": [
-      "côlon",
-      "adénocarcinome"
-    ],
-    "scenario_patient": "Patient(e) diagnostiqué(e) avec cancer colique stade IV avec foyers métastatiques multiples dans foie, poumons et os. Bilan d'extension complet effectué.",
-    "reference": "Guide AMFROM 2024, p.150-155",
-    "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Métastases multiples hépatiques, pulmonaires et osseuses."
-  },
-  {
-    "id": "ONC-SYN-125",
-    "categorie": "diagnostic",
+    "categorie": "traitement",
     "type_cancer": "ovaire",
-    "sous_type": "sérosopapillaire",
-    "stade": "Stade IV (multiples métastases)",
-    "titre": "Cancer ovarien avec métastases multiples - sites variés",
-    "contenu": "Le cancer ovarien en présentation avec métastases multiples (foie, poumon, os) implique une stratégie palliative agressive. La chimiothérapie systémique combinée au traitement symptomatique offre le meilleur compromis.",
-    "protocole": null,
+    "sous_type": "carcinome séreux de haut grade BRCA1",
+    "stade": "stade IIIC",
+    "titre": "Cancer de l'ovaire BRCA1 muté stade IIIC avec métastases péritonéales et pleurales — NACT puis chirurgie",
+    "contenu": "Le carcinome ovarien séreux de haut grade (COSHG) BRCA1 muté stade IIIC non résécable d'emblée requiert une chimiothérapie néoadjuvante (NACT) par Carboplatine AUC5 + Paclitaxel 175 mg/m² (3 cycles) avant évaluation de résécabilité (score de Fagotti). La mutation BRCA1 confère une hypersensibilité aux platines et prédispose à la réponse aux inhibiteurs de PARP. Après chirurgie optimale (résidu <1 cm), une maintenance par Olaparib 300 mg×2/j (SOLO-1) prolonge la survie sans progression de manière significative (p<0,001). L'épanchement pleural exsudatif est drainé en urgence si dyspnée ; la cytologie pleurale positive ne modifie pas le stade (IIIC → IV si positive selon FIGO 2014).",
+    "protocole": {
+      "nom": "Carboplatine-Paclitaxel NACT + Olaparib maintenance (ovaire BRCA1 IIIC)",
+      "medicaments": [
+        {
+          "nom": "Carboplatine",
+          "dose": "AUC 5 (Calvert)",
+          "voie": "IV 30 min",
+          "jour": "J1"
+        },
+        {
+          "nom": "Paclitaxel",
+          "dose": "175 mg/m²",
+          "voie": "IV 3h",
+          "jour": "J1"
+        },
+        {
+          "nom": "Olaparib (maintenance post-chirurgie)",
+          "dose": "300 mg × 2/j",
+          "voie": "PO",
+          "jour": "continu 2 ans"
+        }
+      ],
+      "frequence": "Carboplatine+Paclitaxel toutes les 21 jours × 3 cycles, puis réévaluation",
+      "cycles": "3 cycles NACT → chirurgie → 3 cycles adjuvants → Olaparib 2 ans",
+      "remarques": "DFG Cockcroft avant chaque cycle. G-CSF si neutropénie grade 4. BRCA confirmé obligatoire pour Olaparib."
+    },
     "effets_secondaires": [
-      "À définir"
+      "neuropathie périphérique",
+      "neutropénie",
+      "alopécie",
+      "anémie",
+      "nausées",
+      "fatigue"
     ],
     "mots_cles": [
       "ovaire",
-      "sérosopapillaire"
+      "BRCA1",
+      "carboplatine",
+      "paclitaxel",
+      "Olaparib",
+      "PARP",
+      "métastases péritonéales",
+      "SOLO-1"
     ],
-    "scenario_patient": "Patient(e) diagnostiqué(e) avec cancer ovarien stade IV avec foyers métastatiques multiples dans foie, poumons et os. Bilan d'extension complet effectué.",
-    "reference": "Guide AMFROM 2024, p.150-155",
+    "scenario_patient": "Femme de 62 ans, BRCA1 muté germinal. Distension abdominale progressive, CA-125 = 4200 U/mL. Scanner : masse ovarienne droite 9 cm, carcinose péritonéale diffuse (Fagotti score 8 = non résécable d'emblée), ascite abondante, épanchement pleural droit. 3 cycles NACT : CA-125 à 280 U/mL, masse 4 cm, ascite disparue. Chirurgie : résidu 0 mm. 3 cycles adjuvants puis Olaparib 300 mg×2/j débuté.",
+    "reference": "Guide AMFROM 2024, Chapitre V – Cancer de l'ovaire II.C – Prise en charge BRCA",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Métastases multiples hépatiques, pulmonaires et osseuses."
+    "date_creation": "2026-06-10T21:48:23.219333",
+    "metastase": "Carcinose péritonéale diffuse et épanchement pleural exsudatif bilatéral"
+  },
+  {
+    "id": "ONC-SYN-125",
+    "categorie": "traitement",
+    "type_cancer": "prostate",
+    "sous_type": "métastatique hormono-sensible",
+    "stade": "stade IV M1",
+    "titre": "Cancer de la prostate métastatique d'emblée hormono-sensible — privation androgénique + Docétaxel",
+    "contenu": "Le cancer de la prostate métastatique d'emblée à haut volume (≥4 métastases osseuses dont 1 extra-pelvienne, ou métastases viscérales) bénéficie d'un traitement combiné par suppression androgénique (LHRH agoniste ou antagoniste) associée à Docétaxel 75 mg/m² × 6 cycles (CHAARTED/STAMPEDE). Ce schéma améliore la survie globale vs hormonothérapie seule (HazardRatio 0,61). Les métastases osseuses ≥3 justifient l'adjonction d'acide zolédronique 4 mg/4 semaines après stabilisation hormonale. Le suivi PSA mensuel les 6 premiers mois, puis trimestriel, guide la réponse.",
+    "protocole": {
+      "nom": "LHRH agoniste + Docétaxel (prostate métastatique haut volume CHAARTED)",
+      "medicaments": [
+        {
+          "nom": "Leuproréline (LHRH agoniste)",
+          "dose": "22,5 mg depot 3 mois",
+          "voie": "SC",
+          "jour": "J1/90j"
+        },
+        {
+          "nom": "Docétaxel",
+          "dose": "75 mg/m²",
+          "voie": "IV 1h",
+          "jour": "J1/21j × 6"
+        },
+        {
+          "nom": "Prednisone",
+          "dose": "10 mg/j",
+          "voie": "PO",
+          "jour": "continu pendant Docétaxel"
+        },
+        {
+          "nom": "Acide Zolédronique",
+          "dose": "4 mg",
+          "voie": "IV",
+          "jour": "J1/28j × 24 mois"
+        }
+      ],
+      "frequence": "Docétaxel toutes les 3 semaines × 6 cycles; LHRH continu",
+      "cycles": "6 cycles Docétaxel puis LHRH seul jusqu'à résistance",
+      "remarques": "Castration chirurgicale alternative. Surveillance densité osseuse. G-CSF si neutropénie grade 4."
+    },
+    "effets_secondaires": [
+      "bouffées de chaleur",
+      "neutropénie",
+      "neuropathie",
+      "fatigue",
+      "ostéoporose",
+      "anémie"
+    ],
+    "mots_cles": [
+      "prostate",
+      "métastatique",
+      "LHRH",
+      "Docétaxel",
+      "CHAARTED",
+      "STAMPEDE",
+      "bisphosphonate",
+      "PSA"
+    ],
+    "scenario_patient": "Homme de 68 ans, PSA = 780 ng/mL, Gleason 9 (4+5). Bilan d'extension : 8 localisations osseuses (rachis, côtes, bassin, ilion droit), 1 adénopathie rétropéritonéale 2,5 cm. ECOG 1. Privation androgénique + Docétaxel 75 mg/m² × 6 cycles. PSA nadir à 1,2 ng/mL à M6. Acide zolédronique mensuel débuté à M3.",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Cancer de la prostate III.B – Métastatique HS",
+    "est_synthetique": true,
+    "date_creation": "2026-06-10T21:48:23.219336",
+    "metastase": "Métastases osseuses multiples (8 sites) et adénopathie rétropéritonéale"
   },
   {
     "id": "ONC-SYN-126",
     "categorie": "traitement",
     "type_cancer": "sein",
-    "sous_type": "HER2+",
-    "stade": "Stade III",
-    "titre": "Cancer du sein chez patient âgé fragile (>75 ans)",
-    "contenu": "La prise en charge des cancers chez patients âgés fragiles (>75 ans) avec comorbidités multiples (insuffisance cardiaque, démence, malnutrition) impose une approche dé-escaladée. Les doses standard sont souvent contre-indiquées. L'évaluation gériatrique complète est impérative.",
-    "protocole": null,
+    "sous_type": "luminal B HR+ HER2- fragile",
+    "stade": "stade III",
+    "titre": "Cancer du sein luminal B chez patiente âgée fragile (82 ans, G8 ≤10) — désescalade thérapeutique",
+    "contenu": "La prise en charge du cancer du sein chez la patiente âgée fragile (score G8 ≤ 14/17) impose une approche individualisée par onco-gériatrie. En cas de score G8 ≤ 10 (fragilité avérée), la chimiothérapie standard est contre-indiquée : les schémas anthracyclines exposent à un risque de cardiotoxicité disproportionné. La monothérapie Capécitabine 1250 mg/m² × 14 j/21j est validée en situation palliative ou néoadjuvante allégée. L'hormonothérapie exclusive (Létrozole 2,5 mg/j ou Fulvestrant 500 mg/M si contre-indication aux ISAI) est préférable si tumeur RH+ grade faible. La radiothérapie hypofractionnée (26 Gy/5 fr) limite les contraintes logistiques.",
+    "protocole": {
+      "nom": "Capécitabine monothérapie + Létrozole (sein fragile âgée)",
+      "medicaments": [
+        {
+          "nom": "Capécitabine",
+          "dose": "1000 mg/m² × 2/j J1-J14",
+          "voie": "PO",
+          "jour": "J1-J14/21j"
+        },
+        {
+          "nom": "Létrozole",
+          "dose": "2,5 mg/j",
+          "voie": "PO",
+          "jour": "continu"
+        }
+      ],
+      "frequence": "Capécitabine toutes les 21 jours; Létrozole quotidien continu",
+      "cycles": "Capécitabine jusqu'à progression ou toxicité; Létrozole 5 ans",
+      "remarques": "Ajuster Capécitabine à 75% si DFG 30-50 (formule Cockcroft). Prévention syndrome main-pied : crème urée 10%."
+    },
     "effets_secondaires": [
-      "À définir"
+      "syndrome main-pied",
+      "diarrhée",
+      "stomatite",
+      "bouffées de chaleur",
+      "ostéoporose"
     ],
     "mots_cles": [
       "sein",
-      "HER2+"
+      "âgée",
+      "fragile",
+      "G8",
+      "Capécitabine",
+      "Létrozole",
+      "désescalade",
+      "onco-gériatrie"
     ],
-    "scenario_patient": "Patient(e) de 78 ans, fragile, score ECOG 2-3, avec cancer du sein stade III. Score de fragilité gériatrique élevé.",
-    "reference": "Guide AMFROM 2024, p.200-210",
+    "scenario_patient": "Femme de 82 ans, score G8 = 9/17 (fragilité avérée), MMSE 22/30 (déclin cognitif léger), FEVG 48% (insuffisance cardiaque légère). Cancer du sein gauche luminal B HR+/HER2- grade II, stade IIIA (T3 N1 M0). Contre-indication aux anthracyclines (FEVG <50%). Capécitabine 1000 mg/m²×2/j J1-J14/21j + Létrozole 2,5 mg/j débuté. Tolérance correcte à M2, réduction partielle à 30% de la masse tumorale.",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein V.A – Personnes âgées",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Comorbidités multiples : insuffisance cardiaque, démence, malnutrition."
+    "date_creation": "2026-06-10T21:48:23.219340",
+    "metastase": ""
   },
   {
     "id": "ONC-SYN-127",
     "categorie": "traitement",
     "type_cancer": "prostate",
-    "sous_type": "adénocarcinome",
-    "stade": "Stade IV",
-    "titre": "Cancer de la prostate chez patient âgé fragile (>75 ans)",
-    "contenu": "La prise en charge des cancers chez patients âgés fragiles (>75 ans) avec comorbidités multiples (insuffisance cardiaque, démence, malnutrition) impose une approche dé-escaladée. Les doses standard sont souvent contre-indiquées. L'évaluation gériatrique complète est impérative.",
-    "protocole": null,
+    "sous_type": "CPRC métastatique fragile",
+    "stade": "stade IV résistant castration",
+    "titre": "Cancer de la prostate résistant à la castration chez patient âgé fragile (78 ans) — Enzalutamide désescaladé",
+    "contenu": "La résistance à la castration chez le patient fragile (G8 ≤ 12, polypharmacie, chutes récurrentes) oriente vers une hormonothérapie de nouvelle génération plutôt que vers le Docétaxel. L'Enzalutamide 160 mg/j présente un risque de convulsions accru chez le sujet âgé (interactions CYP3A4, antécédents d'AVC). L'Abiratérone 1000 mg/j + Prednisone 5 mg×2/j est préférable en cas de contre-indication aux anti-épileptiques. Les chutes doivent être prévenues par physiothérapie et adaptation de l'habitat. La surveillance ostéoporotique (DEXA) est obligatoire sous privation androgénique prolongée (>12 mois).",
+    "protocole": {
+      "nom": "Enzalutamide (CPRC fragile) ou alternative Abiratérone",
+      "medicaments": [
+        {
+          "nom": "Enzalutamide",
+          "dose": "160 mg/j",
+          "voie": "PO",
+          "jour": "continu"
+        },
+        {
+          "nom": "Dénosumab (protection osseuse)",
+          "dose": "120 mg SC",
+          "voie": "SC",
+          "jour": "J1/28j"
+        }
+      ],
+      "frequence": "Enzalutamide quotidien continu; Dénosumab mensuel",
+      "cycles": "Jusqu'à progression biochimique ou clinique",
+      "remarques": "Supplémenter Ca 1000 mg/j + Vit D3 800 UI/j. DEXA baseline. Risque convulsif : contre-indication si AVC < 1 an."
+    },
     "effets_secondaires": [
-      "À définir"
+      "risque convulsif",
+      "asthénie",
+      "hypertension",
+      "hot flashes",
+      "ostéoporose",
+      "chutes"
     ],
     "mots_cles": [
       "prostate",
-      "adénocarcinome"
+      "résistant castration",
+      "CPRC",
+      "Enzalutamide",
+      "Abiratérone",
+      "âgé",
+      "fragile",
+      "G8"
     ],
-    "scenario_patient": "Patient(e) de 81 ans, fragile, score ECOG 2-3, avec cancer de la prostate métastatique. Score de fragilité gériatrique élevé.",
-    "reference": "Guide AMFROM 2024, p.200-210",
+    "scenario_patient": "Homme de 78 ans, PSA 45 ng/mL sous LHRH depuis 18 mois, testostérone castrée <0,5 ng/mL. ECOG 2, score G8 = 11/17, polypharmacie (7 médicaments), antécédent AVC ischémique 4 ans. Progression osseuse (3 nouvelles lésions). Enzalutamide évité (AVC < 5 ans). Abiratérone 1000 mg/j + Prednisone débuté. PSA = 12 ng/mL à M3.",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Cancer de la prostate IV.A – CPRC fragile",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Comorbidités multiples : insuffisance cardiaque, démence, malnutrition."
+    "date_creation": "2026-06-10T21:48:23.219343",
+    "metastase": "Progression osseuse sur privation androgénique (CPRC stade M1)"
   },
   {
     "id": "ONC-SYN-128",
     "categorie": "traitement",
-    "type_cancer": "côlon",
-    "sous_type": "adénocarcinome",
-    "stade": "Stade III",
-    "titre": "Cancer colique chez patient âgé fragile (>75 ans)",
-    "contenu": "La prise en charge des cancers chez patients âgés fragiles (>75 ans) avec comorbidités multiples (insuffisance cardiaque, démence, malnutrition) impose une approche dé-escaladée. Les doses standard sont souvent contre-indiquées. L'évaluation gériatrique complète est impérative.",
-    "protocole": null,
+    "type_cancer": "colorectal",
+    "sous_type": "CCR stade III fragile",
+    "stade": "stade III",
+    "titre": "Cancer colique stade III chez patient âgé fragile (79 ans, G8 12) — Capécitabine adjuvante allégée",
+    "contenu": "L'adénocarcinome colique réséqué stade III (pT3 pN1) chez le sujet fragile âgé requiert un traitement adjuvant allégé. FOLFOX (oxaliplatine-5FU bimensuel) est standard chez le sujet fit mais contra-indiqué si score G8 ≤ 12 ou neuropathie préexistante, en raison du risque de neuropathie périphérique cumulatif sévère sous oxaliplatine. La Capécitabine orale (XELOX allégé ou Capécitabine seule) représente l'alternative validée. Capécitabine 1250 mg/m²×2/j J1-J14 × 8 cycles offre une survie sans récidive similaire à FOLFOX chez >70 ans (QUASAR, MOSAIC). Adapter la dose à 75% si créatinine > 1,4 ou DFG < 50.",
+    "protocole": {
+      "nom": "Capécitabine adjuvante allégée (colique stade III fragile)",
+      "medicaments": [
+        {
+          "nom": "Capécitabine",
+          "dose": "1250 mg/m² (réduit à 1000 si DFG<50) × 2/j J1-J14",
+          "voie": "PO",
+          "jour": "J1-J14/21j"
+        }
+      ],
+      "frequence": "Toutes les 21 jours",
+      "cycles": "8 cycles (6 mois)",
+      "remarques": "Ajuster si syndrome main-pied grade ≥ 2 : réduction 25%. Bilan hépatique J1 de chaque cycle."
+    },
     "effets_secondaires": [
-      "À définir"
+      "syndrome main-pied",
+      "diarrhée",
+      "stomatite",
+      "fatigue",
+      "hyperbilirubinémie"
     ],
     "mots_cles": [
-      "côlon",
-      "adénocarcinome"
+      "colorectal",
+      "colique",
+      "stade III",
+      "Capécitabine",
+      "adjuvant",
+      "âgé",
+      "fragile",
+      "QUASAR"
     ],
-    "scenario_patient": "Patient(e) de 79 ans, fragile, score ECOG 2-3, avec cancer colique stade III. Score de fragilité gériatrique élevé.",
-    "reference": "Guide AMFROM 2024, p.200-210",
+    "scenario_patient": "Homme de 79 ans, cancer du côlon sigmoïde opéré par laparoscopie (pT3 pN1 M0, 3/18 ganglions positifs). ECOG 2, score G8 = 12/17, neuropathie diabétique bilatérale préexistante aux membres inférieurs. DFG = 52 mL/min. Contre-indication oxaliplatine (neuropathie). Capécitabine 1000 mg/m²×2/j J1-J14 débuté. Syndrome main-pied grade 1 à M2, géré par émollient sans réduction de dose. Bilan hépatique normal à chaque cycle.",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer colorectal III.A – Traitement adjuvant fragile",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Comorbidités multiples : insuffisance cardiaque, démence, malnutrition."
+    "date_creation": "2026-06-10T21:48:23.219345",
+    "metastase": ""
   },
   {
     "id": "ONC-SYN-129",
     "categorie": "traitement",
     "type_cancer": "poumon",
-    "sous_type": "CBNPC",
-    "stade": "Stade III",
-    "titre": "Cancer pulmonaire chez patient âgé fragile (>75 ans)",
-    "contenu": "La prise en charge des cancers chez patients âgés fragiles (>75 ans) avec comorbidités multiples (insuffisance cardiaque, démence, malnutrition) impose une approche dé-escaladée. Les doses standard sont souvent contre-indiquées. L'évaluation gériatrique complète est impérative.",
-    "protocole": null,
+    "sous_type": "CBNPC stade III fragile",
+    "stade": "stade IIIA",
+    "titre": "CBNPC stade IIIA chez patient âgé fragile (80 ans) — radiothérapie exclusive hypofractionnée",
+    "contenu": "Le cancer bronchique non à petites cellules stade IIIA inopérable chez le sujet âgé fragile (G8 ≤ 11, DLCO < 60%) ne tolère pas la radiochimiothérapie concomitante standard (cisplatine-étoposide). Une radiothérapie conformationnelle 3D exclusive à dose curative (60 Gy en 30 fractions / 6 semaines) ou hypofractionnée (55 Gy en 20 fractions) est recommandée. En cas de Performance Status ECOG 2-3, la radiothérapie palliative (30 Gy en 10 fractions) est préférable pour contrôler les symptômes (dyspnée, hémoptysie). La durothérapie seule par Durvalumab est à éviter si l'ECOG est > 1 (toxicité pulmonaire immunologique majorée).",
+    "protocole": {
+      "nom": "Radiothérapie conformationnelle 3D exclusive (CBNPC III fragile)",
+      "medicaments": [
+        {
+          "nom": "Radiothérapie externe 3D-CRT",
+          "dose": "60 Gy / 30 fr (ou 55 Gy/20 fr)",
+          "voie": "externe",
+          "jour": "quotidien × 6 semaines"
+        }
+      ],
+      "frequence": "5 séances par semaine",
+      "cycles": "30 fractions (curatif) ou 10 fractions (palliatif selon ECOG)",
+      "remarques": "Spirométrie obligatoire (VEMS >40% théorique). Contrainte cardiaque Dmean <26 Gy. Corticoïdes si pneumopathie radique grade ≥2."
+    },
     "effets_secondaires": [
-      "À définir"
+      "pneumopathie radique",
+      "oesophagite",
+      "fatigue",
+      "dyspnée aggravée",
+      "toux sèche"
     ],
     "mots_cles": [
       "poumon",
-      "CBNPC"
+      "CBNPC",
+      "stade III",
+      "radiothérapie",
+      "fragile",
+      "âgé",
+      "hypofractionnement",
+      "G8"
     ],
-    "scenario_patient": "Patient(e) de 80 ans, fragile, score ECOG 2-3, avec cancer pulmonaire stade III. Score de fragilité gériatrique élevé.",
-    "reference": "Guide AMFROM 2024, p.200-210",
+    "scenario_patient": "Homme de 80 ans, ex-fumeur 45 PA, CBNPC épidermoïde stade IIIA (T3N2M0). ECOG 2, score G8 = 10/17, VEMS 1,2 L (42% théorique), DLCO 52%. Contre-indication chimiothérapie (créatinine 1,8, VEMS borderline). Radiothérapie 3D-CRT 60 Gy/30fr débutée. Oesophagite grade 2 à S4 gérée par sucralfate + oméprazole. Réponse radiologique partielle à M3 (réduction 35% masse).",
+    "reference": "Guide AMFROM 2024, Chapitre II – CBNPC IV.B – Sujets âgés et fragiles",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Comorbidités multiples : insuffisance cardiaque, démence, malnutrition."
+    "date_creation": "2026-06-10T21:48:23.219347",
+    "metastase": ""
   },
   {
     "id": "ONC-SYN-130",
     "categorie": "traitement",
     "type_cancer": "lymphome",
-    "sous_type": "diffus à grandes cellules B",
-    "stade": "Stade IV",
-    "titre": "Lymphome chez patient âgé fragile (>75 ans)",
-    "contenu": "La prise en charge des cancers chez patients âgés fragiles (>75 ans) avec comorbidités multiples (insuffisance cardiaque, démence, malnutrition) impose une approche dé-escaladée. Les doses standard sont souvent contre-indiquées. L'évaluation gériatrique complète est impérative.",
-    "protocole": null,
+    "sous_type": "DLBCL stade IV fragile",
+    "stade": "stade IV",
+    "titre": "Lymphome B diffus à grandes cellules stade IV chez patient fragile (77 ans) — R-mini-CHOP",
+    "contenu": "Le lymphome diffus à grandes cellules B (DLBCL) stade IV chez le sujet âgé fragile (G8 ≤ 13, IPI ≥ 3) relève du protocole R-mini-CHOP (doses réduites à 50%) plutôt que R-CHOP standard. Le Rituximab est maintenu à dose pleine (375 mg/m²) car sa toxicité est indépendante des doses. La réduction de Doxorubicine à 25 mg/m² (vs 50 mg/m² standard) et Cyclophosphamide à 400 mg/m² (vs 750) limite la cardiotoxicité et la neutropénie sévère. G-CSF systématique J4-J10. Échocardiographie obligatoire si FEVG < 55% : substituer Doxorubicine par Etoposide (R-CEOP). L'objectif est la rémission complète avec prévention de la toxicité létale.",
+    "protocole": {
+      "nom": "R-mini-CHOP (DLBCL fragile âgé)",
+      "medicaments": [
+        {
+          "nom": "Rituximab",
+          "dose": "375 mg/m²",
+          "voie": "IV",
+          "jour": "J1"
+        },
+        {
+          "nom": "Cyclophosphamide",
+          "dose": "400 mg/m²",
+          "voie": "IV",
+          "jour": "J1"
+        },
+        {
+          "nom": "Doxorubicine",
+          "dose": "25 mg/m²",
+          "voie": "IV",
+          "jour": "J1"
+        },
+        {
+          "nom": "Vincristine",
+          "dose": "1 mg (plafond)",
+          "voie": "IV",
+          "jour": "J1"
+        },
+        {
+          "nom": "Prednisone",
+          "dose": "40 mg/m²/j",
+          "voie": "PO",
+          "jour": "J1-J5"
+        },
+        {
+          "nom": "G-CSF (filgrastim)",
+          "dose": "5 µg/kg/j",
+          "voie": "SC",
+          "jour": "J4-J10"
+        }
+      ],
+      "frequence": "Toutes les 21 jours",
+      "cycles": "6 cycles",
+      "remarques": "PET-CT interim après 2-3 cycles (critères Deauville). Prophylaxie cotrimoxazole. Échocardiographie avant chaque cycle si FEVG initiale < 55%."
+    },
     "effets_secondaires": [
-      "À définir"
+      "neutropénie fébrile",
+      "infections opportunistes",
+      "cardiotoxicité",
+      "neuropathie vincristine",
+      "mucite"
     ],
     "mots_cles": [
       "lymphome",
-      "diffus à grandes cellules B"
+      "DLBCL",
+      "R-mini-CHOP",
+      "Rituximab",
+      "âgé",
+      "fragile",
+      "G8",
+      "IPI",
+      "FEVG"
     ],
-    "scenario_patient": "Patient(e) de 77 ans, fragile, score ECOG 2-3, avec lymphome métastatique. Score de fragilité gériatrique élevé.",
-    "reference": "Guide AMFROM 2024, p.200-210",
+    "scenario_patient": "Homme de 77 ans, DLBCL stade IV (atteinte ganglionnaire médiastinale, hépatique et splénique). Score G8 = 12/17, IPI = 4, FEVG 52% (cardiomyopathie ischémique légère). LDH = 3N. R-mini-CHOP débuté : Doxorubicine 25 mg/m² (vs 50 standard) pour préserver la FEVG. PET-CT à M2 (interim) : Deauville 2 (réponse complète métabolique). FEVG stable à 50% à M3. 6 cycles complétés sans neutropénie grade 4.",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Lymphomes B agressifs III.C – Personnes âgées",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:33:41.174624",
-    "metastase": "Comorbidités multiples : insuffisance cardiaque, démence, malnutrition."
+    "date_creation": "2026-06-10T21:48:23.219350",
+    "metastase": "Atteinte hépatique et splénique (stade IV)"
   },
   {
     "id": "ONC-SYN-131",

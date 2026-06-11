@@ -1,0 +1,9 @@
+{
+  "model_c": {
+    "bleu": 0.0215,
+    "rouge_l": 0.1295,
+    "bertscore": 0.6626,
+    "latency_seconds": 98.8803,
+    "safe": 1
+  }
+}
