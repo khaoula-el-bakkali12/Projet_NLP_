@@ -19,10 +19,11 @@
       "surexpression"
     ],
     "scenario_patient": "Femme de 48 ans, masse mammaire gauche découverte en autopalpation. Biopsie : carcinome canalaire infiltrant grade SBR II, IHC HER2 score 3+. Bilan d'extension : stade IIB (T2 N1 M0).",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-002",
@@ -104,7 +105,8 @@
     "reference": "Guide AMFROM 2024, p.13-14",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 13
   },
   {
     "id": "ONC-003",
@@ -143,10 +145,11 @@
       "Katherine"
     ],
     "scenario_patient": "Femme de 50 ans, cancer du sein HER2+ stade III, traitement néoadjuvant EC→Docetaxel+HP. Résultat anatomopathologique post-chirurgical : résidu tumoral ypT1 ypN1. Passage au TDM-1 pour 14 cycles supplémentaires. Bonne tolérance, surveillance plaquettaire mensuelle.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein HER2+",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein HER2+, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-004",
@@ -192,10 +195,11 @@
       "adjuvant"
     ],
     "scenario_patient": "Femme de 55 ans, cancer du sein HER2+ pT1c pN0, grade II, chirurgie conservatrice d'emblée. Décision en RCP : schéma Tolaney (Paclitaxel 80mg/m² hebdomadaire x12 + Trastuzumab 1 an). Bonne tolérance, légère neuropathie des pieds à partir de la 9ème semaine, régressive.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein HER2+",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein HER2+, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-005",
@@ -217,10 +221,11 @@
       "sein"
     ],
     "scenario_patient": "Femme de 48 ans, fin de traitement cancer du sein HER2+ stade II. Programme de suivi : consultation J1M3, J1M6, J1M12. FEVG à M3, M6, M12. Mammographie bilatérale à 1 an. Aucun signe de rechute à 2 ans de recul.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-006",
@@ -243,10 +248,11 @@
       "jeune"
     ],
     "scenario_patient": "Femme de 38 ans, ATCD familial de cancer du sein. Masse de 3 cm sein droit, IHC : RE 0%, RP 0%, HER2 score 1+. Diagnostic : TNBC grade III. Test BRCA en cours. Bilan : stade IIB (T2 N1 M0).",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein triple négatif",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein triple négatif, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-007",
@@ -326,10 +332,11 @@
       "Keynote-522"
     ],
     "scenario_patient": "Femme de 41 ans, TNBC stade IIIA (T3 N2 M0). Débute Pembrolizumab + Paclitaxel/Carboplatine x4 cycles, puis AC x4. IRM à mi-traitement : réponse partielle majeure. Chirurgie conservatrice possible. pCR obtenue. Poursuite Pembrolizumab 6 mois en adjuvant.",
-    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-008",
@@ -371,10 +378,11 @@
       "Olympia"
     ],
     "scenario_patient": "Femme de 44 ans, TNBC stade II, chimio néoadjuvante AC→Paclitaxel. Résultat : résidu tumoral ypT2 ypN0. Test BRCA : mutation BRCA1 germinale. Décision en RCP : Olaparib 300mg x2/j pendant 1 an. Tolérance acceptable, fatigue grade 1, hémoglobine à surveiller.",
-    "reference": "Guide AMFROM 2024, Chapitre I – TNBC post-néoadjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre I – TNBC post-néoadjuvant, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-009",
@@ -424,10 +432,11 @@
       "adjuvant"
     ],
     "scenario_patient": "Femme de 52 ans ménopausée, cancer du sein RH+ HER2- pT1b pN0 grade I. Chimiothérapie non indiquée. Décision : Anastrozole 1mg/j x 5 ans. Bilan osseux initial (DEXA-scan). Calcium + Vitamine D systématiques. Suivi gynécologique annuel.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein RH+/HER2-",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein RH+/HER2-, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-010",
@@ -475,10 +484,11 @@
       "hormonothérapie"
     ],
     "scenario_patient": "Femme de 60 ans ménopausée, cancer du sein RH+/HER2- pT2 pN2 (4 ganglions+), grade II, Ki67=25%. Chimiothérapie adjuvante AC→Docetaxel terminée. Décision RCP : Abemaciclib 150mg x2/j x2 ans + Létrozole 2,5mg/j x5-10 ans. Diarrhées grade 1 gérées par lopéramide.",
-    "reference": "Guide AMFROM 2024, Chapitre I – RH+/HER2- inhibiteurs CDK4/6",
+    "reference": "Guide AMFROM 2024, Chapitre I – RH+/HER2- inhibiteurs CDK4/6, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-011",
@@ -531,10 +541,11 @@
       "1ère ligne"
     ],
     "scenario_patient": "Femme de 53 ans, cancer du sein HER2+ stade IV (métastases hépatiques et osseuses). Jamais traitée en contexte métastatique. 1ère ligne : Docetaxel + HP x6 cycles, puis maintenance HP. Réponse partielle à 3 mois. Bonne tolérance sous G-CSF préventif.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique HER2+",
+    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique HER2+, p.32",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 32
   },
   {
     "id": "ONC-012",
@@ -556,10 +567,11 @@
       "séreux"
     ],
     "scenario_patient": "Femme de 62 ans, distension abdominale progressive depuis 2 mois. CA-125 = 1200 UI/mL. Scanner : masse ovarienne bilatérale + carcinose péritonéale + ascite. Biopsie par ponction : adénocarcinome séreux de haut grade. Stade IIIC FIGO. Test BRCA demandé.",
-    "reference": "Guide AMFROM 2024, Chapitre II – Cancers de l'ovaire",
+    "reference": "Guide AMFROM 2024, Chapitre II – Cancers de l'ovaire, p.57",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie."
+    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie.",
+    "page": 57
   },
   {
     "id": "ONC-013",
@@ -608,10 +620,11 @@
       "Olaparib"
     ],
     "scenario_patient": "Femme de 65 ans, cancer de l'ovaire stade IIIC séreux de haut grade. Chirurgie de cytoréduction optimale (résidu <1cm). 6 cycles Carboplatine AUC5 + Paclitaxel 175. BRCA muté : maintenance Olaparib 300mg x2/j débutée après chimiothérapie. CA-125 normalisé à C3.",
-    "reference": "Guide AMFROM 2024, Chapitre II – Ovaire avancé",
+    "reference": "Guide AMFROM 2024, Chapitre II – Ovaire avancé, p.57",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie."
+    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie.",
+    "page": 57
   },
   {
     "id": "ONC-014",
@@ -659,10 +672,11 @@
       "Pembrolizumab"
     ],
     "scenario_patient": "Femme de 45 ans, carcinome épidermoïde du col utérin stade IIIB (atteinte paramétrique bilatérale). Bilan : pas de métastases à distance. Traitement : RT externe 45 Gy + Cisplatine 40mg/m² x6 semaines, puis curiethérapie HDR x4 fractions. Réponse complète clinique à 3 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre II – Cancer du col utérin",
+    "reference": "Guide AMFROM 2024, Chapitre II – Cancer du col utérin, p.67",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab."
+    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab.",
+    "page": 67
   },
   {
     "id": "ONC-015",
@@ -686,10 +700,11 @@
       "bilan moléculaire"
     ],
     "scenario_patient": "Homme de 58 ans, rectorragies + perte de poids. Coloscopie : masse du côlon sigmoïde. Anatomopathologie : adénocarcinome bien différencié. Scanner : métastases hépatiques multiples. Tests moléculaires : KRAS muté exon 2, MSS. Stade IV. Pas d'anti-EGFR possible (RAS muté).",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancers colorectaux",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancers colorectaux, p.77",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77
   },
   {
     "id": "ONC-016",
@@ -750,10 +765,11 @@
       "stade III"
     ],
     "scenario_patient": "Homme de 64 ans, cancer du côlon droit pT3 pN2 (5 ganglions positifs), résection complète. Stade IIIC. Adjuvant : FOLFOX x12 cycles. Neuropathie grade 2 apparue à C8, dose d'Oxaliplatine réduite de 25%. Fin de traitement sans progression. Surveillance tous les 6 mois, ACE, scanner annuel.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant, p.77",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77
   },
   {
     "id": "ONC-017",
@@ -819,10 +835,11 @@
       "anti-angiogénique"
     ],
     "scenario_patient": "Femme de 55 ans, adénocarcinome du rectosigmoïde métastatique (foie + poumons). KRAS muté exon 2, MSS. 1ère ligne : FOLFIRI + Bevacizumab. Réponse partielle à 3 mois (réduction >50% des lésions). HTA grade 1 traitée par Amlodipine. Maintien du traitement jusqu'à progression à 14 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique, p.83",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 83
   },
   {
     "id": "ONC-018",
@@ -847,10 +864,11 @@
       "NGS"
     ],
     "scenario_patient": "Homme non-fumeur de 52 ans, toux chronique + douleur thoracique. Scanner : masse hilaire droite avec adénopathies médiastinales. Biopsie : adénocarcinome pulmonaire. NGS : mutation EGFR exon 19 (délétion). PD-L1 10%. Stade IIIB. Traitement par ITK anti-EGFR (Osimertinib) débuté.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC, p.150",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150
   },
   {
     "id": "ONC-019",
@@ -893,10 +911,11 @@
       "T790M"
     ],
     "scenario_patient": "Femme non-fumeuse de 47 ans, adénocarcinome pulmonaire stade IV (métastases osseuses + pleurésie), EGFR délétion exon 19. Traitement : Osimertinib 80mg/j. Réponse rapide à 1 mois (disparition de la pleurésie). Rash grade 1 traité par crème hydratante. Progression à 22 mois (mutation C797S détectée sur ADN circulant).",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC EGFR+",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC EGFR+, p.150",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150
   },
   {
     "id": "ONC-020",
@@ -938,10 +957,11 @@
       "KEYNOTE-024"
     ],
     "scenario_patient": "Homme de 67 ans, fumeur, carcinome épidermoïde du poumon stade IVB. PD-L1 TPS=75%, EGFR/ALK négatifs. Traitement : Pembrolizumab 200mg toutes les 3 semaines. Réponse partielle à C3. Hypothyroïdie grade 2 à M4, Lévothyroxine débutée. Maintien du Pembrolizumab. Progression à 18 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC sans driver",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC sans driver, p.150",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150
   },
   {
     "id": "ONC-021",
@@ -990,10 +1010,11 @@
       "ORL"
     ],
     "scenario_patient": "Homme de 35 ans, syndrome de la fosse nasale + adénopathies cervicales bilatérales. IRM : masse du nasopharynx envahissant la base du crâne. EBV ADN positif. Stade IVA. Traitement : RCC (Cisplatine 100mg/m² x3 + RT 70 Gy IMRT). Mucite grade 3 à S4, nutrition entérale temporaire. Réponse complète à 3 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre V – UCNT du cavum",
+    "reference": "Guide AMFROM 2024, Chapitre V – UCNT du cavum, p.177",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut."
+    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut.",
+    "page": 177
   },
   {
     "id": "ONC-022",
@@ -1041,10 +1062,11 @@
       "androgènes"
     ],
     "scenario_patient": "Homme de 72 ans, cancer de prostate Gleason 9, traité par analogue LH-RH depuis 2 ans. PSA en augmentation (12 → 45 ng/mL) malgré testostéronémie à 15 ng/dL. Métastases osseuses multiples. Diagnostic mCRPC. Traitement : Abiratérone 1000mg/j + Prednisone. PSA en baisse de 70% à 3 mois. Stabilité osseuse à 12 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre VII – Cancer de la prostate",
+    "reference": "Guide AMFROM 2024, Chapitre VII – Cancer de la prostate, p.240",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie)."
+    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie).",
+    "page": 240
   },
   {
     "id": "ONC-023",
@@ -1094,10 +1116,11 @@
       "DREAMSEQ"
     ],
     "scenario_patient": "Homme de 49 ans, mélanome cutané BRAF V600E muté, métastases hépatiques et cérébrales. Décision : immunothérapie en 1ère ligne (Nivolumab + Ipilimumab). Progression cérébrale à 8 mois. 2ème ligne : Dabrafenib + Trametinib. Réponse rapide sur les métastases cérébrales à 6 semaines.",
-    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome BRAF muté",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome BRAF muté, p.246",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK)."
+    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK).",
+    "page": 246
   },
   {
     "id": "ONC-024",
@@ -1157,10 +1180,11 @@
       "résécable"
     ],
     "scenario_patient": "Homme de 61 ans, adénocarcinome de la jonction œso-gastrique cT3 N1 M0 (stade IIIA). HER2 négatif. Traitement : FLOT x4 préop (bon tolérance, neuropathie grade 1). Évaluation : réponse partielle, chirurgie réalisée (gastrectomie totale + curage D2). FLOT x4 postop complété. Survie sans rechute à 30 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique, p.102",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2."
+    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2.",
+    "page": 102
   },
   {
     "id": "ONC-025",
@@ -1203,10 +1227,11 @@
       "métastatique"
     ],
     "scenario_patient": "Homme de 55 ans, GIST gastrique de 8 cm réséqué, KIT exon 11 muté, indice mitotique 8/50 HPF. Risque élevé de rechute. Adjuvant : Imatinib 400mg/j x3 ans. Tolérance correcte (œdèmes légers, crampes). Pas de rechute à 4 ans de suivi.",
-    "reference": "Guide AMFROM 2024, Chapitre III – GIST",
+    "reference": "Guide AMFROM 2024, Chapitre III – GIST, p.146",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib)."
+    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib).",
+    "page": 146
   },
   {
     "id": "ONC-SYN-026",
@@ -1269,7 +1294,8 @@
     "scenario_patient": "Patiente de 35 ans, mère de deux jeunes enfants, diagnostiquée 18 mois plus tôt d'un carcinome canalaire infiltrant du sein gauche grade III, triple négatif (RH-, HER2-), stade IIB. Après traitement adjuvant par EC-Docetaxel, elle a présenté une rechute avec métastases hépatiques multiples et ascite. ECOG 1. Fonction hépatique légèrement dégradée (bilirubin 1,8 mg/dL). Elle reçoit le schéma FOLEC hebdomadaire. Après 3 cycles, imagerie montre stabilité des foyers hépatiques et régression de l'ascite. Tolérance marquée par une mucite grade 2 contrôlée et neutropénie grade 1.",
     "reference": "Guide AMFROM 2024, p.45-48",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:22:04.823775"
+    "date_creation": "2026-06-10T18:22:04.823775",
+    "page": 45
   },
   {
     "id": "ONC-SYN-027",
@@ -1332,7 +1358,8 @@
     "scenario_patient": "Patient de 62 ans, ex-fumeur, hospitalisé pour occlusion colique. Diagnostic d'adénocarcinome du côlon sigmoid stade IV avec métastases pulmonaires bilatérales et carcinomatose péritonéale. NGS confirme mutation BRAF V600E, MSS. Après résection du côlon sigmoïde, traitement par Encorafénib + Cétuximab + Irinotecan initié. Après 4 cycles, imagerie montre réduction de 45% des métastases pulmonaires. Tolérance acceptable avec éruption cutanée grade 2 sous doxycycline, diarrhée grade 1 contrôlée par lopéramide.",
     "reference": "Guide AMFROM 2024, p.62-65",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:22:04.823775"
+    "date_creation": "2026-06-10T18:22:04.823775",
+    "page": 62
   },
   {
     "id": "ONC-SYN-028",
@@ -1389,7 +1416,8 @@
     "scenario_patient": "Femme de 58 ans, non-fumeuse, présentant une dyspnée progressive et migraines frontales. Scanner thoracique montre masse apicale gauche 3 cm avec adénopathies médiastinales. Biopsie : adénocarcinome bronchioloalvéolaire, mutation EGFR délétion exon 19. IRM cérébrale : 4 nodules métastatiques (1,2 à 2,1 cm). Traitement débute par SRS multi-lésionnelle (18 Gy en 3 fractions), puis Osimertinib 80 mg quotidien 1 semaine après. Après 8 semaines : régression de 40% de la masse pulmonaire, stabilité des foyers cérébrales. Tolérance bonne avec éruption grade 1 et diarrhée mineure.",
     "reference": "Guide AMFROM 2024, p.78-82",
     "est_synthetique": true,
-    "date_creation": "2026-06-10T18:22:04.823775"
+    "date_creation": "2026-06-10T18:22:04.823775",
+    "page": 78
   },
   {
     "id": "ONC-SYN-029",
@@ -1471,7 +1499,8 @@
     "reference": "Guide AMFROM 2024, p.13-14",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 13
   },
   {
     "id": "ONC-SYN-030",
@@ -1551,10 +1580,11 @@
       "Keynote-522"
     ],
     "scenario_patient": "Femme de 32 ans, TNBC stade II (T2 N1), BRCA1 germinal muté. Néoadjuvant : Pembrolizumab + Paclitaxel/Carboplatine → AC x4. Non-pCR. Adjuvant : Olaparib 300mg x2/j x1 an. Discussion chirurgie prophylactique controlatérale et annexectomie programmée. Suivi psycho-oncologique.",
-    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-SYN-031",
@@ -1634,10 +1664,11 @@
       "Keynote-522"
     ],
     "scenario_patient": "Femme de 57 ans, TNBC pT1b pN0 découvert lors mammographie de dépistage. Chirurgie d'emblée. Pas de chimiothérapie indiquée (taille < 5mm). Surveillance rapprochée : clinique tous les 3 mois pendant 2 ans, mammographie annuelle. Pas de rechute à 4 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-SYN-032",
@@ -1717,10 +1748,11 @@
       "Keynote-522"
     ],
     "scenario_patient": "Femme de 48 ans, TNBC T4 N2 (stade IIIC). Traitement : Pembrolizumab 200mg + Paclitaxel/Carboplatine x4 → EC x4. Évaluation IRM à M3 : réponse quasi-complète. Chirurgie conservatrice possible. pCR confirmée. Poursuite Pembrolizumab 6 mois. Toxicité immunitaire : hépatite grade 2 à M2, corticoïdes temporaires puis reprise Pembrolizumab.",
-    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre I – TNBC, néoadjuvant, p.32",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 32
   },
   {
     "id": "ONC-SYN-033",
@@ -1770,10 +1802,11 @@
       "adjuvant"
     ],
     "scenario_patient": "Femme de 68 ans ménopausée, cancer du sein RH+ HER2- pT1c pN0 grade I, Ki67=8%. Signature génomique (Oncotype DX) : score bas risque (RS=12). Chimiothérapie non indiquée. Létrozole 2,5mg/j x5 ans. DEXA-scan basal : ostéopénie. Calcium + VitD débutés.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein RH+/HER2-",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein RH+/HER2-, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-SYN-034",
@@ -1823,10 +1856,11 @@
       "adjuvant"
     ],
     "scenario_patient": "Femme de 38 ans préménopausée, cancer du sein RH+ HER2- stade IIIA (T3 N2), grade III, Ki67=35%. Chimiothérapie adjuvante FOLFOX terminée. Décision : Goséréline mensuelle (analogue LH-RH) + Létrozole 2,5mg/j pendant 5 ans + Abemaciclib 150mg x2/j pendant 2 ans (haut risque N2). Contraception mécanique obligatoire.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein RH+/HER2-",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancer du sein RH+/HER2-, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-SYN-035",
@@ -1887,10 +1921,11 @@
       "stade III"
     ],
     "scenario_patient": "Homme de 51 ans, cancer du côlon gauche métastatique (foie + poumons). RAS/BRAF sauvage, MSS. 1ère ligne : FOLFIRI + Cétuximab (anti-EGFR possible vu RAS sauvage et côlon gauche). Réponse partielle majeure à 3 mois. Discussion résection hépatique après 6 cycles. Rash acnéiforme grade 2 sous Cétuximab : crème antibiotique topique.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant, p.77",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77
   },
   {
     "id": "ONC-SYN-036",
@@ -1951,10 +1986,11 @@
       "stade III"
     ],
     "scenario_patient": "Femme de 45 ans, adénocarcinome du côlon droit métastatique (foie). MSI-H/dMMR, BRAF V600E muté. Immunothérapie en 1ère ligne : Pembrolizumab 200mg toutes les 3 semaines. Réponse complète à 6 mois. Pas de progression à 24 mois. Excellent profil de tolérance.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant, p.77",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77
   },
   {
     "id": "ONC-SYN-037",
@@ -2015,10 +2051,11 @@
       "stade III"
     ],
     "scenario_patient": "Homme de 73 ans, cancer du côlon stade IIA (T3 N0) avec perforation tumorale (facteur de haut risque). Discussion RCP : chimiothérapie adjuvante CAPOX x4 cycles (3 mois) retenue vu le facteur de risque. Tolérance correcte malgré l'âge, syndrome main-pied grade 1, pas d'interruption de traitement.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant, p.77",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77
   },
   {
     "id": "ONC-SYN-038",
@@ -2061,10 +2098,11 @@
       "T790M"
     ],
     "scenario_patient": "Femme non-fumeuse de 35 ans, adénocarcinome pulmonaire stade IV (plèvre + foie), ALK réarrangé. 1ère ligne : Alectinib 600mg x2/j. Réponse rapide, stabilité cérébrale sans RT. Tolérance : bradycardie asymptomatique grade 1, myalgies légères. Progression à 28 mois (mutation ALK G1202R).",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC EGFR+",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC EGFR+, p.150",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150
   },
   {
     "id": "ONC-SYN-039",
@@ -2107,10 +2145,11 @@
       "T790M"
     ],
     "scenario_patient": "Homme de 70 ans, fumeur, CBPC stade extensif (poumon bilatéral + foie + os). Performance status 1. 1ère ligne : Carboplatine AUC5 + Etoposide 100mg/m² J1-J3 + Atézolizumab toutes les 3 semaines x4 cycles, puis maintenance Atézolizumab. Réponse partielle à C2. Pneumopathie immunitaire grade 2 à M4 : corticoïdes + pause immunothérapie.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC EGFR+",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC EGFR+, p.165",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 165
   },
   {
     "id": "ONC-SYN-040",
@@ -2137,10 +2176,11 @@
       "SNC"
     ],
     "scenario_patient": "Femme de 50 ans, cancer du sein HER2+ traité en adjuvant, rechute métastatique cérébrale (3 lésions) + pulmonaire à 2 ans. Radiochirurgie stéréotaxique sur les 3 métastases cérébrales. Traitement systémique : TDM-1 (meilleure pénétrance SNC disponible localement). Stabilité cérébrale à 6 mois. Apparition nouvelle lésion hépatique à 10 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique, p.32",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 32
   },
   {
     "id": "ONC-SYN-041",
@@ -2185,10 +2225,11 @@
       "biphosphonate"
     ],
     "scenario_patient": "Femme de 55 ans, CBNPC adénocarcinome EGFR L858R, stade IV (métastases osseuses vertébrales D5-D6 + côtes). Douleur dorsale grade 3. RT palliative D5-D6 (30 Gy / 10 fractions). Osimertinib 80mg/j + Acide zolédronique mensuel. Bilan dentaire préalable. Douleur contrôlée à S3.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC avancé",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC avancé, p.153",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 153
   },
   {
     "id": "ONC-SYN-042",
@@ -2210,10 +2251,11 @@
       "Cétuximab"
     ],
     "scenario_patient": "Homme de 59 ans, cancer du rectosigmoïde RAS sauvage, 3 métastases hépatiques initialement non résécables. 1ère ligne : FOLFIRI + Cétuximab. Réponse majeure à 4 mois. Discussion RCP chirurgicale : résection hépatique en 2 temps programmée. Hépatectomie droite + cunéiforme gauche réalisée. Pas de récidive à 18 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique, p.83",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 83
   },
   {
     "id": "ONC-SYN-043",
@@ -2267,10 +2309,11 @@
       "CDK4/6"
     ],
     "scenario_patient": "Femme de 67 ans ménopausée, rechute métastatique osseuse (vertèbres, bassin) 5 ans après traitement adjuvant d'un cancer du sein RH+ HER2-. Pas d'atteinte viscérale. 1ère ligne métastatique : Ribociclib + Létrozole + Zolédronique mensuel. Neutropénie grade 3 à C1 : réduction de dose Ribociclib à 400mg. Stabilité osseuse à 12 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique RH+",
+    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique RH+, p.32",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 32
   },
   {
     "id": "ONC-026",
@@ -2295,10 +2338,11 @@
       "TNM"
     ],
     "scenario_patient": "Homme de 63 ans, fumeur 40 PA, toux productive + hémoptysie. Radiographie : opacité hilaire gauche. Scanner : masse de 4 cm lobe supérieur gauche + adénopathies médiastinales. EBUS : adénopathie N2 positive. TEP : hyperfixation pulmonaire + médiastinale, sans métastase à distance. Biopsie bronchique : carcinome épidermoïde. NGS : pas de driver. PD-L1 = 30%. Stade IIIA.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC, p.165",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 165
   },
   {
     "id": "ONC-027",
@@ -2321,10 +2365,11 @@
       "ctDNA"
     ],
     "scenario_patient": "Femme de 52 ans, CBNPC EGFR muté stade IV, sous Osimertinib. Consultation M3 : scanner stable. TSH normale. Bilan hépatique : légère élévation ALAT (1,5N). Surveillance renforcée, pas d'interruption. ADN circulant (ctDNA) à M12 : détection mutation C797S émergente. Changement de stratégie thérapeutique décidé en RCP.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC suivi",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC suivi, p.150",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150
   },
   {
     "id": "ONC-028",
@@ -2347,10 +2392,11 @@
       "surveillance"
     ],
     "scenario_patient": "Homme de 67 ans, cancer du côlon stade III opéré, chimiothérapie FOLFOX adjuvante terminée. Programme de surveillance : consultation + ACE toutes les 3 mois. Scanner à M6 : RAS. ACE à M18 : élévation de 2 à 8 ng/mL. Scanner : nodule hépatique de 1,5 cm segment VI. IRM confirme une métastase unique résécable. Hépatectomie partielle réalisée à M20.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal suivi",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal suivi, p.77",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77
   },
   {
     "id": "ONC-029",
@@ -2374,10 +2420,11 @@
       "biopsie"
     ],
     "scenario_patient": "Homme de 58 ans, fumeur-alcoolique, dysphagie progressive + adénopathie cervicale gauche. Nasofibroscopie : tumeur oropharynx gauche. Biopsie : carcinome épidermoïde p16+ (HPV+). IRM : T3 N2b. TEP : pas de métastase à distance. Bilan dentaire : 3 extractions nécessaires avant RT. Audition normale. Stade IVA. Décision RCP : RCC avec Cisplatine hebdomadaire.",
-    "reference": "Guide AMFROM 2024, Chapitre V – ORL",
+    "reference": "Guide AMFROM 2024, Chapitre V – ORL, p.181",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut."
+    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut.",
+    "page": 181
   },
   {
     "id": "ONC-030",
@@ -2400,10 +2447,11 @@
       "surveillance post-RT"
     ],
     "scenario_patient": "Homme de 55 ans, cancer de l'oropharynx HPV+ traité par RCC. Évaluation à M3 : réponse complète clinique et TEP négative. Xérostomie grade 2 persistante. TSH à M6 : hypothyroïdie fruste (TSH = 7 mUI/L). Lévothyroxine débutée. Pas de rechute à 3 ans. Sevrage tabac-alcool maintenu. Suivi nutritionnel trimestriel.",
-    "reference": "Guide AMFROM 2024, Chapitre V – ORL suivi",
+    "reference": "Guide AMFROM 2024, Chapitre V – ORL suivi, p.181",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut."
+    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut.",
+    "page": 181
   },
   {
     "id": "ONC-031",
@@ -2427,10 +2475,11 @@
       "diagnostic"
     ],
     "scenario_patient": "Homme de 66 ans, PSA = 12 ng/mL (en hausse depuis 2 ans). TR : lobe droit induré. IRM : lésion PI-RADS 5 apex droit. Biopsies fusion : 4/12 carottes positives, Gleason 4+3=7 (grade group 3). Scanner TAP normal. Scintigraphie osseuse : pas de métastase. Classification D'Amico : risque intermédiaire défavorable. Décision : traitement curatif.",
-    "reference": "Guide AMFROM 2024, Chapitre VII – Cancer de la prostate",
+    "reference": "Guide AMFROM 2024, Chapitre VII – Cancer de la prostate, p.238",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie)."
+    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie).",
+    "page": 238
   },
   {
     "id": "ONC-032",
@@ -2453,10 +2502,11 @@
       "Phoenix"
     ],
     "scenario_patient": "Homme de 70 ans, cancer de prostate haut risque traité par radiothérapie + analogue LH-RH 3 ans. PSA nadir = 0,05 ng/mL à 18 mois. Fin de l'hormonothérapie à 3 ans. Densitométrie osseuse : ostéopénie (T-score = -1,8). Calcium + VitD + exercice physique. PSA à 5 ans : 0,3 ng/mL. Surveillance maintenue, pas de rechute significative à 7 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre VII – Prostate suivi",
+    "reference": "Guide AMFROM 2024, Chapitre VII – Prostate suivi, p.238",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie)."
+    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie).",
+    "page": 238
   },
   {
     "id": "ONC-033",
@@ -2479,10 +2529,11 @@
       "adénocarcinome"
     ],
     "scenario_patient": "Homme de 69 ans, ictère progressif + douleur dorsale. Scanner : masse céphalique pancréatique de 3 cm au contact de la veine porte (<180°). CA 19-9 = 450 UI/mL. Bili-IRM confirme dilatation des voies biliaires. Classification : tumeur borderline. Test BRCA : négatif. Décision RCP : chimiothérapie néoadjuvante mFOLFIRINOX x4 cycles, réévaluation chirurgicale.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas, p.124",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet."
+    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet.",
+    "page": 124
   },
   {
     "id": "ONC-034",
@@ -2544,10 +2595,11 @@
       "Gemcitabine"
     ],
     "scenario_patient": "Homme de 62 ans, OMS 0, adénocarcinome du pancréas métastatique (foie + péritoine). CA 19-9 = 2400. Drainage biliaire par prothèse endoscopique réalisé. Traitement : mFOLFIRINOX. Réponse partielle à C4 (CA 19-9 descendu à 450). Neuropathie grade 1. Maintien du traitement. Progression hépatique à C14 (7 mois). 2ème ligne : Gemcitabine + Nab-Paclitaxel.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas métastatique, p.126",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet."
+    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet.",
+    "page": 126
   },
   {
     "id": "ONC-035",
@@ -2606,10 +2658,11 @@
       "PRODIGE24"
     ],
     "scenario_patient": "Femme de 58 ans, adénocarcinome céphalique du pancréas pT3 N1 (2 ganglions). DPC réalisée, marges R0. OMS 0. Décision : mFOLFIRINOX adjuvant x12 cycles. Début à J55 post-op. Tolérance : neuropathie grade 1 (pieds), diarrhée grade 1. Pas d'interruption. CA 19-9 normalisé avant fin du traitement. Pas de rechute à 30 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Pancréas adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre III – Pancréas adjuvant, p.124",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet."
+    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet.",
+    "page": 124
   },
   {
     "id": "ONC-036",
@@ -2634,10 +2687,11 @@
       "OMS 2021"
     ],
     "scenario_patient": "Homme de 64 ans, céphalées progressives + déficit moteur bras droit. IRM : prise de contraste en anneau frontale gauche 4 cm avec œdème péri-lésionnel. Exérèse chirurgicale maximale. Histologie : glioblastome grade IV. Moléculaire : IDH sauvage, MGMT méthylé. Traitement post-op : radiochimiothérapie Stupp. Pronostic amélioré par méthylation MGMT.",
-    "reference": "Guide AMFROM 2024, Chapitre IX – Tumeurs cérébrales",
+    "reference": "Guide AMFROM 2024, Chapitre IX – Tumeurs cérébrales, p.260",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 260
   },
   {
     "id": "ONC-037",
@@ -2703,10 +2757,11 @@
       "60 Gy"
     ],
     "scenario_patient": "Homme de 58 ans, glioblastome frontal gauche IDH sauvage, MGMT méthylé. Résection quasi-totale. Radiochimiothérapie Stupp : Temozolomide 75mg/m²/j pendant RT 60 Gy. Puis Temozolomide 150 (C1) puis 200 mg/m² J1-J5 x6 cycles. Lymphopénie grade 3 à C3 : report du cycle. IRM à C4 : stabilité. Progression à 18 mois. 2ème ligne : Bevacizumab.",
-    "reference": "Guide AMFROM 2024, Chapitre IX – Glioblastome",
+    "reference": "Guide AMFROM 2024, Chapitre IX – Glioblastome, p.260",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 260
   },
   {
     "id": "ONC-038",
@@ -2755,10 +2810,11 @@
       "cérébral"
     ],
     "scenario_patient": "Femme de 55 ans, glioblastome IDH sauvage, MGMT non méthylé, traitée par Stupp. Récidive à 10 mois (IRM : progression frontale). Pas de re-résection possible (zone éloquente). 2ème ligne : Bevacizumab 10 mg/kg toutes les 2 semaines. Amélioration clinique rapide (réduction de l'œdème). Stabilité IRM à M3. HTA grade 2 contrôlée. Progression à M5.",
-    "reference": "Guide AMFROM 2024, Chapitre IX – Tumeurs cérébrales récidivantes",
+    "reference": "Guide AMFROM 2024, Chapitre IX – Tumeurs cérébrales récidivantes, p.260",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 260
   },
   {
     "id": "ONC-039",
@@ -2826,10 +2882,11 @@
       "périopératoire"
     ],
     "scenario_patient": "Adolescent de 16 ans, douleurs genou droit depuis 3 mois. Radiographie : ostéosarcome fémoral distal (image soufflante). IRM : tumeur 8 cm sans métastase. 3 cycles API néoadjuvant. Chirurgie : résection-reconstruction prothétique. Réponse histologique : 92% de nécrose (bonne réponse). Adjuvant API x3 cycles. Pas de rechute à 5 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre VI – Ostéosarcome",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Ostéosarcome, p.202",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables."
+    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables.",
+    "page": 202
   },
   {
     "id": "ONC-040",
@@ -2919,10 +2976,11 @@
       "dose-dense"
     ],
     "scenario_patient": "Jeune homme de 19 ans, douleur os iliaque gauche depuis 6 semaines. IRM : volumineuse tumeur 10 cm os iliaque avec composante extraosseuse. Biopsie : sarcome d'Ewing EWS-FLI1+. TEP : pas de métastase. Protocole VDC/IE dose-dense x6 cycles d'induction. Réponse partielle. Chirurgie de résection-reconstruction hémi-pelvienne. Consolidation chimio x6 cycles. Pas de rechute à 3 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre VI – Sarcome d'Ewing",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Sarcome d'Ewing, p.206",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables."
+    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables.",
+    "page": 206
   },
   {
     "id": "ONC-041",
@@ -2945,10 +3003,11 @@
       "surveillance"
     ],
     "scenario_patient": "Femme de 68 ans, cancer de l'ovaire stade IIIC BRCA muté, traité par carboplatine+paclitaxel x6 + maintenance Olaparib. CA-125 normalisé à C3. Suivi M12 : CA-125 en légère hausse (45 → 120 UI/mL). Scanner : nodule de 2 cm sur le péritoine. Rechute à 18 mois. Sensible au platine (>12 mois). Retraitement : Carboplatine + Gemcitabine ± Bevacizumab.",
-    "reference": "Guide AMFROM 2024, Chapitre II – Ovaire suivi",
+    "reference": "Guide AMFROM 2024, Chapitre II – Ovaire suivi, p.57",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie."
+    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie.",
+    "page": 57
   },
   {
     "id": "ONC-AR-001",
@@ -3012,11 +3071,13 @@
       "علاج قبل جراحي"
     ],
     "scenario_patient": "امرأة تبلغ 45 عاماً، سرطان ثدي HER2+ من الدرجة IIIA (T3 N2). بدأت بروتوكول EC100 لـ 4 دورات، ثم دوسيتاكسيل + تراستوزوماب + بيرتوزوماب لـ 4 دورات. تقييم بعد 4 دورات: انخفاض حجم الورم بنسبة 70%. الجراحة مقررة بعد 3 أسابيع من نهاية العلاج.",
-    "reference": "دليل بروتوكولات علاج الأورام AMFROM 2024، الفصل الأول – سرطان الثدي HER2+",
+    "reference": "دليل بروتوكولات علاج الأورام AMFROM 2024، الفصل الأول – سرطان الثدي HER2+, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "ONC-AR-002",
@@ -3038,11 +3099,13 @@
       "تسلسل الجيل الجديد NGS"
     ],
     "scenario_patient": "رجل لا يدخن عمره 50 عاماً، سعال مزمن وألم صدري. تشخيص: سرطان رئة (CBNPC) غدي مرحلة IV. NGS: طفرة EGFR حذف إكسون 19. PD-L1 = 10%. قرار: أوسيمرتينيب 80 ملغ/يوم (معيار السطر الأول).",
-    "reference": "دليل AMFROM 2024، الفصل الرابع – سرطان الرئة",
+    "reference": "دليل AMFROM 2024، الفصل الرابع – سرطان الرئة, p.153",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 153,
+    "chapitre_guide": "IV – Cancers pulmonaires (CNPC)"
   },
   {
     "id": "ONC-AR-003",
@@ -3102,11 +3165,13 @@
       "المرحلة الثالثة"
     ],
     "scenario_patient": "رجل عمره 60 عاماً، سرطان قولون أيمن pT3 pN2 (5 عقد ليمفاوية إيجابية)، استئصال كامل. المرحلة IIIC. العلاج المساعد: FOLFOX × 12 دورة. ظهر اعتلال عصبي من الدرجة 2 عند الدورة الثامنة، تم تخفيض جرعة الأوكساليبلاتين بنسبة 25%. لا توجد انتكاسة في المتابعة بعد عامين.",
-    "reference": "دليل AMFROM 2024، الفصل الثالث – سرطان القولون والمستقيم",
+    "reference": "دليل AMFROM 2024، الفصل الثالث – سرطان القولون والمستقيم, p.77",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77,
+    "chapitre_guide": "III – Cancers digestifs (colorectal)"
   },
   {
     "id": "ONC-AR-004",
@@ -3171,11 +3236,13 @@
       "ورم الدماغ"
     ],
     "scenario_patient": "رجل عمره 55 عاماً، ورم أرومي دبقي أمامي أيسر من الدرجة IV، IDH سلبي، MGMT مميَّث. استئصال جراحي شبه كامل. كيميائي-إشعاعي ستوب: تيموزولوميد 75mg/m²/يوم أثناء إشعاع 60 Gy. ثم تيموزولوميد مساعد × 6 دورات. نقص ليمفاوي من الدرجة 3 عند الدورة 3، تأجيل الدورة. تصوير IRM بعد 4 دورات: استقرار. انتكاسة بعد 18 شهراً. السطر الثاني: بيفاسيزوماب.",
-    "reference": "دليل AMFROM 2024، الفصل التاسع – أورام الدماغ",
+    "reference": "دليل AMFROM 2024، الفصل التاسع – أورام الدماغ, p.260",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 260,
+    "chapitre_guide": "IX – Tumeurs cérébrales (gliomes)"
   },
   {
     "id": "ONC-AR-005",
@@ -3221,11 +3288,13 @@
       "مقاوم للإخصاء"
     ],
     "scenario_patient": "رجل عمره 74 عاماً، سرطان بروستاتا Gleason 9، تحت علاج بمناهج LH-RH منذ سنتين. PSA في ارتفاع مستمر (12 إلى 45 ng/mL) رغم تستوستيرون 15 ng/dL. نقائل عظمية متعددة. تشخيص mCRPC. علاج: أبيراتيرون 1000 mg/يوم + بريدنيزون. انخفاض PSA بنسبة 70% بعد 3 أشهر. استقرار عظمي بعد سنة.",
-    "reference": "دليل AMFROM 2024، الفصل السابع – سرطان البروستاتا",
+    "reference": "دليل AMFROM 2024، الفصل السابع – سرطان البروستاتا, p.240",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie)."
+    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie).",
+    "page": 240,
+    "chapitre_guide": "VII – Cancers de la prostate"
   },
   {
     "id": "ONC-SYN-046",
@@ -3264,10 +3333,11 @@
       "métastatique"
     ],
     "scenario_patient": "Homme de 78 ans, OMS 2, cancer du pancréas métastatique (foie), comorbidités (DNID, insuffisance rénale légère, dénutrition). Bilan nutritionnel : IMC 17. Support nutritionnel entéral débuté. mFOLFIRINOX contre-indiqué. Gemcitabine 1000mg/m² J1-J8-J14/28j. Bonne tolérance relative, amélioration de l'état général à C2. CA 19-9 réduit de 30%.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Pancréas",
+    "reference": "Guide AMFROM 2024, Chapitre III – Pancréas, p.126",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet."
+    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet.",
+    "page": 126
   },
   {
     "id": "ONC-SYN-047",
@@ -3307,10 +3377,11 @@
       "Euro-Ewing"
     ],
     "scenario_patient": "Enfant de 12 ans, sarcome d'Ewing pelvien + métastases pulmonaires multiples. VDC/IE dose-dense x6. Réponse partielle pulmonaire. Réponse histologique pelvienne 85% (limite). Éligible BuMel (âge <50 ans, volume >200 mL). Autogreffe CSPH après BuMel. RT pulmonaire bilatérale post-autogreffe. Rémission à 2 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre VI – Sarcome d'Ewing métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Sarcome d'Ewing métastatique, p.208",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables."
+    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables.",
+    "page": 208
   },
   {
     "id": "ONC-SYN-048",
@@ -3362,10 +3433,11 @@
       "schéma court"
     ],
     "scenario_patient": "Femme de 75 ans, glioblastome temporal droit IDH sauvage MGMT méthylé, OMS 1. Exérèse partielle. Schéma hypofractionné 40Gy/15f + TMZ 75mg/m²/j. Puis TMZ adjuvant x6 cycles bien tolérés. Stabilité IRM à M4. Progression à M10. Soins de confort.",
-    "reference": "Guide AMFROM 2024, Chapitre IX – Glioblastome patient âgé",
+    "reference": "Guide AMFROM 2024, Chapitre IX – Glioblastome patient âgé, p.259",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 259
   },
   {
     "id": "ONC-SYN-049",
@@ -3412,10 +3484,11 @@
       "RCC"
     ],
     "scenario_patient": "Femme de 62 ans, cancer du rectum moyen T3 N1 à l'IRM. RT longue 45 Gy + Capécitabine concomitant. Chirurgie TME à 7 semaines : résection antérieure basse. ypT1 ypN0 (downstaging). FOLFOX adjuvant x8 cycles. Pas de rechute à 3 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du rectum",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du rectum, p.83",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 83
   },
   {
     "id": "ONC-SYN-050",
@@ -3459,10 +3532,11 @@
       "Trastuzumab post-partum"
     ],
     "scenario_patient": "Femme de 33 ans, 20 SA, cancer du sein HER2+ T2 N1. Chirurgie conservatrice à 24 SA. AC x4 (2ème trimestre). Naissance à 37 SA par césarienne programmée. Post-partum : Docetaxel + Trastuzumab + Pertuzumab. pCR obtenue. Suivi normal à 2 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Sein HER2+ situations particulières",
+    "reference": "Guide AMFROM 2024, Chapitre I – Sein HER2+ situations particulières, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11
   },
   {
     "id": "ONC-SYN-051",
@@ -3485,10 +3559,11 @@
       "exérèse"
     ],
     "scenario_patient": "Homme de 45 ans, lésion pigmentée dos, Breslow 3,2 mm, ulcérée. Ganglion sentinelle positif (stade IIIA). Scanner TAP : pas de métastase. BRAF V600E muté. Discussion RCP : traitement adjuvant (Dabrafenib + Trametinib 1 an ou Pembrolizumab 1 an).",
-    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome, p.246",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK)."
+    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK).",
+    "page": 246
   },
   {
     "id": "ONC-SYN-052",
@@ -3535,10 +3610,11 @@
       "CheckMate067"
     ],
     "scenario_patient": "Femme de 52 ans, mélanome métastatique stade IV (ganglions + poumons). BRAF sauvage. 1ère ligne : Nivolumab 1mg/kg + Ipilimumab 3mg/kg x4 cycles. Colite grade 3 à C3 : méthylprednisolone IV puis relais oral. Résolution en 3 semaines. Maintenance Nivolumab 480mg/4S. Réponse complète à M6. Maintien à 3 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome non BRAF",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome non BRAF, p.246",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK)."
+    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK).",
+    "page": 246
   },
   {
     "id": "ONC-SYN-053",
@@ -3598,10 +3674,11 @@
       "KEYNOTE-826"
     ],
     "scenario_patient": "Femme de 50 ans, carcinome épidermoïde du col utérin stade IVA récidivant après RCC 18 mois plus tôt. PD-L1 CPS = 20. Traitement : Pembrolizumab + Carboplatine AUC5 + Paclitaxel 175 + Bevacizumab 15mg/kg x6 cycles. Réponse partielle à C4. Maintenance Pembrolizumab + Bevacizumab. Survie sans progression à 12 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre II – Col utérin métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre II – Col utérin métastatique, p.67",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab."
+    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab.",
+    "page": 67
   },
   {
     "id": "ONC-SYN-054",
@@ -3663,10 +3740,11 @@
       "consolidation"
     ],
     "scenario_patient": "Homme de 68 ans, CBNPC épidermoïde stade IIIB (T4 N2), inopérable. Sans driver moléculaire. RCC : Carboplatine/Paclitaxel + RT 60 Gy. Pas de progression à fin RCC. Durvalumab 10mg/kg /2 semaines x12 mois. Pneumopathie grade 2 à M4 : pause + corticoïdes. Reprise Durvalumab à M5. Stabilité à 18 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC stade III",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC stade III, p.150",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150
   },
   {
     "id": "ONC-SYN-055",
@@ -3719,10 +3797,11 @@
       "gastrique"
     ],
     "scenario_patient": "Homme de 57 ans, adénocarcinome de la jonction œso-gastrique métastatique (foie + péritoine). HER2 IHC 3+. CAPOX + Trastuzumab. Réponse partielle à C4. Maintien du traitement. Progression hépatique à 9 mois. 2ème ligne : Ramucirumab + Paclitaxel hebdomadaire.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique HER2+",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique HER2+, p.105",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2."
+    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2.",
+    "page": 105
   },
   {
     "id": "SMC-001",
@@ -4490,10 +4569,11 @@
       "second mélanome"
     ],
     "scenario_patient": "Homme de 52 ans, mélanome stade IIIC réséqué, Pembrolizumab adjuvant 1 an terminé. Suivi M3 : examen clinique normal, scanner sans anomalie, TSH normale. M18 : douleur inguinale gauche. Scanner : adénopathie inguinale 2,5 cm. TEP positive. Biopsie : rechute métastatique. Reprise Pembrolizumab ou BRAF/MEK selon statut moléculaire.",
-    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome suivi",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome suivi, p.246",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK)."
+    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK).",
+    "page": 246
   },
   {
     "id": "SUV-002",
@@ -4516,10 +4596,11 @@
       "surveillance post-DPC"
     ],
     "scenario_patient": "Femme de 60 ans, DPC pour cancer du pancréas pT3 N1, mFOLFIRINOX adjuvant terminé. Insuffisance pancréatique exocrine : Créon 25000 UI à chaque repas. Poids stable. CA 19-9 normalisé. Scanner M12 normal. M18 : CA 19-9 monte de 35 à 180 UI/mL. Scanner : rechute hépatique + péritonéale. Gemcitabine + Nab-Paclitaxel débuté.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas suivi",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas suivi, p.124",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet."
+    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet.",
+    "page": 124
   },
   {
     "id": "SUV-003",
@@ -4543,10 +4624,11 @@
       "sténose vaginale"
     ],
     "scenario_patient": "Femme de 48 ans, carcinome épidermoïde col utérin stade IIB traité par RCC. IRM à 3 mois : réponse complète. Suivi M12 : saignements rectaux + ténesme. Coloscopie : rectite radique grade 2. Traitement : lavements aux corticoïdes + sucralfate rectal. SCC stable à <1 ng/mL. Pas de rechute à 3 ans. Dilatateurs vaginaux utilisés régulièrement.",
-    "reference": "Guide AMFROM 2024, Chapitre II – Col utérin suivi",
+    "reference": "Guide AMFROM 2024, Chapitre II – Col utérin suivi, p.66",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab."
+    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab.",
+    "page": 66
   },
   {
     "id": "SUV-004",
@@ -4570,10 +4652,11 @@
       "corticoïdes"
     ],
     "scenario_patient": "Patient sous Temozolomide adjuvant post-Stupp pour glioblastome MGMT méthylé. IRM fin RCC (M+1,5) : augmentation de la prise de contraste de 40%. Clinique stable. Diagnostic différentiel : pseudo-progression vs vraie progression. Décision : maintien du Temozolomide, contrôle IRM à 6 semaines. IRM M+3 : réduction de la prise de contraste. Pseudo-progression confirmée. Poursuite Temozolomide adjuvant x6 cycles.",
-    "reference": "Guide AMFROM 2024, Chapitre IX – Glioblastome suivi IRM",
+    "reference": "Guide AMFROM 2024, Chapitre IX – Glioblastome suivi IRM, p.259",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 259
   },
   {
     "id": "SUV-005",
@@ -4597,10 +4680,11 @@
       "métastasectomie"
     ],
     "scenario_patient": "Adolescent de 17 ans traité pour ostéosarcome fémoral distal (API + chirurgie + API). Rémission complète. Scanner thoracique M24 : nodule pulmonaire droit 1,5 cm. TEP positif. Pas d'autre lésion. Métastasectomie pulmonaire réalisée. Histologie : métastase d'ostéosarcome. Chimiothérapie de 2ème ligne (GemTax : Gemcitabine + Docetaxel) x4 cycles. Échocardiographie de contrôle : FEVG normale (cumul Doxorubicine = 360 mg/m²).",
-    "reference": "Guide AMFROM 2024, Chapitre VI – Sarcomes osseux suivi",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Sarcomes osseux suivi, p.206",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables."
+    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables.",
+    "page": 206
   },
   {
     "id": "SUV-006",
@@ -4624,10 +4708,11 @@
       "rechute"
     ],
     "scenario_patient": "Homme de 65 ans, gastrectomie totale pour cancer gastrique pT3 N2. FLOT péri-opératoire terminé. Injections B12 mensuelles débutées. Alimentation fractionnée 6x/j : poids stable. CA 19-9 normalisé. M16 : ascite + CA 19-9 = 340 UI/mL. Scanner : carcinose péritonéale. FOLFOX + Nivolumab (PD-L1 CPS=12 sur pièce opératoire). Discussion CHIP en RCP.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique suivi",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique suivi, p.102",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2."
+    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2.",
+    "page": 102
   },
   {
     "id": "SUV-007",
@@ -4652,10 +4737,11 @@
       "rebond"
     ],
     "scenario_patient": "Homme de 58 ans, GIST gastrique KIT exon 11 muté, réséqué, Imatinib 3 ans terminé. Scanner de fin de traitement : fibrose résiduelle sans signe de maladie active. Scanner M3 post-arrêt : lésion hépatique nodulaire 2 cm (rebond). Critères Choi+ (densité +35%). Reprise Imatinib 400 mg/j. Réponse complète en densité à M3. Poursuite Imatinib indéfiniment.",
-    "reference": "Guide AMFROM 2024, Chapitre III – GIST suivi",
+    "reference": "Guide AMFROM 2024, Chapitre III – GIST suivi, p.146",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib)."
+    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib).",
+    "page": 146
   },
   {
     "id": "DIAG-001",
@@ -4680,10 +4766,11 @@
       "NRS-2002"
     ],
     "scenario_patient": "Homme de 67 ans, épigastralgies + perte de poids 8 kg en 3 mois. FOGD : ulcère fundique suspect. Biopsies x10 : adénocarcinome tubuleux peu différencié. Scanner : T3 N2, pas de métastase. Écho-endoscopie : envahissement de la musculeuse. HER2 IHC 1+ (négatif). PD-L1 CPS = 8. MSS. Laparoscopie : absence de carcinose. Décision : FLOT périopératoire.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique diagnostic",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique diagnostic, p.102",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2."
+    "metastase": "Métastases hépatiques ou péritonéales (carcinose). Traitement métastatique palliatif systémique, avec prise en compte du statut HER2.",
+    "page": 102
   },
   {
     "id": "DIAG-002",
@@ -4707,10 +4794,11 @@
       "HLA-A02:01"
     ],
     "scenario_patient": "Femme de 55 ans, baisse d'acuité visuelle œil gauche. Fond d'œil : mélanome choroïdien 8 mm hauteur. Bilan : pas de métastase. HLA-A*02:01 positif. Traitement : protonthérapie 60 CGE/4 fractions. Surveillance hépatique semestrielle. IRM à 3 ans : lésion hépatique 2 cm. Tebentafusp débuté (HLA positif). Réponse partielle à M3.",
-    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome uvéal",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome uvéal, p.246",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK)."
+    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK).",
+    "page": 246
   },
   {
     "id": "DIAG-003",
@@ -4734,10 +4822,11 @@
       "biopsie planifiée"
     ],
     "scenario_patient": "Homme de 55 ans, douleur iliaque droite depuis 6 mois. IRM : volumineuse masse osseuse 12 cm du bassin droit avec calcifications en anneaux. Biopsie scanner-guidée (planifiée en RCP) : chondrosarcome grade II. Scanner thoracique : pas de métastase. Chirurgie : hémi-pelvectomie interne avec marges R0. Pas de chimiothérapie (grade II, R0). Pas de rechute à 4 ans.",
-    "reference": "Guide AMFROM 2024, Chapitre VI – Chondrosarcome",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Chondrosarcome, p.202",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables."
+    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables.",
+    "page": 202
   },
   {
     "id": "ONC-AR-006",
@@ -4760,11 +4849,13 @@
       "تصوير الثدي"
     ],
     "scenario_patient": "امرأة من الدار البيضاء عمرها 45 عاماً، اكتشفت كتلة في ثديها الأيسر أثناء الفحص الذاتي. تصوير الثدي: كتلة 2 سم، BIRADS 5. خزعة: سرطان قنوي توغلي، درجة II، RE 80%، RP 60%، HER2 سلبي، Ki67 = 20%. سكانر الانتشار: لا توجد نقائل. المرحلة IIA. قرار المجلس المتعدد التخصصات: عملية جراحية متبوعة بعلاج كيميائي مساعد + هرموني.",
-    "reference": "دليل AMFROM 2024، الفصل الأول – تشخيص سرطان الثدي",
+    "reference": "دليل AMFROM 2024، الفصل الأول – تشخيص سرطان الثدي, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "ONC-AR-007",
@@ -4787,11 +4878,13 @@
       "كثافة العظام"
     ],
     "scenario_patient": "امرأة 52 عاماً انتهت من علاج سرطان الثدي (RH+/HER2-)، تتناول ليتروزول 2.5 ملغ/يوم. زيارة M12: تصوير الثدي طبيعي. DEXA: هشاشة عظام خفيفة (T-score = -1.6). وُصف كالسيوم + فيتامين د + رياضة منتظمة. M36: ألم في الركبة + ارتفاع ACE خفيف. سكانر: ورم محدود في العظام. انتكاس عظمي: ريبوسيكليب + ليتروزول + زوليدرونيك.",
-    "reference": "دليل AMFROM 2024، الفصل الأول – متابعة سرطان الثدي",
+    "reference": "دليل AMFROM 2024، الفصل الأول – متابعة سرطان الثدي, p.11",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "ONC-AR-008",
@@ -4839,11 +4932,13 @@
       "جراحة تقليص"
     ],
     "scenario_patient": "امرأة عمرها 60 عاماً، انتفاخ بطني + ارتفاع CA-125. سكانر: ورم مبيضي ثنائي + صبيب بريتواني. عملية جراحية: إزالة كاملة للورم. النتائج: سرطان مصلي عالي الدرجة، المرحلة IIIC. BRCA1 متحور. 6 دورات كاربوبلاتين + باكليتاكسيل. ثم علاج صيانة بأولاباريب 300 ملغ × 2/يوم لسنتين. CA-125 طبيعي بعد 3 دورات. متابعة منتظمة.",
-    "reference": "دليل AMFROM 2024، الفصل الثاني – سرطان المبيض",
+    "reference": "دليل AMFROM 2024، الفصل الثاني – سرطان المبيض, p.57",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie."
+    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie.",
+    "page": 57,
+    "chapitre_guide": "II – Cancers gynécologiques (ovaire)"
   },
   {
     "id": "ONC-AR-009",
@@ -4867,11 +4962,13 @@
       "تشخيص"
     ],
     "scenario_patient": "رجل 65 عاماً، نزيف شرجي + إمساك. تنظير: ورم في المستقيم السفلي 5 سم من الحافة الشرجية. خزعة: سرطان غدي متمايز. RMI: T3 N1 (3 عقد موجبة). سكانر: لا نقائل. ACE = 8 نانوغرام/مل. RAS/BRAF سلبي. MSS. قرار: علاج كيميائي إشعاعي قبل الجراحة (ليتروزول + إشعاع) ثم عملية TME.",
-    "reference": "دليل AMFROM 2024، الفصل الثالث – سرطان القولون والمستقيم",
+    "reference": "دليل AMFROM 2024، الفصل الثالث – سرطان القولون والمستقيم, p.77",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77,
+    "chapitre_guide": "III – Cancers digestifs (colorectal)"
   },
   {
     "id": "ONC-AR-010",
@@ -4913,11 +5010,13 @@
       "خط أول"
     ],
     "scenario_patient": "امرأة 50 عاماً لا تدخن، سعال مزمن + ضيق في التنفس. سكانر: كتلة رئوية يمنى مع انصباب جنبي. خزعة: سرطان غدي CBNPC. NGS: حذف إكسون 19 في EGFR. PD-L1 = 15%. المرحلة IV. علاج: أوسيمرتينيب 80 ملغ/يوم. استجابة سريعة خلال شهر (اختفاء الانصباب الجنبي). طفح جلدي من الدرجة 1: كريم مرطب. تطور المرض بعد 22 شهراً.",
-    "reference": "دليل AMFROM 2024، الفصل الرابع – سرطان الرئة EGFR+",
+    "reference": "دليل AMFROM 2024، الفصل الرابع – سرطان الرئة EGFR+, p.150",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150,
+    "chapitre_guide": "IV – Cancers pulmonaires (CNPC)"
   },
   {
     "id": "ONC-AR-011",
@@ -4940,11 +5039,13 @@
       "مراقبة بعد الجراحة"
     ],
     "scenario_patient": "رجل 62 عاماً، استئصال سرطان القولون المرحلة III، أنهى FOLFOX المساعد. ACE طبيعي خلال 18 شهراً. عند الشهر 20: ACE يرتفع من 3 إلى 11 نانوغرام/مل. سكانر: عقيدة كبدية 2 سم في القسم السادس. RMI: نقيلة كبدية وحيدة قابلة للاستئصال. استئصال جراحي للكبد. نسيج: نقيلة سرطان القولون. تعافٍ كامل. متابعة مستمرة.",
-    "reference": "دليل AMFROM 2024، الفصل الثالث – متابعة سرطان القولون",
+    "reference": "دليل AMFROM 2024، الفصل الثالث – متابعة سرطان القولون, p.77",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 77,
+    "chapitre_guide": "III – Cancers digestifs (colorectal)"
   },
   {
     "id": "ONC-AR-012",
@@ -4984,11 +5085,13 @@
       "دماغ"
     ],
     "scenario_patient": "رجل 60 عاماً، ورم أرومي دبقي IDH سلبي، علاج ستوب مكتمل. انتكاس بعد 10 أشهر في RMI. الحالة العامة OMS 1. لا إشارة لإعادة الاستئصال. بيفاسيزوماب 10 ملغ/كغ كل أسبوعين. تحسن سريري سريع (تراجع الوذمة). ارتفاع ضغط دم من الدرجة 2: أملوديبين. استقرار RMI بعد 3 أشهر. تطور بعد 5 أشهر.",
-    "reference": "دليل AMFROM 2024، الفصل التاسع – الورم الأرومي الدبقي المتكرر",
+    "reference": "دليل AMFROM 2024، الفصل التاسع – الورم الأرومي الدبقي المتكرر, p.259",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 259,
+    "chapitre_guide": "IX – Tumeurs cérébrales (gliomes)"
   },
   {
     "id": "ONC-AR-013",
@@ -5077,11 +5180,13 @@
       "نقيلي"
     ],
     "scenario_patient": "رجل 58 عاماً، OMS 0، سرطان رأس البنكرياس النقيلي (الكبد + البريتوان). CA 19-9 = 2800 وحدة/مل. صفار إنجابي → جبيرة قنوية صفراوية بالمنظار. علاج: mFOLFIRINOX. استجابة جزئية بعد 4 دورات (CA 19-9 نزل إلى 600). اعتلال عصبي الدرجة 1 (أقدام). تطور كبدي بعد 14 دورة (7 أشهر). السطر الثاني: جيمسيتابين + نابابكليتاكسيل.",
-    "reference": "دليل AMFROM 2024، الفصل الثالث – سرطان البنكرياس النقيلي",
+    "reference": "دليل AMFROM 2024، الفصل الثالث – سرطان البنكرياس النقيلي, p.126",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet."
+    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet.",
+    "page": 126,
+    "chapitre_guide": "III – Cancers digestifs (pancréas)"
   },
   {
     "id": "ONC-AR-015",
@@ -5132,11 +5237,13 @@
       "DNA EBV"
     ],
     "scenario_patient": "شاب عمره 25 عاماً من الناظور، تضخم غدد عنقي + انسداد أنفي. منظار الأنف: ورم في الحفرة الجانبية للبلعوم الأنفي. خزعة: UCNT. RMI: T2 N2b. PET: لا نقائل بعيدة. EBV DNA = 38000 نسخة/مل. علاج: كيميائي-إشعاعي متزامن. التهاب فم شديد في الأسبوع 4: تغذية أنبوبية مؤقتة. RMI بعد 3 أشهر: استجابة كاملة. EBV DNA لا يكشف.",
-    "reference": "دليل AMFROM 2024، الفصل الخامس + SMC 2017، الفصل 31",
+    "reference": "دليل AMFROM 2024، الفصل الخامس + SMC 2017، الفصل 31, p.177",
     "est_synthetique": false,
     "date_creation": "2026-05-02",
     "langue": "ar",
-    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut."
+    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut.",
+    "page": 177,
+    "chapitre_guide": "V – Tumeurs ORL (UCNT du cavum)"
   },
   {
     "id": "EXT-SYN-001",
@@ -5158,10 +5265,12 @@
       "pT1b"
     ],
     "scenario_patient": "Femme de 42 ans, TNBC pT1a pN0 (4mm). Grade III, Ki67 80%. BRCA non muté. Décision RCP : observation après chirurgie conservatrice + RT adjuvante. Pas de chimiothérapie retenue (taille <5mm, pN0). Surveillance rapprochée.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "EXT-SYN-002",
@@ -5183,10 +5292,12 @@
       "contact vasculaire"
     ],
     "scenario_patient": "Homme de 60 ans, masse céphalique 3cm, contact porte 160°. Borderline. mFOLFIRINOX x4 cycles. CA 19-9 passe de 380 à 45 UI/mL. Scanner : contact 70°. DPC réalisée, marges R0. mFOLFIRINOX adjuvant x8 cycles.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.124",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet."
+    "metastase": "Potentiel métastatique hépatique et péritonéal très important. Chimiothérapie palliative si l'état général du patient le permet.",
+    "page": 124,
+    "chapitre_guide": "III – Cancers digestifs (pancréas)"
   },
   {
     "id": "EXT-SYN-003",
@@ -5225,10 +5336,12 @@
       "métastatique viscéral"
     ],
     "scenario_patient": "Femme de 58 ans, sein RH+ HER2- métastatique, nodules pulmonaires multiples + dyspnée. Crise viscérale. Chimiothérapie Paclitaxel 80mg/m² hebdomadaire. Réponse à M2 (disparition dyspnée). Switch à Palbociclib + Fulvestrant à M4.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.32",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 32,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "EXT-SYN-004",
@@ -5252,10 +5365,12 @@
       "cérébral"
     ],
     "scenario_patient": "Femme de 55 ans, céphalées + syndrome frontal. IRM : méningiome frontal 5 cm, extension osseuse. Résection Simpson III (incomplète). Histologie : grade II OMS. RT adjuvante 54 Gy/30 fractions. Contrôle à 2 ans : stabilité IRM.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.260",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 260,
+    "chapitre_guide": "IX – Tumeurs cérébrales (gliomes)"
   },
   {
     "id": "EXT-SYN-005",
@@ -5307,10 +5422,12 @@
       "2ème ligne"
     ],
     "scenario_patient": "Femme de 52 ans, CCR BRAF V600E muté, RAS sauvage, MSS. 1ère ligne FOLFOXIRI + Bevacizumab. Progression à 5 mois. 2ème ligne : Encorafenib + Binimetinib + Cétuximab. Réponse partielle à C3. Rash grade 2 géré par doxycycline orale.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.83",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 83,
+    "chapitre_guide": "III – Cancers digestifs (colorectal)"
   },
   {
     "id": "EXT-SYN-006",
@@ -5349,10 +5466,12 @@
       "driver oncogénique"
     ],
     "scenario_patient": "Homme de 74 ans, carcinome sarcomatoïde pulmonaire. NGS : MET exon 14 skip. PD-L1 5%. Capmatinib 400mg x2/j. Réponse partielle à C3. Œdèmes des chevilles grade 1. Maintien du traitement. Progression à 9 mois.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.150",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 150,
+    "chapitre_guide": "IV – Cancers pulmonaires (CNPC)"
   },
   {
     "id": "EXT-SYN-007",
@@ -5398,10 +5517,12 @@
       "métastatique"
     ],
     "scenario_patient": "Femme de 82 ans, cancer du sein HER2+ métastatique osseux. OMS 2. Score G8 fragile. Docetaxel contre-indiqué. Vinorelbine IV 25mg/m² J1-J8 + Trastuzumab SC 600mg J1/3S. Bonne tolérance relative. Stabilité osseuse à 6 mois.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "EXT-SYN-008",
@@ -5447,10 +5568,12 @@
       "sarcome osseux"
     ],
     "scenario_patient": "Homme de 35 ans, sarcome d'Ewing pelvien traité par VDC/IE + chirurgie. Rechute pulmonaire à 18 mois. Irinotécan + Temozolomide x4 cycles. Réponse partielle. Chirurgie de métastasectomie pulmonaire bilatérale. Consolidation par radiothérapie pulmonaire totale 15 Gy.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.208",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables."
+    "metastase": "Les métastases sont majoritairement pulmonaires. Le traitement des métastases repose sur la chimiothérapie et la chirurgie d'exérèse des métastases résécables.",
+    "page": 208,
+    "chapitre_guide": "VI – Sarcomes d'Ewing"
   },
   {
     "id": "EXT-SYN-009",
@@ -5472,10 +5595,12 @@
       "rechute platine-résistante"
     ],
     "scenario_patient": "Femme de 50 ans, carcinome à cellules claires stade IIIC. Carboplatine + Paclitaxel x6. CA-125 normalisé. Rechute à 4 mois (résistance platine). Paclitaxel 80mg/m² hebdomadaire + Bevacizumab. Stabilité à 3 mois.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.57",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie."
+    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie.",
+    "page": 57,
+    "chapitre_guide": "II – Cancers gynécologiques (ovaire)"
   },
   {
     "id": "EXT-SYN-010",
@@ -5497,10 +5622,12 @@
       "curiethérapie"
     ],
     "scenario_patient": "Femme de 28 ans, désir de grossesse, carcinome épidermoïde col utérin stade IB1 (1,5cm). N0 en IRM. Trachélectomie radicale + curage ganglionnaire laparoscopique. Marges saines, ganglions négatifs. Grossesse possible après 1 an. Accouchement par césarienne programmée à terme.",
-    "reference": "Guide AMFROM 2024",
+    "reference": "Guide AMFROM 2024, p.66",
     "est_synthetique": true,
     "date_creation": "2026-05-02",
-    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab."
+    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab.",
+    "page": 66,
+    "chapitre_guide": "II – Cancers gynécologiques (col utérin)"
   },
   {
     "id": "EXT-SYN-011",
@@ -5576,10 +5703,12 @@
       "stromal"
     ],
     "scenario_patient": "Homme de 56 ans, douleur épigastrique + méléna. Endoscopie haute : masse sous-muqueuse gastrique 6 cm. Biopsie : cellules fusiformes CD117+, DOG1+, CD34+. Mutation exon 11 KIT. Scanner : masse gastrique sans métastase. Résection chirurgicale R0. Joensuu haut risque (>5cm, >5 mitoses/50HPF). Imatinib adjuvant 400mg/j pendant 3 ans.",
-    "reference": "Guide AMFROM 2024 ; ESMO Guidelines GIST 2021",
+    "reference": "Guide AMFROM 2024 ; ESMO Guidelines GIST 2021, p.144",
     "est_synthetique": true,
     "date_creation": "2026-05-03",
-    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib)."
+    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib).",
+    "page": 144,
+    "chapitre_guide": "III – GIST"
   },
   {
     "id": "PDF-002",
@@ -5601,10 +5730,12 @@
       "dépistage"
     ],
     "scenario_patient": "Femme de 42 ans, saignements post-coïtaux depuis 3 mois. Frottis : HSIL. Colposcopie : lésion cervicale iodo-négative. Biopsie : carcinome épidermoïde infiltrant. IRM : tumeur 4,5 cm, envahissement paramétrial gauche, pas d'envahissement vésical. TEP-TDM : adénopathies iliaques communes bilatérales (N1). Stade FIGO IIIC1r. Décision RCP : radiochimiothérapie concomitante + curiethérapie.",
-    "reference": "Guide AMFROM 2024 ; FIGO Classification 2018 ; RCRC Casablanca 2012",
+    "reference": "Guide AMFROM 2024 ; FIGO Classification 2018 ; RCRC Casablanca 2012, p.66",
     "est_synthetique": true,
     "date_creation": "2026-05-03",
-    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab."
+    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab.",
+    "page": 66,
+    "chapitre_guide": "II – Cancers gynécologiques (col utérin)"
   },
   {
     "id": "PDF-003",
@@ -5689,10 +5820,12 @@
       "freinage TSH"
     ],
     "scenario_patient": "Femme 38 ans, carcinome papillaire thyroïdien 2,5 cm avec emboles vasculaires, N1a. Thyroïdectomie totale + curage central. IRA 3,7 GBq. Tg stimulée à M12 = 0,4 ng/mL (réponse biochimique incomplète). Échographie : ganglion latérocervical 8mm. Cytoponction : métastase. 2e dose IRA 5,5 GBq. Tg à M24 indétectable. Anti-Tg négatifs. Rémission complète. Freinage modéré TSH 0,3 mUI/L.",
-    "reference": "ATA Guidelines 2015 ; ETA Guidelines 2019 ; Guide AMFROM 2024",
+    "reference": "ATA Guidelines 2015 ; ETA Guidelines 2019 ; Guide AMFROM 2024, p.186",
     "est_synthetique": true,
     "date_creation": "2026-05-03",
-    "metastase": "Métastases pulmonaires et osseuses. Les inhibiteurs de tyrosine kinase sont indiqués selon les localisations des métastases, la vitesse de croissance, et si réfractaires à l'iode radioactif."
+    "metastase": "Métastases pulmonaires et osseuses. Les inhibiteurs de tyrosine kinase sont indiqués selon les localisations des métastases, la vitesse de croissance, et si réfractaires à l'iode radioactif.",
+    "page": 186,
+    "chapitre_guide": "V – Cancers de la thyroïde"
   },
   {
     "id": "PDF-006",
@@ -5720,10 +5853,12 @@
       "photoprotection"
     ],
     "scenario_patient": "Femme 45 ans, mélanome dos stade IIIC (N2c) BRAF V600E+. Exérèse large + curage. Adjuvant : dabrafénib 150mg x2/j + tramétinib 2mg/j pendant 12 mois. Suivi M6 : scanner thoracique — 2 nodules pulmonaires 7mm. TEP-TDM : fixation modérée. Biopsie : métastases mélanome. Passage en stade IV. Traitement : pembrolizumab 200mg IV/3 semaines. Réponse partielle à M6 (critères iRECIST).",
-    "reference": "ESMO Guidelines Melanoma 2023 ; Guide AMFROM 2024",
+    "reference": "ESMO Guidelines Melanoma 2023 ; Guide AMFROM 2024, p.246",
     "est_synthetique": true,
     "date_creation": "2026-05-03",
-    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK)."
+    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK).",
+    "page": 246,
+    "chapitre_guide": "VIII – Mélanome"
   },
   {
     "id": "PDF-007",
@@ -5830,10 +5965,12 @@
       "PARP"
     ],
     "scenario_patient": "Femme 55 ans, distension abdominale progressive + dyspnée. CA-125 = 1240 UI/mL, HE4 élevé. Échographie : masse ovarienne droite 12 cm + ascite abondante. Scanner TAP : carcinose péritonéale diffuse, épanchement pleural droit. Stade FIGO IVB. Biopsie écho-guidée d'un nodule péritonéal : adénocarcinome séreux de haut grade. Test BRCA1 : mutation pathogène délétère. Décision : chimiothérapie néoadjuvante (carboplatine-paclitaxel 3 cycles) + chirurgie d'intervalle + 3 cycles adjuvants + maintenance olaparib.",
-    "reference": "ESMO Guidelines Ovarian Cancer 2023 ; Guide AMFROM 2024",
+    "reference": "ESMO Guidelines Ovarian Cancer 2023 ; Guide AMFROM 2024, p.57",
     "est_synthetique": true,
     "date_creation": "2026-05-03",
-    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie."
+    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie.",
+    "page": 57,
+    "chapitre_guide": "II – Cancers gynécologiques (ovaire)"
   },
   {
     "id": "PDF-011",
@@ -5935,10 +6072,12 @@
       "néoadjuvant"
     ],
     "scenario_patient": "Femme 46 ans, carcinome canalaire infiltrant sein gauche T2N2M0, HER2 IHC 3+, RH-, SBR III. Néo-adjuvant : EC100 x4 puis Docétaxel + Trastuzumab + Pertuzumab x4. Chirurgie (mastectomie + curage). Résidu tumoral : ypT1aN1. Non-pCR → TDM-1 adjuvant 14 cycles. Radiothérapie pariétale + ganglionnaire. Surveillance cardiaque trimestrielle (FEVG de base 64%). À M12 FEVG 60% — poursuite TDM-1.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers du sein I.A",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers du sein I.A, p.11",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 11,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "PROTO-002",
@@ -5986,10 +6125,12 @@
       "métastatique"
     ],
     "scenario_patient": "Femme 52 ans, CSTN métastatique avec rechute hépatique 14 mois après fin de chimiothérapie adjuvante. PD-L1 CPS=22 (positif ≥10). BRCA1 muté germinal. 1ère ligne : Pembrolizumab + Paclitaxel hebdo. Réponse partielle à M4 (−65% des lésions hépatiques). Progression à M12. 2ème ligne : Olaparib 300mg x2/j (BRCA+). SSP sous Olaparib : 9 mois. 3ème ligne : Carboplatine AUC5 monothérapie.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers du sein II.B",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers du sein II.B, p.32",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 32,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "PROTO-003",
@@ -6039,10 +6180,12 @@
       "Miettinen"
     ],
     "scenario_patient": "Homme 58 ans, GIST gastrique 8cm, index mitotique 7/50HPF, mutation exon 11 KIT. Résection R0. Classification Miettinen : haut risque. Imatinib adjuvant 400mg/j pendant 3 ans. Rechute hépatique à M42 (6 mois après fin adjuvant). Imatinib 400mg/j repris. Réponse partielle à M6 (-45%). Progression à M24 sous Imatinib 800mg/j. Passage en 2ème ligne : Sunitinib 37,5mg/j en continu. SSP sous Sunitinib : 11 mois.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers digestifs I (GIST)",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers digestifs I (GIST), p.144",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib)."
+    "metastase": "Les métastases sont le plus souvent hépatiques et péritonéales. Le traitement de la maladie métastatique repose sur les inhibiteurs de tyrosine kinase (Imatinib).",
+    "page": 144,
+    "chapitre_guide": "III – GIST"
   },
   {
     "id": "PROTO-004",
@@ -6097,10 +6240,12 @@
       "AMFROM 2024"
     ],
     "scenario_patient": "Femme 60 ans, adénocarcinome pulmonaire droit T3N2M0. Résection (lobectomie supérieure droite + curage). Mutation EGFR exon 19 Del19 confirmée sur pièce opératoire. PD-L1 35%. Adjuvant : Cisplatine + Pemetrexed x4 cycles puis Osimertinib 80mg/j x3 ans. Rechute à M38 : 3 nodules cérébraux + 1 adénopathie médiastinale. T790M négatif sur ctDNA. 2ème ligne : doublet platine-pemetrexed.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers pulmonaires IV.A",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers pulmonaires IV.A, p.153",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 153,
+    "chapitre_guide": "IV – Cancers pulmonaires (CNPC)"
   },
   {
     "id": "PROTO-005",
@@ -6146,10 +6291,12 @@
       "rechute"
     ],
     "scenario_patient": "Homme 64 ans, tabagique 45PA. CBPC stade extensif (LD : médiastin + foie + surrénale gauche). PS 1. Créatinine normale. 1ère ligne : Étoposide 100mg/m² J1-J3 + Cisplatine 75mg/m² J1 x4 cycles. Réponse partielle (−70%). Pas de Durvalumab disponible. IPC non indiquée (maladie métastatique). Rechute progressive à M6 (sensible). Réintroduction EP x3 cycles. Rechute à M5. 3ème ligne : Topotecan 1,5mg/m² J1-J5 x3 cycles. Progression rapide. Soins palliatifs.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers pulmonaires IV.B",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers pulmonaires IV.B, p.165",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1."
+    "metastase": "Métastases fréquentes (cerveau, os, foie, surrénales). La stratégie en stade métastatique dépend du profil moléculaire (EGFR, ALK, ROS1) et de l'expression PD-L1.",
+    "page": 165,
+    "chapitre_guide": "IV – Cancers pulmonaires à petites cellules"
   },
   {
     "id": "PROTO-006",
@@ -6195,10 +6342,12 @@
       "AMFROM 2024"
     ],
     "scenario_patient": "Homme 38 ans, UCNT cavum T3N2M0 (stade IVA UICC), EBV+ (sérologie). Induction : Gemcitabine + Cisplatine × 3 cycles. Réponse partielle (T2N1 en IRM). RCC : Cisplatine 100mg/m² × 3 cycles + RT 70 Gy sur cavum et 60 Gy sur aires ganglionnaires. Réponse complète à M3. Haut risque rechute (N2M0 initial). Adjuvant : Capécitabine 650mg/m² ×2/j × 12 mois. Tolérance correcte. Suivi à 3 ans : pas de rechute. EBV-VCA IgA négatif.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Tumeurs ORL V.A",
+    "reference": "Guide AMFROM 2024, 6ème édition — Tumeurs ORL V.A, p.176",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut."
+    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut.",
+    "page": 176,
+    "chapitre_guide": "V – Tumeurs ORL (UCNT du cavum)"
   },
   {
     "id": "PROTO-007",
@@ -6247,10 +6396,12 @@
       "PD-L1"
     ],
     "scenario_patient": "Homme 57 ans, carcinome épidermoïde de l'oropharynx HPV+ T3N2M0. Non résécable. RCC : Cisplatine 100mg/m² J1,J22,J43 + RT 70 Gy. Mucite grade 3 au cours C2 → Cisplatine réduit. Réponse complète à M3. Rechute ganglionnaire à M18. PD-L1 CPS=35. 1ère ligne métastatique : Pembrolizumab 200mg/3sem + 5FU + Cisplatine × 6 cycles puis Pembrolizumab maintenance. PFS sous Pembrolizumab : 11 mois. 2ème ligne résistance platine : Pembrolizumab monothérapie (TPS 50%).",
-    "reference": "Guide AMFROM 2024, 6ème édition — Tumeurs ORL V.B",
+    "reference": "Guide AMFROM 2024, 6ème édition — Tumeurs ORL V.B, p.182",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut."
+    "metastase": "Métastases ganglionnaires et à distance (poumons). Prise en charge par chimiothérapie, immunothérapie, et thérapies ciblées selon le statut.",
+    "page": 182,
+    "chapitre_guide": "V – Carcinomes épidermoïdes ORL"
   },
   {
     "id": "PROTO-008",
@@ -6298,10 +6449,12 @@
       "PAOLA-1"
     ],
     "scenario_patient": "Femme 62 ans, carcinome séreux ovaire stade IIIC (résidu 0 après chirurgie). BRCA2 muté. 1ère ligne : Paclitaxel + Carboplatine × 6 cycles. Réponse complète (CA-125 normalisé). Maintenance : Olaparib 300mg × 2/j. À M30 : rechute péritonéale. Intervalle libre 30 mois (sensible platine). 2ème ligne : TC × 6 cycles. Réponse partielle. Maintenance Olaparib repris (2ème ligne). SSP 2ème ligne : 18 mois.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers gynécologiques II.A",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers gynécologiques II.A, p.57",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie."
+    "metastase": "Les métastases se font principalement par voie péritonéale (carcinose) ou ganglionnaire, avec ascite fréquente. Traitement par chimiothérapie (Carboplatine + Paclitaxel) et chirurgie.",
+    "page": 57,
+    "chapitre_guide": "II – Cancers gynécologiques (ovaire)"
   },
   {
     "id": "PROTO-009",
@@ -6340,10 +6493,12 @@
       "Keynote 826"
     ],
     "scenario_patient": "Femme 44 ans, carcinome épidermoïde col utérin stade IIB (paramètre gauche envahi). PD-L1 CPS=18. RCC : Cisplatine 40mg/m²/sem × 6 sem + RT externe 45 Gy + curiethérapie 28 Gy. Réponse complète. Rechute locale à M28 (non résécable) + métastase pulmonaire unique. 1ère ligne métastatique : Pembrolizumab + Paclitaxel + Carboplatine (non-naïve platine) + Bevacizumab. Réponse partielle à M4. PFS 13 mois.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers gynécologiques II.B",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers gynécologiques II.B, p.67",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab."
+    "metastase": "Métastases pelviennes, pulmonaires, hépatiques et osseuses. Le traitement métastatique inclut la chimiothérapie associée à l'immunothérapie (Pembrolizumab) ou au Bevacizumab.",
+    "page": 67,
+    "chapitre_guide": "II – Cancers gynécologiques (col utérin)"
   },
   {
     "id": "PROTO-010",
@@ -6401,10 +6556,12 @@
       "Régorafenib"
     ],
     "scenario_patient": "Femme 66 ans, adénocarcinome colon gauche T3N2M1 (métastases hépatiques bilobaires, 6 lésions). RAS sauvage (KRAS/NRAS WT), BRAF sauvage, MSS. But : réduction pour résection hépatique. 1ère ligne : FOLFIRI + Cetuximab (tumeur gauche, RAS WT) × 6 cycles. Réponse partielle (-55%). Chirurgie hépatique (résection R0 après 12 cycles). Adjuvant : FOLFOX × 12 cycles. Rechute ganglionnaire à M24. 2ème ligne : FOLFOX + Bevacizumab. Réponse stable pendant 9 mois.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers digestifs III.A",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers digestifs III.A, p.83",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI)."
+    "metastase": "Les métastases hépatiques sont fréquentes et parfois résécables. La prise en charge implique des thérapies ciblées (anti-EGFR ou anti-VEGF) selon le statut moléculaire (RAS/BRAF) et une chimiothérapie (FOLFOX/FOLFIRI).",
+    "page": 83,
+    "chapitre_guide": "III – Cancers digestifs (colorectal)"
   },
   {
     "id": "PROTO-011",
@@ -6451,10 +6608,12 @@
       "Radium-223"
     ],
     "scenario_patient": "Homme 72 ans, adénocarcinome prostatique Gleason 9, mCSPC haut risque (4 métastases osseuses + N+). 1ère ligne : ADT + Abiratérone + Prednisone. PSA nadir = 0,15 ng/mL à M6. CRPC à M28 : PSA progression + 2 nouvelles lésions osseuses. Enzalutamide 160mg/j. CRPC post-HNG à M42. Docétaxel 75mg/m² × 6 cycles. Réponse biochimique (-60% PSA). Progression à M54. BRCA2 somatique muté sur biopsie liquide. Olaparib 300mg × 2/j. SSP 8 mois. Radium-223 (osseuses symptomatiques, pas de viscérales).",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers urologiques VII.D",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers urologiques VII.D, p.240",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie)."
+    "metastase": "Métastases osseuses très fréquentes. Le traitement du cancer métastatique d'emblée repose sur la déprivation androgénique combinée (nouvelles hormonothérapies ou chimiothérapie).",
+    "page": 240,
+    "chapitre_guide": "VII – Cancers de la prostate"
   },
   {
     "id": "PROTO-012",
@@ -6503,10 +6662,12 @@
       "DREAMseq"
     ],
     "scenario_patient": "Homme 48 ans, mélanome dos stade IV (M1c : 3 métastases cérébrales asymptomatiques + os). BRAF V600E muté. LDH 1,5 N. DREAMseq guide vers immunothérapie en 1ère ligne. 1ère ligne : Nivolumab + Ipilimumab × 4 cures puis Nivolumab maintenance. Réponse intracrânienne complète à M6. Réponse partielle osseuse. Progression à M16 (nouvelles métastases hépatiques). 2ème ligne : Dabrafénib + Tramétinib. Réponse partielle rapide (−80%). Progression à M7 (résistance acquise). Soins de support.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers cutanés VIII.A",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers cutanés VIII.A, p.246",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK)."
+    "metastase": "Potentiel métastatique élevé (poumons, foie, cerveau, os). Prise en charge métastatique par immunothérapie ou thérapies ciblées (inhibiteurs BRAF/MEK).",
+    "page": 246,
+    "chapitre_guide": "VIII – Mélanome"
   },
   {
     "id": "PROTO-013",
@@ -6555,10 +6716,12 @@
       "BRAF"
     ],
     "scenario_patient": "Homme 58 ans, GBM frontal droit IDH sauvage, MGMT méthylé. Résection subtotale (90%). Schéma Stupp : TMZ 75mg/m²/j × 42j + RT 60 Gy. Bonne tolérance. Adjuvant : TMZ 150 puis 200mg/m² J1-J5 × 6 cycles. Progression à M11 (IRM : nouvelle prise de contraste). Récidive : Bevacizumab 10mg/kg/14j + Irinotécan 125mg/m²/14j. Stabilisation pendant 5 mois. Décès à M19.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Tumeurs cérébrales IX",
+    "reference": "Guide AMFROM 2024, 6ème édition — Tumeurs cérébrales IX, p.259",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central."
+    "metastase": "Les gliomes de haut grade récidivent localement mais métastasent exceptionnellement hors du système nerveux central.",
+    "page": 259,
+    "chapitre_guide": "IX – Tumeurs cérébrales (gliomes)"
   },
   {
     "id": "PROTO-014",
@@ -6616,10 +6779,11 @@
       "thrombose"
     ],
     "scenario_patient": "Femme 54 ans, cancer sein HER2+ sous EC-Docétaxel + Pertuzumab + Trastuzumab. Antiémétiques : Dexaméthasone + Ondansétron + Aprépitant aux cycles EC (haut risque). G-CSF préventif J5-J10. Mucite grade 2 au cycle 3 : bains de bouche bicarbonate x4/j. Métastases osseuses découvertes à M18 : Acide zolédronique 4mg/4sem + vit D3 + calcium. Neuropathie grade 1 après 8 cycles de Docétaxel : Duloxétine 60mg/j, dose Docétaxel maintenue.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Soins de support X (Chapitres A à I)",
+    "reference": "Guide AMFROM 2024, 6ème édition — Soins de support X (Chapitres A à I), p.269",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Le traitement des métastases comprend des soins de support (ex: acide zolédronique ou denosumab pour les métastases osseuses) et des traitements systémiques spécifiques."
+    "metastase": "Le traitement des métastases comprend des soins de support (ex: acide zolédronique ou denosumab pour les métastases osseuses) et des traitements systémiques spécifiques.",
+    "page": 269
   },
   {
     "id": "PROTO-015",
@@ -6665,10 +6829,12 @@
       "hormonothérapie"
     ],
     "scenario_patient": "Femme 59 ans, ménopausée, carcinome lobulaire sein droit RH++, HER2-, Ki67 15%, N3. Stade IV de novo (métastases osseuses bilatérales + ganglions rétropéritonéaux). Pas de crise viscérale. 1ère ligne : Ribociclib 600mg/j J1-21/28 + Létrozole 2,5mg/j. Neutropénie grade 3 au cycle 2 → réduction Ribociclib à 400mg/j. SSP 26 mois. Progression osseuse + nodule pulmonaire. Mutation PIK3CA détectée sur biopsie liquide (ctDNA). 2ème ligne : Alpelisib 300mg/j + Fulvestrant. Hyperglycémie grade 2 : Metformine 1g × 2/j. Acide zolédronique 4mg/4sem tout au long de la maladie.",
-    "reference": "Guide AMFROM 2024, 6ème édition — Cancers du sein III.B / I.C",
+    "reference": "Guide AMFROM 2024, 6ème édition — Cancers du sein III.B / I.C, p.32",
     "est_synthetique": true,
     "date_creation": "2026-05-04",
-    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées."
+    "metastase": "Risque de métastases viscérales (hépatiques, pulmonaires) et osseuses, ainsi que cérébrales. Le traitement dépend du sous-type (RH+/HER2-, HER2+, TNBC) et inclut chimiothérapie, hormonothérapie, et thérapies ciblées.",
+    "page": 32,
+    "chapitre_guide": "I – Cancers du sein"
   },
   {
     "id": "ONC-056",
@@ -7429,9 +7595,10 @@
       "immunothérapie"
     ],
     "scenario_patient": "Homme de 64 ans, tabagique, diabétique de type 2 depuis 12 ans sous insuline, diagnostiqué avec un adénocarcinome pulmonaire stade IV (métastases osseuses). Glycémie initiale à 2,1 g/L avec HbA1c à 8,2%. Protocole de chimiothérapie instauré avec Dexaméthasone réduite à 4 mg. Schéma d'insuline ajusté par l'endocrinologue. Bonne tolérance tumorale, glycémies maintenues entre 1,2 et 1,8 g/L.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC avancé",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC avancé, p.153",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 153
   },
   {
     "id": "ONC-SYN-057",
@@ -7458,9 +7625,10 @@
       "métabolisme"
     ],
     "scenario_patient": "Femme de 58 ans, ménopausée, diabétique sous metformine, traitée pour un cancer du sein luminal A de stade II. Instauration du Létrozole 2,5 mg/jour. Hausse progressive de l'HbA1c de 6,8% à 7,5% après 6 mois. Réajustement des règles hygiéno-diététiques et majoration de la metformine à 1000 mg deux fois par jour pour stabiliser le diabète sans interrompre l'hormonothérapie.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Sein adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre I – Sein adjuvant, p.11",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 11
   },
   {
     "id": "ONC-SYN-058",
@@ -7524,9 +7692,10 @@
       "FOLFOX"
     ],
     "scenario_patient": "Homme de 61 ans, diabétique depuis 15 ans avec microalbuminurie, opéré d'un cancer du côlon stade III. Neuropathie diabétique sous-jacente légère (grade 1 sensitive). Début de FOLFOX avec dose d'oxaliplatine réduite à 65 mg/m². Apparition à la 6ème cure d'une neuropathie de grade 2. Décision en RCP d'arrêter l'oxaliplatine et de poursuivre par 5-FU/LV seul pour les 6 cures restantes.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant, p.77",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 77
   },
   {
     "id": "ONC-SYN-059",
@@ -7553,9 +7722,10 @@
       "cardiovasculaire"
     ],
     "scenario_patient": "Homme de 71 ans, diabétique de type 2 sous antidiabétiques oraux, traité pour un cancer de la prostate métastatique osseux par injection semestrielle de Triptoréline 11,25 mg. Constatation d'une prise de poids de 4 kg et d'une augmentation de la glycémie à jeun à 1,9 g/L. Introduction de l'Empagliflozine (Gliflozine) and conseils nutritionnels permettant le contrôle de la glycémie et du poids.",
-    "reference": "Guide AMFROM 2024, Chapitre VII – Prostate",
+    "reference": "Guide AMFROM 2024, Chapitre VII – Prostate, p.240",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 240
   },
   {
     "id": "ONC-SYN-060",
@@ -7625,9 +7795,10 @@
       "insuline"
     ],
     "scenario_patient": "Homme de 55 ans, présentant une tumeur de la tête du pancréas de 4,2 cm englobant l'artère mésentérique supérieure. Diabète inaugurale révélé 3 mois auparavant avec amaigrissement de 10 kg. Sous insuline glargine et Créon. Supporte 6 cycles de mFOLFIRINOX. Le diabète reste stable grâce à l'adaptation des doses d'insuline rapide selon le schéma fonctionnel. Réduction tumorale significative permettant d'envisager une résection.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du pancréas, p.126",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 126
   },
   {
     "id": "ONC-SYN-061",
@@ -7726,9 +7897,10 @@
       "radiothérapie"
     ],
     "scenario_patient": "Femme de 72 ans, cancer du rectum moyen T3 N1 M0. DFG calculé à 28 ml/min. La Capecitabine initialement prévue est récusée. Pose d'une voie centrale pour perfusion continue de 5-FU à 225 mg/m²/j concomitante à une radiothérapie conformationnelle de 45 Gy. Traitement complété avec succès sans toxicité digestive ou hématologique majeure. Fonction rénale préservée (DFG stable à 29 ml/min).",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du rectum",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer du rectum, p.77",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 77
   },
   {
     "id": "ONC-SYN-063",
@@ -7786,9 +7958,10 @@
       "hypocalcémie"
     ],
     "scenario_patient": "Femme de 66 ans, cancer du sein métastatique osseux multiple et pulmonaire, insuffisance rénale chronique stade IV (DFG 22 ml/min). Acide zolédronique contre-indiqué. Début de Denosumab 120 mg sous haute surveillance biologique. Malgré une supplémentation doublée (Calcium 2g/j), la patiente a présenté une hypocalcémie asymptomatique transitoire à 1,95 mmol/L au 10ème jour, corrigée par l'adjonction d'Alfacalcidol.",
-    "reference": "Guide AMFROM 2024, Chapitre X – Soins de support",
+    "reference": "Guide AMFROM 2024, Chapitre X – Soins de support, p.32",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 32
   },
   {
     "id": "ONC-SYN-064",
@@ -7852,9 +8025,10 @@
       "Calvert"
     ],
     "scenario_patient": "Homme de 69 ans, adénocarcinome pulmonaire métastatique, DFG de base à 48 ml/min. Protocole Pemetrexed + Carboplatine débuté. Éducation thérapeutique stricte concernant l'interdiction d'auto-médication par AINS. À la 3ème cure, baisse transitoire du DFG à 39 ml/min suite à une déshydratation par vomissements, résolue après hydratation saline IV. Reprise du traitement après retour du DFG à 46 ml/min.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – Cancers pulmonaires",
+    "reference": "Guide AMFROM 2024, Chapitre IV – Cancers pulmonaires, p.150",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 150
   },
   {
     "id": "ONC-SYN-065",
@@ -7906,9 +8080,10 @@
       "insuffisance rénale"
     ],
     "scenario_patient": "Femme de 74 ans, carcinome séreux ovarien stade IIIc post-chirurgie de cytoréduction complète. Poids : 50 kg, Créatinine : 130 µmol/L. Cockcroft donne 28 ml/min, mais la mesure par CKD-EPI donne 35 ml/min. Décision d'utiliser la valeur CKD-EPI pour le calcul de Calvert (AUC 5 soit 300 mg de Carboplatine). Le traitement est bien toléré, avec une thrombopénie de grade 2 transitoire gérée sans transfusion.",
-    "reference": "Guide AMFROM 2024, Chapitre II – Cancers de l'ovaire",
+    "reference": "Guide AMFROM 2024, Chapitre II – Cancers de l'ovaire, p.57",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 57
   },
   {
     "id": "ONC-SYN-066",
@@ -7995,9 +8170,10 @@
       "complication vasculaire"
     ],
     "scenario_patient": "Homme de 65 ans, cancer du côlon gauche métastatique hépatique, traité par FOLFIRI + Bevacizumab. TA à 168/102 mmHg à l'admission pour la cure 5. Cure de Bevacizumab différée de 7 jours. Instauration d'une double association Ramipril + Hydrochlorothiazide. Une semaine plus tard, TA mesurée à 132/80 mmHg permettant la réalisation de la cure de Bevacizumab sous haute surveillance.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique, p.83",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 83
   },
   {
     "id": "ONC-SYN-068",
@@ -8024,9 +8200,10 @@
       "insuffisance cardiaque"
     ],
     "scenario_patient": "Femme de 63 ans, hypertensive sous monothérapie par Valsartan, diagnostiquée avec un cancer du sein triple négatif de stade II. FEVG initiale à 58%. Avant de débuter la chimiothérapie adjuvante EC100, réajustement tensionnel par l'ajout d'Amlodipine car TA résiduelle à 148/92 mmHg. Après 4 cycles d'EC100, la FEVG est mesurée à 55% (baisse asymptomatique minime). Poursuite du protocole par Paclitaxel sans anthracycline.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Sein adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre I – Sein adjuvant, p.11",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 11
   },
   {
     "id": "ONC-SYN-069",
@@ -8071,9 +8248,10 @@
       "cardiaque"
     ],
     "scenario_patient": "Femme de 67 ans, carcinome vésiculaire de la thyroïde métastatique pulmonaire réfractaire à l'iode 131. Instauration du Lenvatinib à 24 mg/j. À J10, poussée hypertensive à 182/110 mmHg avec céphalées modérées (grade 3 HTA). Suspension immédiate du Lenvatinib. Introduction de Ramipril 5 mg + Amlodipine 5 mg. À J17, TA stabilisée à 130/82 mmHg. Reprise du Lenvatinib à la dose réduite de 20 mg/jour sous stricte surveillance.",
-    "reference": "Guide AMFROM 2024, Chapitre VIII – Cancers de la thyroïde",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Cancers de la thyroïde, p.186",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 186
   },
   {
     "id": "ONC-SYN-070",
@@ -8126,9 +8304,10 @@
       "Éplérénone"
     ],
     "scenario_patient": "Homme de 73 ans, traité pour un cancer de la prostate métastatique résistant à la castration par Abiraterone + Prednisone. Kaliémie initiale à 4,1 mmol/L. Au bout de 2 mois de traitement, apparition d'œdèmes bilatéraux des chevilles et élévation de la TA à 158/95 mmHg, kaliémie mesurée à 3,2 mmol/L. Instauration de chlorure de potassium oral et d'Éplérénone 25 mg/j, permettant de normaliser la kaliémie (4,0 mmol/L) et de stabiliser la tension (134/82 mmHg) sans arrêter l'Abiraterone.",
-    "reference": "Guide AMFROM 2024, Chapitre VII – Cancer de la prostate",
+    "reference": "Guide AMFROM 2024, Chapitre VII – Cancer de la prostate, p.240",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 240
   },
   {
     "id": "ONC-SYN-071",
@@ -8175,9 +8354,10 @@
       "radiothérapie"
     ],
     "scenario_patient": "Femme de 41 ans, présentant une récidive métastatique précoce d'un cancer du sein triple négatif, associant 3 nodules cérébraux (dont le plus grand mesure 1,8 cm), des lésions pulmonaires bilatérales et de multiples nodules hépatiques. Réalisation d'une radiothérapie stéréotaxique cérébrale fractionnée, puis instauration du Sacituzumab Govitecan. Après 4 cycles, le scanner montre une réponse partielle de 40% sur les localisations hépatiques et pulmonaires, et l'IRM cérébrale montre une régression des nodules traités. Excellente tolérance sous couvert d'injections de G-CSF.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre I – Sein métastatique, p.32",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 32
   },
   {
     "id": "ONC-SYN-072",
@@ -8247,9 +8427,10 @@
       "chimiothérapie intensive"
     ],
     "scenario_patient": "Homme de 51 ans, diagnostiqué avec un cancer du sigmoïde sténosant et de multiples métastases hépatiques bilatérales (plus de 10 lésions, non résécables d'emblée) et 4 micronodules pulmonaires. Statut KRAS muté au niveau de l'exon 2. Traitement d'induction par FOLFOXIRI + Bevacizumab initié. Après 8 cycles, réponse tumorale hépatique majeure avec régression de 60% du volume des lésions et disparition des nodules pulmonaires. Patient adressé en chirurgie hépatique pour résection séquentielle planifiée.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal métastatique, p.83",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 83
   },
   {
     "id": "ONC-SYN-073",
@@ -8296,9 +8477,10 @@
       "barrière hémato-encéphalique"
     ],
     "scenario_patient": "Femme de 56 ans, non-fumeuse, présentant une dyspnée d'effort révélant un adénocarcinome pulmonaire avec mutation de l'exon 19 de l'EGFR. Le bilan d'extension révèle plus de 8 métastases cérébrales millimétriques asymptomatiques et des lésions osseuses lytiques diffuses (bassin, rachis). Mise sous Osimertinib 80 mg/jour. À l'évaluation à 3 mois, régression complète des métastases cérébrales à l'IRM et réponse osseuse stable avec disparition complète des douleurs.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC avancé",
+    "reference": "Guide AMFROM 2024, Chapitre IV – CBNPC avancé, p.150",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 150
   },
   {
     "id": "ONC-SYN-074",
@@ -8356,9 +8538,10 @@
       "douleur osseuse"
     ],
     "scenario_patient": "Homme de 78 ans, présentant un mCRPC avec plus de 20 métastases osseuses blastiques douloureuses (rachis, côtes, bassin) résistant à l'Enzalutamide. Pas de lésion viscérale. NFS normale. Reçoit 6 injections mensuelles de Radium-223 associées au maintien de la Triptoréline et au Denosumab 120 mg. Baisse significative du score visuel analogique (EVA) de la douleur de 7/10 à 2/10 dès la 2ème injection, permettant la réduction des morphiniques. PSA stabilisé.",
-    "reference": "Guide AMFROM 2024, Chapitre VII – Prostate",
+    "reference": "Guide AMFROM 2024, Chapitre VII – Prostate, p.240",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 240
   },
   {
     "id": "ONC-SYN-075",
@@ -8411,9 +8594,10 @@
       "pyrexie"
     ],
     "scenario_patient": "Homme de 49 ans, présentant un mélanome du dos métastatique avec 5 lésions cérébrales (la plus grande de 1,2 cm avec œdème périlésionnel), de multiples métastases pulmonaires et hépatiques. Mutation BRAF V600E identifiée sur biopsie cutanée. Instauration d'une corticothérapie (Dexaméthasone) et de l'association Dabrafenib + Trametinib. Régression de 50% des lésions cérébrales et viscérales à 8 semaines avec disparition des céphalées. Épisode de pyrexie à 39,2°C résolu par l'arrêt temporaire de 3 jours et introduction de Paracétamol.",
-    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome",
+    "reference": "Guide AMFROM 2024, Chapitre VIII – Mélanome, p.246",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 246
   },
   {
     "id": "ONC-SYN-076",
@@ -8459,9 +8643,10 @@
       "Capecitabine monothérapie"
     ],
     "scenario_patient": "Homme de 82 ans, opéré d'un cancer du côlon stade III (pT4 pN1 M0). Score G8 mesuré à 11/17. L'évaluation gériatrique révèle une autonomie conservée mais une dénutrition modérée et une insuffisance rénale légère (DFG 52 ml/min). Récusation de l'Oxaliplatine. Début de Capecitabine à dose réduite (1000 mg/m² x2/j). Le traitement est complété avec succès, marqué uniquement par une sécheresse cutanée palmaire de grade 1 bien gérée par des crèmes émollientes.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant",
+    "reference": "Guide AMFROM 2024, Chapitre III – Colorectal adjuvant, p.77",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 77
   },
   {
     "id": "ONC-SYN-077",
@@ -8488,9 +8673,10 @@
       "abstention chirurgicale"
     ],
     "scenario_patient": "Femme de 88 ans, atteinte d'une insuffisance cardiaque de classe III NYHA et d'une maladie d'Alzheimer modérée, présentant une tumeur du sein gauche palpable de 3,5 cm. La biopsie montre un carcinome canalaire invasif grade I, fortement récepteur d'œstrogènes (90%) et de progestérone (60%), HER2 négatif. Décision en RCP d'une hormonothérapie première et exclusive par Létrozole 2,5 mg/jour. À 1 an, la tumeur a régressé à 1,8 cm, sans aucun symptôme local ni complication systémique.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein, p.11",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 11
   },
   {
     "id": "ONC-SYN-078",
@@ -8518,9 +8704,10 @@
       "morphine"
     ],
     "scenario_patient": "Homme de 85 ans, ancien mineur, atteint d'une BPCO sévère sous oxygénothérapie à domicile, diagnostiqué avec un carcinome épidermoïde pulmonaire stade IV (métastases surrénaliennes et hépatiques). ECOG PS à 3. Décision d'une prise en charge palliative exclusive à domicile. Introduction d'une corticothérapie à faible dose (Prednisolone 20 mg/j) pour stimuler l'appétit et réduire la dyspnée, associée à du sulfate de morphine orale pour les douleurs osseuses. Qualité de vie maintenue pendant plusieurs mois sous la supervision de l'équipe de soins palliatifs.",
-    "reference": "Guide AMFROM 2024, Chapitre IV – Cancers pulmonaires",
+    "reference": "Guide AMFROM 2024, Chapitre IV – Cancers pulmonaires, p.153",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 153
   },
   {
     "id": "ONC-SYN-079",
@@ -8639,9 +8826,10 @@
       "fragile"
     ],
     "scenario_patient": "Homme de 81 ans, parkinsonien, porteur d'un adénocarcinome gastrique métastatique péritonéal et hépatique. État général altéré (PS 2). Reçoit du Paclitaxel hebdomadaire (80 mg/m²) à J1, J8, J15. Le traitement permet une réorganisation des ascites palliatives et une reprise de l'alimentation autonome. Neuropathie sensitive de grade 1 stable. Le patient conserve une bonne autonomie au domicile.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer gastrique, p.105",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 105
   },
   {
     "id": "SMC-017",
@@ -9141,9 +9329,10 @@
       "hyperglycémie"
     ],
     "scenario_patient": "Patiente de 54 ans, diabétique de type 2 sous metformine (HbA1c à 7.2%), diagnostiquée avec un carcinome mammaire triple négatif stade II (T2 N1 M0). Elle débute le protocole Keynote-522. Une surveillance étroite de la glycémie est instaurée pendant les cycles de chimiothérapie en raison de la pré-médication par dexaméthasone, nécessitant l'introduction temporaire d'insuline rapide les jours de traitement.",
-    "reference": "Guide AMFROM 2024, Chapitre I",
+    "reference": "Guide AMFROM 2024, Chapitre I, p.11",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 11
   },
   {
     "id": "ONC-SYN-082",
@@ -9192,9 +9381,10 @@
       "neuropathie"
     ],
     "scenario_patient": "Patient de 63 ans, diabétique de type 2 depuis 10 ans sous insuline, présentant un adénocarcinome du côlon descendant stade III (pT3 pN1a M0) réséqué. Il présente une neuropathie diabétique mineure préexistante (sensibilité vibratoire diminuée aux pieds). Débute le traitement adjuvant FOLFOX. À la 6ème cure, apparition de paresthésies douloureuses au froid de grade 2, motivant l'arrêt définitif de l'Oxaliplatine et la poursuite du 5-FU seul en maintenance.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.77",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 77
   },
   {
     "id": "ONC-SYN-083",
@@ -9231,9 +9421,10 @@
       "endocrine"
     ],
     "scenario_patient": "Patient de 67 ans, diabétique de type 2 bien contrôlé sous analogues du GLP-1 et inhibiteurs de SGLT2, traité par Pembrolizumab en monothérapie pour un CBNPC métastatique PD-L1 à 80%. Au cycle 4, survenue d'un déséquilibre glycémique majeur (glycémie à 4.5 g/L) sans acidocétose. Adaptation thérapeutique avec instauration d'une insulinothérapie basale-bolus et poursuite sous surveillance étroite de l'immunothérapie.",
-    "reference": "Guide AMFROM 2024, Chapitre IV",
+    "reference": "Guide AMFROM 2024, Chapitre IV, p.153",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 153
   },
   {
     "id": "ONC-SYN-084",
@@ -9276,9 +9467,10 @@
       "insulinorésistance"
     ],
     "scenario_patient": "Patient de 74 ans, diabétique de type 2 sous metformine et sulfamides, traité par privation androgénique (Triptoréline trimestrielle) combinée à l'Abiratérone pour un cancer de la prostate métastatique d'emblée. L'HbA1c passe de 6.8% à 8.4% après 6 mois d'hormonothérapie. Introduction d'une insuline basale (Glargine) pour rééquilibrer le diabète.",
-    "reference": "Guide AMFROM 2024, Chapitre VII",
+    "reference": "Guide AMFROM 2024, Chapitre VII, p.240",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 240
   },
   {
     "id": "ONC-SYN-085",
@@ -9333,9 +9525,10 @@
       "glycémie"
     ],
     "scenario_patient": "Patient de 58 ans, diabétique de type 2, traité par le protocole FLOT périopératoire pour un adénocarcinome gastrique localement avancé. Pendant la phase préopératoire, les nausées sévères de grade 2 couplées à l'administration de dexaméthasone provoquent des épisodes d'hypoglycémie nocturne suivis d'hyperglycémie matinale. Prise en charge par ajustement nutritionnel et réduction de la dose de dexaméthasone sous contrôle diabétologique.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.105",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 105
   },
   {
     "id": "ONC-SYN-086",
@@ -9384,9 +9577,10 @@
       "Cisplatine"
     ],
     "scenario_patient": "Patient de 48 ans, UCNT du cavum stade IVA, présentant une insuffisance rénale chronique de grade 3a (clairance de la créatinine à 42 mL/min). Devant le risque de néphrotoxicité cumulative majeure du Cisplatine tri-hebdomadaire, la RCP décide de le remplacer par du Carboplatine AUC 5 concomitant à la radiothérapie externe IMRT (70 Gy). Bonne tolérance rénale sans dégradation de la clairance.",
-    "reference": "Guide AMFROM 2024, Chapitre V",
+    "reference": "Guide AMFROM 2024, Chapitre V, p.177",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 177
   },
   {
     "id": "ONC-SYN-087",
@@ -9441,9 +9635,10 @@
       "Pembrolizumab"
     ],
     "scenario_patient": "Patient de 71 ans, atteint d'un adénocarcinome pulmonaire métastatique (PD-L1 10%), avec insuffisance rénale chronique modérée (clairance à 48 mL/min). Il reçoit l'association Carboplatine (AUC 5) + Pemetrexed (500 mg/m²) + Pembrolizumab. Après le cycle 2, survenue d'une neutropénie de grade 3 et hausse de la créatininémie. La clairance chute à 38 mL/min, imposant l'arrêt du Pemetrexed et la poursuite de l'immunothérapie par Pembrolizumab seul en maintenance.",
-    "reference": "Guide AMFROM 2024, Chapitre IV",
+    "reference": "Guide AMFROM 2024, Chapitre IV, p.153",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 153
   },
   {
     "id": "ONC-SYN-088",
@@ -9492,9 +9687,10 @@
       "FOLFOX"
     ],
     "scenario_patient": "Patiente de 69 ans avec cancer du côlon stade III réséqué, insuffisance rénale modérée stable (clairance de la créatinine à 35 mL/min). La RCP récuse la Capecitabine orale en monothérapie adjuvante et opte pour le schéma FOLFOX IV intraveineux avec réduction de 25% de la dose d'Oxaliplatine et surveillance rapprochée. Le traitement est mené à terme sans complication rénale additionnelle.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.77",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 77
   },
   {
     "id": "ONC-SYN-089",
@@ -9543,9 +9739,10 @@
       "Cockcroft-Gault"
     ],
     "scenario_patient": "Patiente de 66 ans, carcinome ovarien séreux de haut grade stade IIIC, clairance de la créatinine à 40 mL/min. Elle reçoit Paclitaxel (175 mg/m²) et Carboplatine calculé à AUC 5 par la formule de Calvert (Dose = 5 x (40 + 25) = 325 mg). Le traitement est administré toutes les 3 semaines pour 6 cycles. Excellente tolérance hématologique, stabilité de la fonction rénale.",
-    "reference": "Guide AMFROM 2024, Chapitre II",
+    "reference": "Guide AMFROM 2024, Chapitre II, p.57",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 57
   },
   {
     "id": "ONC-SYN-090",
@@ -9588,9 +9785,10 @@
       "anti-HER2"
     ],
     "scenario_patient": "Patiente de 57 ans, cancer du sein HER2+ métastatique osseux et pulmonaire, insuffisance rénale de grade 3b (clairance de la créatinine à 32 mL/min). Traitée par double blocage Trastuzumab + Pertuzumab associé au Docetaxel en 1ère ligne. Pas d'adaptation de dose nécessaire pour les anticorps. À la progression, introduction de T-DM1 à dose standard sous surveillance hebdomadaire des plaquettes et du bilan rénal. Tolérance satisfaisante.",
-    "reference": "Guide AMFROM 2024, Chapitre I",
+    "reference": "Guide AMFROM 2024, Chapitre I, p.32",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 32
   },
   {
     "id": "ONC-SYN-091",
@@ -9639,9 +9837,10 @@
       "anti-angiogénique"
     ],
     "scenario_patient": "Patient de 60 ans, hypertendu sous inhibiteur calcique (Amlodipine 5mg), traité par FOLFIRI + Bevacizumab pour cancer du côlon métastatique. Après le cycle 3, sa tension s'élève à 175/105 mmHg. Ajout d'un IEC (Ramipril 5mg) et report de la cure de Bevacizumab d'une semaine. Après stabilisation de la TA (<140/90 mmHg), reprise du Bevacizumab sous surveillance hebdomadaire.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.83",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 83
   },
   {
     "id": "ONC-SYN-092",
@@ -9690,9 +9889,10 @@
       "protéinurie"
     ],
     "scenario_patient": "Patiente de 49 ans, TNBC métastatique pulmonaire d'emblée, avec antécédent d'HTA essentielle contrôlée par Bisoprolol. Elle débute le traitement par Paclitaxel + Bevacizumab. Au cours du deuxième cycle, la pression artérielle atteint 168/102 mmHg associée à une protéinurie à 1.2 g/24h. Le Bevacizumab est suspendu, et un traitement par Énalapril (20 mg/j) est introduit. Régression de la protéinurie et contrôle tensionnel permettant la reprise du traitement.",
-    "reference": "Guide AMFROM 2024, Chapitre I",
+    "reference": "Guide AMFROM 2024, Chapitre I, p.32",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 32
   },
   {
     "id": "ONC-SYN-093",
@@ -9747,9 +9947,10 @@
       "Paclitaxel"
     ],
     "scenario_patient": "Patient de 64 ans, CBNPC métastatique (adénocarcinome) stade IV, hypertendu non suivi. Tension initiale mesurée à 180/105 mmHg en consultation d'oncologie. La chimiothérapie par Carboplatine-Paclitaxel est débutée, mais le Bevacizumab est différé. Introduction d'une trithérapie antihypertensive. Après 3 semaines, la tension se stabilise à 135/82 mmHg, ce qui autorise l'introduction du Bevacizumab au cycle 2 sous contrôle strict.",
-    "reference": "Guide AMFROM 2024, Chapitre IV",
+    "reference": "Guide AMFROM 2024, Chapitre IV, p.153",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 153
   },
   {
     "id": "ONC-SYN-094",
@@ -9798,9 +9999,10 @@
       "RAINBOW"
     ],
     "scenario_patient": "Patient de 56 ans, adénocarcinome gastrique métastatique en progression après FLOT. Il commence une deuxième ligne par Paclitaxel + Ramucirumab. Historique d'HTA modérée sous Valsartan. Au cycle 3 de Ramucirumab, la TA s'élève à 170/98 mmHg. La dose de Valsartan est doublée et de l'Amlodipine est associée. La pression artérielle se normalise à 138/85 mmHg, permettant le maintien du traitement par Ramucirumab.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.105",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 105
   },
   {
     "id": "ONC-SYN-095",
@@ -9837,9 +10039,10 @@
       "tyrosine kinase"
     ],
     "scenario_patient": "Patient de 62 ans, traité par Sunitinib (50 mg/j, schéma 4 semaines sur 6) pour un GIST gastrique métastatique résistant à l'Imatinib. Antécédent d'HTA bien équilibrée par Périndopril. Après 10 jours de Sunitinib, survenue de céphalées intenses avec TA à 190/115 mmHg. Suspension immédiate du Sunitinib, ajout de Nicardipine orale. Après retour à la normale, le Sunitinib est repris à la dose réduite de 37.5 mg/j sous surveillance journalière de la TA.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.146",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 146
   },
   {
     "id": "ONC-SYN-096",
@@ -9894,9 +10097,10 @@
       "Dénosumab"
     ],
     "scenario_patient": "Patiente de 65 ans, cancer du sein RH+/HER2- récidivant 5 ans après traitement adjuvant. Bilan d'extension : métastases osseuses diffuses (bassin, rachis), épanchement pleural carcinomateux de faible abondance et 3 nodules hépatiques (le plus grand à 2.5 cm). Cliniquement asymptomatique en dehors de douleurs osseuses modérées. Instauration de Létrozole + Ribociclib + Dénosumab. Très bonne réponse avec régression des lésions viscérales et stabilisation osseuse à 12 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre I",
+    "reference": "Guide AMFROM 2024, Chapitre I, p.32",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 32
   },
   {
     "id": "ONC-SYN-097",
@@ -9939,9 +10143,10 @@
       "cérébrale"
     ],
     "scenario_patient": "Patient de 45 ans, non-fumeur, présentant un adénocarcinome pulmonaire avec métastases cérébrales asymptomatiques multiples (plus de 10 lésions de 2 à 8 mm), métastases hépatiques bilatérales et lésions osseuses du fémur et du rachis. Le NGS objective un réarrangement EML4-ALK. Traitement par Alectinib (600 mg x2/jour) associé à l'Acide Zolédronique mensuel. Réponse complète cérébrale et régression viscérale majeure à 6 mois. Maintien de l'Alectinib avec excellente qualité de vie.",
-    "reference": "Guide AMFROM 2024, Chapitre IV",
+    "reference": "Guide AMFROM 2024, Chapitre IV, p.153",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 153
   },
   {
     "id": "ONC-SYN-098",
@@ -9990,9 +10195,10 @@
       "carcinose péritonéale"
     ],
     "scenario_patient": "Patient de 52 ans, adénocarcinome du côlon gauche avec métastases hépatiques bilatérales massives (envahissant 60% du parenchyme), micronodules pulmonaires bilatéraux et nodules de carcinose péritonéale du pelvis. Profil moléculaire : RAS et BRAF sauvages. Traitement par FOLFIRI + Panitumumab. Après 6 cycles, réduction tumorale de 55% sur le foie, régression complète des nodules pulmonaires. Patient stable à 9 mois.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.83",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 83
   },
   {
     "id": "ONC-SYN-099",
@@ -10053,9 +10259,10 @@
       "Docetaxel"
     ],
     "scenario_patient": "Patient de 68 ans, diagnostiqué avec un cancer de la prostate d'emblée métastatique. PSA initial à 180 ng/mL, Gleason 9 (5+4). Le bilan montre plus de 15 métastases osseuses lytiques et condensantes (rachis, côtes, bassin, fémur gauche) et des adénopathies iliaques et rétropéritonéales. Traitement instauré : ADT (Triptoréline) + Docetaxel 6 cycles + Enzalutamide sous protection par G-CSF et Dénosumab. PSA indétectable à 8 mois, excellent contrôle de la douleur osseuse.",
-    "reference": "Guide AMFROM 2024, Chapitre VII",
+    "reference": "Guide AMFROM 2024, Chapitre VII, p.240",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 240
   },
   {
     "id": "ONC-SYN-100",
@@ -10104,9 +10311,10 @@
       "cérébrale"
     ],
     "scenario_patient": "Patiente de 51 ans, présentant un mélanome du tronc opéré récidivant sous forme de nodules sous-cutanés multiples, de nodules pulmonaires bilatéraux (le plus grand 3 cm) et de 4 métastases cérébrales asymptomatiques de 3 à 5 mm. Tumeur BRAF sauvage. Traitement : Nivolumab + Ipilimumab. Après 4 cycles, réponse partielle globale avec disparition des métastases cérébrales et réduction de 70% des nodules pulmonaires. Colite immunitaire de grade 2 résolutive sous corticoïdes.",
-    "reference": "Guide AMFROM 2024, Chapitre VIII",
+    "reference": "Guide AMFROM 2024, Chapitre VIII, p.246",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 246
   },
   {
     "id": "ONC-SYN-101",
@@ -10149,9 +10357,10 @@
       "désescalade"
     ],
     "scenario_patient": "Patient de 82 ans, opéré d'un cancer du côlon sigmoïde stade III (pT3 pN1 M0). Évaluation gériatrique : score G8 à 11/17, perte d'autonomie modérée (IADL diminué) et insuffisance rénale modérée (clairance à 45 mL/min). Devant sa fragilité, la RCP récuse l'Oxaliplatine. Traitement adjuvant par Capecitabine orale seule avec réduction de dose de 25% (1000 mg/m² deux fois par jour, J1 à J14 toutes les 3 semaines) pour 8 cycles. Le traitement est mené à terme avec une bonne tolérance sans syndrome main-pied sévère.",
-    "reference": "Guide AMFROM 2024, Chapitre III",
+    "reference": "Guide AMFROM 2024, Chapitre III, p.77",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 77
   },
   {
     "id": "ONC-SYN-102",
@@ -10188,9 +10397,10 @@
       "omission radiothérapie"
     ],
     "scenario_patient": "Patiente de 79 ans vivant en institution, dépendante (score G8 à 10), présentant un carcinome canalaire infiltrant du sein gauche de 1.4 cm récepteurs hormonaux positifs à 100%, HER2 négatif, pN0 après biopsie du sentinelle. Tumorectomie réalisée. En accord avec la patiente et sa famille, la radiothérapie adjuvante est omise. Prescription d'Anastrozole (1 mg/jour) pour 5 ans associé à une surveillance de l'observance et de la tolérance osseuse.",
-    "reference": "Guide AMFROM 2024, Chapitre I",
+    "reference": "Guide AMFROM 2024, Chapitre I, p.11",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 11
   },
   {
     "id": "ONC-SYN-103",
@@ -10227,9 +10437,10 @@
       "immunothérapie"
     ],
     "scenario_patient": "Patient de 77 ans, CBNPC métastatique (adénocarcinome) avec PD-L1 à 20%, présentant des troubles cognitifs légers et une dénutrition (score G8 à 12). La RCP décide de récuser le doublet Cisplatine-Pemetrexed. Mise en place d'une monothérapie par Pembrolizumab (200 mg toutes les 3 semaines) associée à un support nutritionnel et une surveillance gériatrique mensuelle. Stabilité tumorale obtenue à 6 mois sans altération cognitive additionnelle.",
-    "reference": "Guide AMFROM 2024, Chapitre IV",
+    "reference": "Guide AMFROM 2024, Chapitre IV, p.153",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 153
   },
   {
     "id": "ONC-SYN-104",
@@ -10278,9 +10489,10 @@
       "Carboplatine"
     ],
     "scenario_patient": "Patiente de 81 ans, présentant un carcinome ovarien séreux de haut grade stade IV (pleurésie carcinomateuse) et une insuffisance cardiaque stable. Score G8 à 11/17. Mise en route d'une chimiothérapie de première ligne selon le schéma Carboplatine (AUC 2) + Paclitaxel (60 mg/m²) aux jours J1, J8, et J15 de cycles de 28 jours. Excellente tolérance cardiaque et hématologique, régression complète de l'épanchement pleural après 3 cycles.",
-    "reference": "Guide AMFROM 2024, Chapitre II",
+    "reference": "Guide AMFROM 2024, Chapitre II, p.57",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 57
   },
   {
     "id": "ONC-SYN-105",
@@ -10329,9 +10541,10 @@
       "Bonner"
     ],
     "scenario_patient": "Patient de 78 ans, coronarien et insuffisant rénal modéré (clairance à 45 mL/min), présentant un carcinome épidermoïde de la langue mobile stade T3 N1 M0. Score G8 à 12/17. Chirurgie récusée pour raisons techniques et cardiologiques. La RCP valide une radiothérapie de 70 Gy sur la tumeur primitive associée à du Cétuximab hebdomadaire (dose de charge 400 mg/m² puis 250 mg/m²). Tolérance marquée par un rash acnéiforme de grade 2 traité efficacement. Pas de néphrotoxicité induite.",
-    "reference": "Guide AMFROM 2024, Chapitre V",
+    "reference": "Guide AMFROM 2024, Chapitre V, p.182",
     "est_synthetique": true,
-    "date_creation": "2026-06-10"
+    "date_creation": "2026-06-10",
+    "page": 182
   },
   {
     "id": "SMC-024",
@@ -10641,7 +10854,8 @@
     "reference": "Guide AMFROM 2024, p.112-115",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Risque métastases hépatiques augmenté."
+    "metastase": "Risque métastases hépatiques augmenté.",
+    "page": 112
   },
   {
     "id": "ONC-SYN-107",
@@ -10683,7 +10897,8 @@
     "reference": "Guide AMFROM 2024, p.56-59",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Métastases ganglionnaires."
+    "metastase": "Métastases ganglionnaires.",
+    "page": 56
   },
   {
     "id": "ONC-SYN-108",
@@ -10707,7 +10922,8 @@
     "reference": "Guide AMFROM 2024, p.95-98",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Métastases osseuses multiples."
+    "metastase": "Métastases osseuses multiples.",
+    "page": 95
   },
   {
     "id": "ONC-SYN-109",
@@ -10749,7 +10965,8 @@
     "reference": "Guide AMFROM 2024, p.107-110",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Envahissement ganglionnaire régional."
+    "metastase": "Envahissement ganglionnaire régional.",
+    "page": 107
   },
   {
     "id": "ONC-SYN-110",
@@ -10773,7 +10990,8 @@
     "reference": "Guide AMFROM 2024, p.128-132",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Tumeur multifocale intra-hépatique."
+    "metastase": "Tumeur multifocale intra-hépatique.",
+    "page": 128
   },
   {
     "id": "ONC-SYN-111",
@@ -10815,7 +11033,8 @@
     "reference": "Guide AMFROM 2024, p.14-18",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Ganglions régionaux envahis."
+    "metastase": "Ganglions régionaux envahis.",
+    "page": 14
   },
   {
     "id": "ONC-SYN-112",
@@ -10840,7 +11059,8 @@
     "reference": "Guide AMFROM 2024, p.134-137",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Métastases pulmonaires bilatérales."
+    "metastase": "Métastases pulmonaires bilatérales.",
+    "page": 134
   },
   {
     "id": "ONC-SYN-113",
@@ -10882,7 +11102,8 @@
     "reference": "Guide AMFROM 2024, p.187-190",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Atteinte hépatosplénique."
+    "metastase": "Atteinte hépatosplénique.",
+    "page": 187
   },
   {
     "id": "ONC-SYN-114",
@@ -10906,7 +11127,8 @@
     "reference": "Guide AMFROM 2024, p.149-152",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Envahissement musculaire perivésical."
+    "metastase": "Envahissement musculaire perivésical.",
+    "page": 149
   },
   {
     "id": "ONC-SYN-115",
@@ -10949,7 +11171,8 @@
     "reference": "Guide AMFROM 2024, p.175-178",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Métastases hépatiques et péritonéales."
+    "metastase": "Métastases hépatiques et péritonéales.",
+    "page": 175
   },
   {
     "id": "ONC-SYN-116",
@@ -10973,7 +11196,8 @@
     "reference": "Guide AMFROM 2024, p.18-22",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Atteinte ganglionnaire régionale."
+    "metastase": "Atteinte ganglionnaire régionale.",
+    "page": 18
   },
   {
     "id": "ONC-SYN-117",
@@ -11016,7 +11240,8 @@
     "reference": "Guide AMFROM 2024, p.139-143",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Pas métastases, adjuvant."
+    "metastase": "Pas métastases, adjuvant.",
+    "page": 139
   },
   {
     "id": "ONC-SYN-118",
@@ -11040,7 +11265,8 @@
     "reference": "Guide AMFROM 2024, p.81-85",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Stade IIIB (N3)."
+    "metastase": "Stade IIIB (N3).",
+    "page": 81
   },
   {
     "id": "ONC-SYN-119",
@@ -11083,7 +11309,8 @@
     "reference": "Guide AMFROM 2024, p.58-62",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Métastases hépatiques multiples."
+    "metastase": "Métastases hépatiques multiples.",
+    "page": 58
   },
   {
     "id": "ONC-SYN-120",
@@ -11107,7 +11334,8 @@
     "reference": "Guide AMFROM 2024, p.192-195",
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:32:42.845491",
-    "metastase": "Métastases pulmonaires et hépato-spléniques."
+    "metastase": "Métastases pulmonaires et hépato-spléniques.",
+    "page": 192
   },
   {
     "id": "ONC-SYN-121",
@@ -11169,10 +11397,11 @@
       "bisphosphonate"
     ],
     "scenario_patient": "Femme de 54 ans, cancer du sein HER2+ diagnostiqué en 2021, traitée par chimiothérapie adjuvante AC×4 puis Docétaxel+Trastuzumab. Rechute métastatique à 18 mois : scanner révèle 4 localisations hépatiques (max 3 cm), 3 lyses osseuses vertébrales et une opacité pulmonaire péri-hilaire droite. Performance status ECOG 1. FEVG 62%. Indication CLEOPATRA + acide zolédronique débuté en J1.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein IV.B – Maladie métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein IV.B – Maladie métastatique, p.32",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219316",
-    "metastase": "Métastases hépatiques multiples, osseuses vertébrales et lésion pulmonaire péri-hilaire droite"
+    "metastase": "Métastases hépatiques multiples, osseuses vertébrales et lésion pulmonaire péri-hilaire droite",
+    "page": 32
   },
   {
     "id": "ONC-SYN-122",
@@ -11213,10 +11442,11 @@
       "FLAURA"
     ],
     "scenario_patient": "Femme de 61 ans, non-fumeuse, dyspnée progressive sur 2 mois. TDM thoracique : masse pulmonaire droite 4,5 cm + 3 adénopathies médiastinales. IRM cérébrale : 2 métastases (1,5 cm et 0,8 cm, asymptomatiques). TDM abdominale : 2 localisations hépatiques <2 cm. Biopsie : adénocarcinome, délétion exon 19 EGFR. ECOG 1. Osimertinib 80 mg/j débuté en J1. Réponse partielle à M3 (réduction 45% masse pulmonaire, disparition métastases cérébrales sur IRM M3).",
-    "reference": "Guide AMFROM 2024, Chapitre II – CBNPC – III.A Thérapies ciblées EGFR",
+    "reference": "Guide AMFROM 2024, Chapitre II – CBNPC – III.A Thérapies ciblées EGFR, p.153",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219326",
-    "metastase": "Métastases cérébrales bilatérales et localisations hépatiques"
+    "metastase": "Métastases cérébrales bilatérales et localisations hépatiques",
+    "page": 153
   },
   {
     "id": "ONC-SYN-123",
@@ -11281,10 +11511,11 @@
       "carcinose péritonéale"
     ],
     "scenario_patient": "Homme de 58 ans, cancer du côlon gauche sigmoïde réséqué 2 ans avant. Rechute métastatique : 5 localisations hépatiques bilatérales (max 4 cm), carcinose péritonéale limitée (IP=6). RAS/BRAF sauvage. ACE = 485 ng/mL. ECOG 1. Sous FOLFIRI+Cétuximab : réponse partielle à M4 (3 localisations hépatiques résiduelles <2 cm). Rash acnéiforme grade 2 géré par tétracycline topique.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer colorectal II.B – 1ère ligne métastatique",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer colorectal II.B – 1ère ligne métastatique, p.83",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219329",
-    "metastase": "Métastases hépatiques bilatérales multiples et carcinose péritonéale limitée"
+    "metastase": "Métastases hépatiques bilatérales multiples et carcinose péritonéale limitée",
+    "page": 83
   },
   {
     "id": "ONC-SYN-124",
@@ -11339,10 +11570,11 @@
       "SOLO-1"
     ],
     "scenario_patient": "Femme de 62 ans, BRCA1 muté germinal. Distension abdominale progressive, CA-125 = 4200 U/mL. Scanner : masse ovarienne droite 9 cm, carcinose péritonéale diffuse (Fagotti score 8 = non résécable d'emblée), ascite abondante, épanchement pleural droit. 3 cycles NACT : CA-125 à 280 U/mL, masse 4 cm, ascite disparue. Chirurgie : résidu 0 mm. 3 cycles adjuvants puis Olaparib 300 mg×2/j débuté.",
-    "reference": "Guide AMFROM 2024, Chapitre V – Cancer de l'ovaire II.C – Prise en charge BRCA",
+    "reference": "Guide AMFROM 2024, Chapitre V – Cancer de l'ovaire II.C – Prise en charge BRCA, p.57",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219333",
-    "metastase": "Carcinose péritonéale diffuse et épanchement pleural exsudatif bilatéral"
+    "metastase": "Carcinose péritonéale diffuse et épanchement pleural exsudatif bilatéral",
+    "page": 57
   },
   {
     "id": "ONC-SYN-125",
@@ -11403,10 +11635,11 @@
       "PSA"
     ],
     "scenario_patient": "Homme de 68 ans, PSA = 780 ng/mL, Gleason 9 (4+5). Bilan d'extension : 8 localisations osseuses (rachis, côtes, bassin, ilion droit), 1 adénopathie rétropéritonéale 2,5 cm. ECOG 1. Privation androgénique + Docétaxel 75 mg/m² × 6 cycles. PSA nadir à 1,2 ng/mL à M6. Acide zolédronique mensuel débuté à M3.",
-    "reference": "Guide AMFROM 2024, Chapitre VI – Cancer de la prostate III.B – Métastatique HS",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Cancer de la prostate III.B – Métastatique HS, p.240",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219336",
-    "metastase": "Métastases osseuses multiples (8 sites) et adénopathie rétropéritonéale"
+    "metastase": "Métastases osseuses multiples (8 sites) et adénopathie rétropéritonéale",
+    "page": 240
   },
   {
     "id": "ONC-SYN-126",
@@ -11454,10 +11687,11 @@
       "onco-gériatrie"
     ],
     "scenario_patient": "Femme de 82 ans, score G8 = 9/17 (fragilité avérée), MMSE 22/30 (déclin cognitif léger), FEVG 48% (insuffisance cardiaque légère). Cancer du sein gauche luminal B HR+/HER2- grade II, stade IIIA (T3 N1 M0). Contre-indication aux anthracyclines (FEVG <50%). Capécitabine 1000 mg/m²×2/j J1-J14/21j + Létrozole 2,5 mg/j débuté. Tolérance correcte à M2, réduction partielle à 30% de la masse tumorale.",
-    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein V.A – Personnes âgées",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein V.A – Personnes âgées, p.11",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219340",
-    "metastase": ""
+    "metastase": "",
+    "page": 11
   },
   {
     "id": "ONC-SYN-127",
@@ -11506,10 +11740,11 @@
       "G8"
     ],
     "scenario_patient": "Homme de 78 ans, PSA 45 ng/mL sous LHRH depuis 18 mois, testostérone castrée <0,5 ng/mL. ECOG 2, score G8 = 11/17, polypharmacie (7 médicaments), antécédent AVC ischémique 4 ans. Progression osseuse (3 nouvelles lésions). Enzalutamide évité (AVC < 5 ans). Abiratérone 1000 mg/j + Prednisone débuté. PSA = 12 ng/mL à M3.",
-    "reference": "Guide AMFROM 2024, Chapitre VI – Cancer de la prostate IV.A – CPRC fragile",
+    "reference": "Guide AMFROM 2024, Chapitre VI – Cancer de la prostate IV.A – CPRC fragile, p.240",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219343",
-    "metastase": "Progression osseuse sur privation androgénique (CPRC stade M1)"
+    "metastase": "Progression osseuse sur privation androgénique (CPRC stade M1)",
+    "page": 240
   },
   {
     "id": "ONC-SYN-128",
@@ -11551,10 +11786,11 @@
       "QUASAR"
     ],
     "scenario_patient": "Homme de 79 ans, cancer du côlon sigmoïde opéré par laparoscopie (pT3 pN1 M0, 3/18 ganglions positifs). ECOG 2, score G8 = 12/17, neuropathie diabétique bilatérale préexistante aux membres inférieurs. DFG = 52 mL/min. Contre-indication oxaliplatine (neuropathie). Capécitabine 1000 mg/m²×2/j J1-J14 débuté. Syndrome main-pied grade 1 à M2, géré par émollient sans réduction de dose. Bilan hépatique normal à chaque cycle.",
-    "reference": "Guide AMFROM 2024, Chapitre III – Cancer colorectal III.A – Traitement adjuvant fragile",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancer colorectal III.A – Traitement adjuvant fragile, p.77",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219345",
-    "metastase": ""
+    "metastase": "",
+    "page": 77
   },
   {
     "id": "ONC-SYN-129",
@@ -11596,10 +11832,11 @@
       "G8"
     ],
     "scenario_patient": "Homme de 80 ans, ex-fumeur 45 PA, CBNPC épidermoïde stade IIIA (T3N2M0). ECOG 2, score G8 = 10/17, VEMS 1,2 L (42% théorique), DLCO 52%. Contre-indication chimiothérapie (créatinine 1,8, VEMS borderline). Radiothérapie 3D-CRT 60 Gy/30fr débutée. Oesophagite grade 2 à S4 gérée par sucralfate + oméprazole. Réponse radiologique partielle à M3 (réduction 35% masse).",
-    "reference": "Guide AMFROM 2024, Chapitre II – CBNPC IV.B – Sujets âgés et fragiles",
+    "reference": "Guide AMFROM 2024, Chapitre II – CBNPC IV.B – Sujets âgés et fragiles, p.150",
     "est_synthetique": true,
     "date_creation": "2026-06-10T21:48:23.219347",
-    "metastase": ""
+    "metastase": "",
+    "page": 150
   },
   {
     "id": "ONC-SYN-130",
@@ -12044,5 +12281,210 @@
     "est_synthetique": true,
     "date_creation": "2026-06-10T18:34:49.761163",
     "metastase": "Stade III local-régional."
+  },
+  {
+    "id": "PARC-001",
+    "categorie": "parcours_de_soins",
+    "type_cancer": "general",
+    "sous_type": "parcours oncologique type",
+    "stade": "tous stades",
+    "titre": "Parcours de soins oncologique type en 7 étapes",
+    "contenu": "Le parcours de soins en oncologie suit sept étapes coordonnées. 1) Consultation initiale : anamnèse, examen clinique et suspicion diagnostique. 2) Bilan d'extension : biopsie, imagerie (scanner thoraco-abdomino-pelvien, IRM, TEP) et marqueurs tumoraux pour stadifier la tumeur. 3) RCP (Réunion de Concertation Pluridisciplinaire) : décision collégiale entre oncologues, chirurgiens, radiologues et anatomopathologistes. 4) Plan personnalisé : consultation d'annonce et Programme Personnalisé de Soins (PPS) avec consentement éclairé. 5) Traitement : chimiothérapie, chirurgie, radiothérapie, immunothérapie ou thérapie ciblée selon le protocole retenu. 6) Évaluation de la réponse : réévaluation tumorale selon les critères RECIST, adaptation de la stratégie si nécessaire. 7) Surveillance post-traitement : consultations régulières, marqueurs, imagerie et soins de support à long terme.",
+    "protocole": null,
+    "effets_secondaires": [],
+    "mots_cles": [
+      "parcours de soins",
+      "RCP",
+      "PPS",
+      "bilan d'extension",
+      "RECIST",
+      "surveillance",
+      "consultation d'annonce"
+    ],
+    "scenario_patient": "Patient adressé pour suspicion de cancer : il suit successivement consultation, bilan d'extension, RCP, annonce, traitement, réévaluation puis surveillance.",
+    "reference": "Guide AMFROM 2024 – Organisation du parcours de soins en oncologie",
+    "est_synthetique": false,
+    "date_creation": "2026-06-11",
+    "metastase": "Le parcours intègre la prise en charge des formes métastatiques (soins de support précoces, RCP de recours)."
+  },
+  {
+    "id": "PARC-002",
+    "categorie": "parcours_de_soins",
+    "type_cancer": "sein",
+    "sous_type": "carcinome mammaire",
+    "stade": "tous stades",
+    "titre": "Parcours de soins du cancer du sein",
+    "contenu": "Parcours type du cancer du sein. 1) Consultation : examen des seins et des aires ganglionnaires, évaluation du risque familial (BRCA1/2). 2) Bilan diagnostique : mammographie + échographie, IRM si sein dense ou HER2+, microbiopsie avec récepteurs hormonaux RE/RP, HER2 et Ki-67. 3) RCP sénologique : staging TNM et classification du sous-type moléculaire (Luminal A/B, HER2+, triple négatif), choix néoadjuvant vs adjuvant. 4) Programme personnalisé : protocole adapté (AC-T, EC-T, ou double blocage Trastuzumab + Pertuzumab si HER2+), bilan pré-chimiothérapie et pose de voie veineuse centrale. 5) Traitement : chimiothérapie néoadjuvante puis chirurgie (tumorectomie + curage ou mastectomie) et radiothérapie adjuvante. 6) Réponse : IRM à mi-traitement, recherche d'une réponse complète histologique (pCR), facteur pronostique majeur. 7) Surveillance : mammographie annuelle, hormonothérapie 5 à 10 ans si RE+, surveillance cardiaque sous Trastuzumab.",
+    "protocole": "Néoadjuvant : AC×4 → Paclitaxel×12 (± Trastuzumab/Pertuzumab si HER2+) ; surveillance LVEF si anti-HER2.",
+    "effets_secondaires": [
+      "cardiotoxicité",
+      "neutropénie",
+      "neuropathie",
+      "alopécie"
+    ],
+    "mots_cles": [
+      "sein",
+      "parcours de soins",
+      "RCP sénologique",
+      "pCR",
+      "HER2",
+      "hormonothérapie",
+      "mammographie"
+    ],
+    "scenario_patient": "Femme de 50 ans, masse mammaire : mammographie, biopsie HER2+, RCP, chimiothérapie néoadjuvante, chirurgie, radiothérapie puis surveillance prolongée.",
+    "reference": "Guide AMFROM 2024, Chapitre I – Cancers du sein, p.11",
+    "est_synthetique": false,
+    "date_creation": "2026-06-11",
+    "metastase": "En cas de maladie métastatique, le parcours bascule vers une prise en charge palliative active (chapitre stades métastatiques, p.32)."
+  },
+  {
+    "id": "PARC-003",
+    "categorie": "parcours_de_soins",
+    "type_cancer": "poumon",
+    "sous_type": "CBNPC",
+    "stade": "tous stades",
+    "titre": "Parcours de soins du cancer du poumon (CBNPC)",
+    "contenu": "Parcours type du carcinome bronchique non à petites cellules. 1) Consultation : signes d'alerte (toux persistante, hémoptysie, dyspnée), anamnèse tabagique. 2) Bilan diagnostique et moléculaire : TDM thoracique, TEP-scan, biopsie bronchique ou transthoracique, panel NGS obligatoire (EGFR, ALK, ROS1, BRAF, KRAS G12C) et score PD-L1. 3) RCP thoracique : staging UICC 8e édition, évaluation de l'opérabilité (VEMS, ECOG-PS), identification de la mutation driver. 4) Plan thérapeutique : EGFR muté → Osimertinib ; ALK/ROS1 → Alectinib ; PD-L1 ≥ 50 % → Pembrolizumab ; sans driver → platine doublet ± immunothérapie. 5) Traitement systémique : TKI oral en continu ou cycles de chimio-immunothérapie. 6) Réponse : TDM thoracique selon RECIST, biopsie liquide (ctDNA) en cas de progression sous TKI. 7) Surveillance et soins de support : TDM semestriel, aide au sevrage tabagique, soins palliatifs précoces si stade IV.",
+    "protocole": "Selon biomarqueur : Osimertinib 80 mg/j (EGFR), Alectinib 600 mg×2/j (ALK), Pembrolizumab 200 mg J1=J21 (PD-L1≥50%).",
+    "effets_secondaires": [
+      "toxicité cutanée",
+      "diarrhée",
+      "pneumopathie immuno-induite",
+      "cytopénies"
+    ],
+    "mots_cles": [
+      "poumon",
+      "CBNPC",
+      "parcours de soins",
+      "NGS",
+      "PD-L1",
+      "thérapie ciblée",
+      "RCP thoracique"
+    ],
+    "scenario_patient": "Homme de 62 ans, tabagique, toux et amaigrissement : TDM, biopsie, NGS EGFR muté, RCP, Osimertinib puis surveillance.",
+    "reference": "Guide AMFROM 2024, Chapitre IV – Cancers pulmonaires (CNPC), p.150",
+    "est_synthetique": false,
+    "date_creation": "2026-06-11",
+    "metastase": "Au stade IV, le parcours associe traitement systémique et soins de support précoces (page 153)."
+  },
+  {
+    "id": "PARC-004",
+    "categorie": "parcours_de_soins",
+    "type_cancer": "colorectal",
+    "sous_type": "côlon et rectum",
+    "stade": "tous stades",
+    "titre": "Parcours de soins du cancer colorectal",
+    "contenu": "Parcours type du cancer colorectal. 1) Consultation : symptômes (rectorragie, troubles du transit, anémie ferriprive), toucher rectal, dosage ACE. 2) Coloscopie et bilan : coloscopie totale avec biopsies (gold standard), TDM thoraco-abdomino-pelvien, IRM pelvienne si rectum, statut RAS/BRAF et MSI/MMR. 3) RCP digestive : staging TNM, résécabilité des métastases hépatiques, MSI-H → immunothérapie en 1re ligne. 4) Plan : côlon stade II-III → chirurgie puis FOLFOX adjuvant ; rectum localement avancé → radiochimiothérapie néoadjuvante puis chirurgie. 5) Traitement : résection carcinologique R0 puis chimiothérapie adjuvante ou traitement métastatique selon RAS/BRAF/MSI. 6) Réponse : TDM selon RECIST, suivi de l'ACE, réévaluation de la résécabilité hépatique. 7) Surveillance : examen clinique + ACE semestriel 5 ans, coloscopie de contrôle à 1 puis 3 ans, dépistage familial si Lynch.",
+    "protocole": "FOLFOX (Oxaliplatine 85 mg/m² + Leucovorin + 5-FU) J1=J14 ; ± Bevacizumab ou anti-EGFR si RAS sauvage métastatique.",
+    "effets_secondaires": [
+      "neuropathie périphérique",
+      "diarrhée",
+      "neutropénie",
+      "mucite"
+    ],
+    "mots_cles": [
+      "colorectal",
+      "parcours de soins",
+      "coloscopie",
+      "FOLFOX",
+      "RAS",
+      "MSI",
+      "RCP digestive"
+    ],
+    "scenario_patient": "Patient de 58 ans, rectorragies : coloscopie + biopsie, TDM, RCP, colectomie puis FOLFOX adjuvant et surveillance.",
+    "reference": "Guide AMFROM 2024, Chapitre III – Cancers digestifs (colorectal), p.77",
+    "est_synthetique": false,
+    "date_creation": "2026-06-11",
+    "metastase": "Les métastases hépatiques résécables sont rediscutées en RCP (down-staging) ; maladie métastatique p.83."
+  },
+  {
+    "id": "PARC-005",
+    "categorie": "parcours_de_soins",
+    "type_cancer": "ovaire",
+    "sous_type": "carcinome épithélial de l'ovaire",
+    "stade": "tous stades",
+    "titre": "Parcours de soins du cancer de l'ovaire",
+    "contenu": "Parcours type du carcinome ovarien, souvent diagnostiqué à un stade avancé. 1) Consultation : distension abdominale, douleurs pelviennes, dosage CA-125 et HE4 (score ROMA). 2) Bilan : TDM thoraco-abdomino-pelvien (carcinose péritonéale), score de résécabilité, test BRCA1/2 germinal et somatique. 3) RCP gynéco-oncologique : objectif de résidu tumoral nul (R0), chirurgie première vs chimiothérapie néoadjuvante selon le score de Fagotti. 4) Plan : Carboplatine AUC5-6 + Paclitaxel × 6 cycles, ± Bevacizumab si stade avancé, maintenance par inhibiteur de PARP (Olaparib) si BRCA muté. 5) Traitement : chirurgie de cytoréduction maximale et chimiothérapie, puis maintenance. 6) Réponse : CA-125 après chaque cycle, TDM en fin de traitement, distinction platine-sensible / platine-résistant. 7) Surveillance : CA-125 et examen clinique trimestriels, poursuite de la maintenance, conseil génétique familial.",
+    "protocole": "Carboplatine AUC5 + Paclitaxel 175 mg/m² J1=J21 × 6 ; maintenance Olaparib 300 mg×2/j si BRCA muté.",
+    "effets_secondaires": [
+      "neuropathie",
+      "asthénie",
+      "cytopénies",
+      "hypertension (Bevacizumab)"
+    ],
+    "mots_cles": [
+      "ovaire",
+      "parcours de soins",
+      "CA-125",
+      "cytoréduction",
+      "BRCA",
+      "PARP",
+      "RCP gynécologique"
+    ],
+    "scenario_patient": "Femme de 60 ans, ascite et CA-125 élevé : TDM, chirurgie de cytoréduction, chimiothérapie, maintenance Olaparib (BRCA+) et surveillance.",
+    "reference": "Guide AMFROM 2024, Chapitre II – Cancers gynécologiques (ovaire), p.57",
+    "est_synthetique": false,
+    "date_creation": "2026-06-11",
+    "metastase": "La carcinose péritonéale et les métastases conditionnent la stratégie chirurgicale et la maintenance."
+  },
+  {
+    "id": "PARC-006",
+    "categorie": "parcours_de_soins",
+    "type_cancer": "prostate",
+    "sous_type": "adénocarcinome prostatique",
+    "stade": "tous stades",
+    "titre": "Parcours de soins du cancer de la prostate",
+    "contenu": "Parcours type du cancer de la prostate. 1) Consultation : dosage PSA, toucher rectal, score IPSS, antécédents familiaux. 2) Bilan : IRM multiparamétrique (score PI-RADS), biopsies écho-guidées avec fusion IRM, score de Gleason / groupe ISUP, scintigraphie osseuse si haut risque. 3) RCP urologique : stratification du risque selon D'Amico, estimation de l'espérance de vie, discussion surveillance active vs traitement curatif. 4) Plan : faible risque → surveillance active ; risque intermédiaire/haut → prostatectomie ou radiothérapie + hormonothérapie ; métastatique → ADT + Enzalutamide/Apalutamide ou Docétaxel. 5) Traitement : prostatectomie totale ou radiothérapie conformationnelle, hormonothérapie (ADT) par analogue LH-RH. 6) Réponse : PSA nadir post-traitement, définition de la rechute biochimique, TEP-PSMA si rechute. 7) Surveillance : PSA et testostérone semestriels, prévention de l'ostéoporose (densitométrie) et du risque cardiovasculaire sous ADT.",
+    "protocole": "ADT (Leuproréline/Goséréline) ± Enzalutamide 160 mg/j ; surveillance castration (testostérone < 50 ng/dL).",
+    "effets_secondaires": [
+      "bouffées de chaleur",
+      "ostéoporose",
+      "asthénie",
+      "troubles métaboliques"
+    ],
+    "mots_cles": [
+      "prostate",
+      "parcours de soins",
+      "PSA",
+      "Gleason",
+      "PI-RADS",
+      "ADT",
+      "RCP urologique"
+    ],
+    "scenario_patient": "Homme de 68 ans, PSA élevé : IRM, biopsies Gleason 7, RCP, radiothérapie + hormonothérapie puis surveillance du PSA.",
+    "reference": "Guide AMFROM 2024, Chapitre VII – Cancers de la prostate, p.238",
+    "est_synthetique": false,
+    "date_creation": "2026-06-11",
+    "metastase": "Le cancer métastatique résistant à la castration (mCRPC) relève d'une intensification (page 240)."
+  },
+  {
+    "id": "PARC-007",
+    "categorie": "parcours_de_soins",
+    "type_cancer": "col_uterin",
+    "sous_type": "carcinome du col utérin",
+    "stade": "tous stades",
+    "titre": "Parcours de soins du cancer du col utérin",
+    "contenu": "Parcours type du cancer du col utérin. 1) Consultation : métrorragies, leucorrhées, examen au spéculum, frottis cervico-vaginal et test HPV. 2) Bilan : biopsie cervicale (confirmation histologique), IRM pelvienne (référence pour le staging local), TDM pour les ganglions, marqueur SCC. 3) RCP gynéco-oncologique : staging FIGO 2018, opérabilité (chirurgie si IB1-IIA1, radiochimiothérapie si stade ≥ IB2). 4) Plan : stade précoce → hystérectomie radicale (Wertheim) + curage ; stade avancé → radiochimiothérapie concomitante (Cisplatine hebdomadaire + RT) puis curiethérapie. 5) Traitement : chirurgie ou radiochimiothérapie + curiethérapie de haut débit de dose. 6) Réponse : IRM pelvienne à 3 mois (gold standard), normalisation du SCC, TEP en cas de doute. 7) Surveillance : examen gynécologique trimestriel 2 ans, IRM annuelle, prise en charge des effets tardifs (sténose vaginale, cystite radique).",
+    "protocole": "Radiochimiothérapie : RT pelvienne 45-50 Gy + Cisplatine 40 mg/m² hebdomadaire × 5, puis curiethérapie HDR.",
+    "effets_secondaires": [
+      "cystite radique",
+      "sténose vaginale",
+      "néphrotoxicité (Cisplatine)",
+      "diarrhée"
+    ],
+    "mots_cles": [
+      "col utérin",
+      "parcours de soins",
+      "FIGO",
+      "radiochimiothérapie",
+      "curiethérapie",
+      "HPV",
+      "Cisplatine"
+    ],
+    "scenario_patient": "Femme de 45 ans, métrorragies : biopsie, IRM pelvienne, RCP, radiochimiothérapie + curiethérapie puis surveillance gynécologique.",
+    "reference": "Guide AMFROM 2024, Chapitre II – Cancer du col utérin, p.66",
+    "est_synthetique": false,
+    "date_creation": "2026-06-11",
+    "metastase": "La maladie métastatique relève d'une chimiothérapie systémique ± immunothérapie (page 67)."
   }
 ]

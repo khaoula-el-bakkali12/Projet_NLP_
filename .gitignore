@@ -36,7 +36,10 @@ Thumbs.db
 *.bin
 *.safetensors
 *.gguf
-models/
+# ML model artifacts only — NOT the backend source package backend/models/
+/models/
+!backend/models/
+!backend/models/**
 
 # Frontend build output and dependencies
 frontend/node_modules/

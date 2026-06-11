@@ -4,16 +4,16 @@ import { authLogin, authRegister } from '../api/client'
 import { useAuth } from '../context/AuthContext'
 
 const FEATURES = [
-  { icon: Database,    text: '291 protocoles AMFROM 2024 indexés', color: '#60A5FA', rgb: '96,165,250'  },
-  { icon: Cpu,         text: '3 LLMs locaux comparables',          color: '#34D399', rgb: '52,211,153'  },
-  { icon: ShieldCheck, text: 'Déploiement 100% local, souverain',  color: '#FBBF24', rgb: '251,191,36'  },
-  { icon: Stethoscope, text: '28+ types de cancer couverts',       color: '#F472B6', rgb: '244,114,182' },
+  { icon: Database,    text: '291 protocoles AMFROM 2024 indexés', color: '#b8824e', rgb: '96,165,250'  },
+  { icon: Cpu,         text: '3 LLMs locaux comparables',          color: '#7d9b6f', rgb: '52,211,153'  },
+  { icon: ShieldCheck, text: 'Déploiement 100% local, souverain',  color: '#c79a3e', rgb: '251,191,36'  },
+  { icon: Stethoscope, text: '28+ types de cancer couverts',       color: '#c08272', rgb: '244,114,182' },
 ]
 
 const STATS = [
-  { n: '291', l: 'Protocoles', color: '#60A5FA' },
-  { n: '28+', l: 'Cancers',    color: '#34D399' },
-  { n: '3',   l: 'Modèles IA', color: '#FBBF24' },
+  { n: '291', l: 'Protocoles', color: '#b8824e' },
+  { n: '28+', l: 'Cancers',    color: '#7d9b6f' },
+  { n: '3',   l: 'Modèles IA', color: '#c79a3e' },
 ]
 
 export default function LoginPage({ onSuccess }) {
@@ -49,7 +49,7 @@ export default function LoginPage({ onSuccess }) {
       {/* ── Left panel — branding ─────────────────────────────────── */}
       <div
         className="hidden lg:flex w-[44%] flex-col justify-between p-12 flex-shrink-0 relative overflow-hidden"
-        style={{ background: 'linear-gradient(160deg, #050A14 0%, #09152A 45%, #0D1E3C 100%)' }}
+        style={{ background: 'linear-gradient(160deg, #1f160f 0%, #2b1f15 45%, #3a2a1b 100%)' }}
       >
         {/* Decorative orbs */}
         <div className="orb"
@@ -78,14 +78,14 @@ export default function LoginPage({ onSuccess }) {
         <div className="flex items-center gap-3 relative z-10">
           <div className="w-11 h-11 rounded-2xl flex items-center justify-center"
                style={{
-                 background: 'linear-gradient(135deg, #1A56DB 0%, #06B6D4 100%)',
+                 background: 'linear-gradient(135deg, #8a4f2a 0%, #b8824e 100%)',
                  boxShadow: '0 6px 24px rgba(26,86,219,0.52), 0 1px 0 rgba(255,255,255,0.22) inset',
                }}>
             <Stethoscope className="text-white" strokeWidth={2.2} style={{ width: 20, height: 20 }} />
           </div>
           <div className="leading-none">
             <div className="font-bold text-white text-[17px] tracking-tight"
-                 style={{ fontFamily: 'Outfit, system-ui, sans-serif' }}>
+                 style={{ fontFamily: 'Playfair Display, system-ui, sans-serif' }}>
               OncologIA
             </div>
             <div className="text-[11px] font-medium mt-0.5"
@@ -102,7 +102,7 @@ export default function LoginPage({ onSuccess }) {
                  background: 'rgba(26,86,219,0.14)',
                  border: '1px solid rgba(26,86,219,0.25)',
                }}>
-            <Heart style={{ width: 14, height: 14, color: '#60A5FA' }} strokeWidth={2} />
+            <Heart style={{ width: 14, height: 14, color: '#b8824e' }} strokeWidth={2} />
             <span className="text-[12px] font-semibold"
                   style={{ color: 'rgba(255,255,255,0.55)' }}>
               Intelligence oncologique
@@ -110,11 +110,11 @@ export default function LoginPage({ onSuccess }) {
           </div>
 
           <h1 className="text-[2.6rem] font-black text-white leading-[1.12] mb-5 tracking-tight"
-              style={{ fontFamily: 'Outfit, system-ui, sans-serif' }}>
+              style={{ fontFamily: 'Playfair Display, system-ui, sans-serif' }}>
             Intelligence<br />artificielle au<br />
             service de{' '}
             <span style={{
-              background: 'linear-gradient(135deg, #60A5FA 0%, #06B6D4 100%)',
+              background: 'linear-gradient(135deg, #b8824e 0%, #b8824e 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -160,7 +160,7 @@ export default function LoginPage({ onSuccess }) {
             <div key={l}>
               <div className="text-2xl font-black mb-0.5"
                    style={{
-                     fontFamily: 'Outfit, system-ui, sans-serif',
+                     fontFamily: 'Playfair Display, system-ui, sans-serif',
                      color,
                      textShadow: `0 0 20px ${color}55`,
                    }}>
@@ -178,7 +178,7 @@ export default function LoginPage({ onSuccess }) {
       {/* ── Right panel — form ────────────────────────────────────── */}
       <div
         className="flex-1 flex items-center justify-center p-8 overflow-y-auto relative"
-        style={{ background: 'linear-gradient(145deg, #EEF2F8 0%, #F4F8FF 100%)' }}
+        style={{ background: 'linear-gradient(145deg, #faf5ef 0%, #fdfaf4 100%)' }}
       >
         {/* Background blobs */}
         <div className="orb"
@@ -200,16 +200,16 @@ export default function LoginPage({ onSuccess }) {
           <div className="lg:hidden mb-8 text-center">
             <div className="w-14 h-14 rounded-2xl mx-auto mb-3 flex items-center justify-center"
                  style={{
-                   background: 'linear-gradient(135deg, #0A1628 0%, #0F2444 100%)',
+                   background: 'linear-gradient(135deg, #2b1f15 0%, #3a2a1b 100%)',
                    boxShadow: '0 8px 28px rgba(10,22,40,0.22)',
                  }}>
               <Stethoscope className="text-white" strokeWidth={2.2} style={{ width: 24, height: 24 }} />
             </div>
-            <div className="font-bold text-lg text-[#0F172A]"
-                 style={{ fontFamily: 'Outfit, system-ui, sans-serif' }}>
+            <div className="font-bold text-lg text-[#2b2520]"
+                 style={{ fontFamily: 'Playfair Display, system-ui, sans-serif' }}>
               OncologIA
             </div>
-            <div className="text-sm text-[#94A3B8] mt-1">Plateforme RAG médicale</div>
+            <div className="text-sm text-[#a89a88] mt-1">Plateforme RAG médicale</div>
           </div>
 
           {/* Card */}
@@ -223,16 +223,16 @@ export default function LoginPage({ onSuccess }) {
             <div className="mb-6">
               <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
                    style={{
-                     background: 'linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%)',
-                     border: '1px solid #BFDBFE',
+                     background: 'linear-gradient(135deg, #faf3ea 0%, #f0e0cc 100%)',
+                     border: '1px solid #e3cdb4',
                    }}>
-                <Activity style={{ width: 18, height: 18, color: '#2563EB' }} strokeWidth={2.2} />
+                <Activity style={{ width: 18, height: 18, color: '#8a4f2a' }} strokeWidth={2.2} />
               </div>
-              <h2 className="text-[22px] font-bold text-[#0F172A] mb-1 tracking-tight"
-                  style={{ fontFamily: 'Outfit, system-ui, sans-serif' }}>
+              <h2 className="text-[22px] font-bold text-[#2b2520] mb-1 tracking-tight"
+                  style={{ fontFamily: 'Playfair Display, system-ui, sans-serif' }}>
                 {tab === 'login' ? 'Connexion' : 'Créer un compte'}
               </h2>
-              <p className="text-sm text-[#94A3B8]">
+              <p className="text-sm text-[#a89a88]">
                 {tab === 'login'
                   ? 'Accédez à votre espace médical'
                   : 'Rejoignez la plateforme OncologIA'}
@@ -241,7 +241,7 @@ export default function LoginPage({ onSuccess }) {
 
             {/* Tab switcher */}
             <div className="flex gap-1 mb-6 p-1 rounded-xl"
-                 style={{ background: '#F1F5F9', border: '1px solid #E8EDF2' }}>
+                 style={{ background: '#f4ece0', border: '1px solid #ece3d6' }}>
               {[['login', 'Connexion'], ['register', 'Inscription']].map(([id, label]) => (
                 <button
                   key={id}
@@ -250,7 +250,7 @@ export default function LoginPage({ onSuccess }) {
                   className="flex-1 py-2 rounded-lg text-sm font-semibold transition-all"
                   style={{
                     background:  tab === id ? 'white' : 'transparent',
-                    color:       tab === id ? '#0F172A' : '#94A3B8',
+                    color:       tab === id ? '#2b2520' : '#a89a88',
                     boxShadow:   tab === id ? '0 2px 8px rgba(0,0,0,0.08)' : 'none',
                   }}
                 >
@@ -262,7 +262,7 @@ export default function LoginPage({ onSuccess }) {
             <form onSubmit={handleSubmit} className="space-y-4">
 
               <div>
-                <label className="block text-[11px] font-bold text-[#475569] mb-1.5 uppercase tracking-widest">
+                <label className="block text-[11px] font-bold text-[#6b5d4f] mb-1.5 uppercase tracking-widest">
                   Identifiant
                 </label>
                 <input
@@ -274,20 +274,20 @@ export default function LoginPage({ onSuccess }) {
                   autoFocus
                   className="input-medical"
                   onFocus={e => {
-                    e.target.style.borderColor = '#2563EB'
+                    e.target.style.borderColor = '#8a4f2a'
                     e.target.style.boxShadow   = '0 0 0 4px rgba(37,99,235,0.10)'
                     e.target.style.background  = 'white'
                   }}
                   onBlur={e => {
-                    e.target.style.borderColor = '#E2E8F0'
+                    e.target.style.borderColor = '#e7ddcf'
                     e.target.style.boxShadow   = 'none'
-                    e.target.style.background  = '#F8FAFC'
+                    e.target.style.background  = '#faf6ef'
                   }}
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-bold text-[#475569] mb-1.5 uppercase tracking-widest">
+                <label className="block text-[11px] font-bold text-[#6b5d4f] mb-1.5 uppercase tracking-widest">
                   Mot de passe
                 </label>
                 <input
@@ -298,14 +298,14 @@ export default function LoginPage({ onSuccess }) {
                   required
                   className="input-medical"
                   onFocus={e => {
-                    e.target.style.borderColor = '#2563EB'
+                    e.target.style.borderColor = '#8a4f2a'
                     e.target.style.boxShadow   = '0 0 0 4px rgba(37,99,235,0.10)'
                     e.target.style.background  = 'white'
                   }}
                   onBlur={e => {
-                    e.target.style.borderColor = '#E2E8F0'
+                    e.target.style.borderColor = '#e7ddcf'
                     e.target.style.boxShadow   = 'none'
-                    e.target.style.background  = '#F8FAFC'
+                    e.target.style.background  = '#faf6ef'
                   }}
                 />
               </div>
@@ -327,7 +327,7 @@ export default function LoginPage({ onSuccess }) {
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm text-white
                            disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{
-                  background: 'linear-gradient(135deg, #1A56DB 0%, #2563EB 100%)',
+                  background: 'linear-gradient(135deg, #8a4f2a 0%, #8a4f2a 100%)',
                   boxShadow: '0 4px 20px rgba(26,86,219,0.38), 0 1px 0 rgba(255,255,255,0.22) inset',
                   transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                 }}

@@ -7,13 +7,13 @@ import { getStatistics } from '../api/client'
 
 // ── Color palettes ─────────────────────────────────────────────────────────
 const CANCER_COLORS = [
-  '#1966f2', '#0ea5e9', '#8b5cf6', '#10b981',
+  '#8a4f2a', '#0ea5e9', '#8b5cf6', '#10b981',
   '#f59e0b', '#ef4444', '#6366f1', '#14b8a6',
 ]
 const CATEGORY_COLORS = [
-  '#1966f2', '#8b5cf6', '#10b981', '#f59e0b', '#ef4444', '#0ea5e9',
+  '#8a4f2a', '#8b5cf6', '#10b981', '#f59e0b', '#ef4444', '#0ea5e9',
 ]
-const MODEL_COLORS = { model_a: '#1966f2', model_b: '#8b5cf6', model_c: '#10b981' }
+const MODEL_COLORS = { model_a: '#8a4f2a', model_b: '#8b5cf6', model_c: '#10b981' }
 
 const CANCER_LABEL = {
   sein: 'Sein', general: 'Général', poumon: 'Poumon', colorectal: 'Colorectal',
@@ -43,7 +43,7 @@ function DonutChart({ data, size = 170, strokeWidth = 24, centerLabel, centerSub
       <svg width={size} height={size}>
         <g transform={`rotate(-90 ${cx} ${cx})`}>
           {/* track */}
-          <circle cx={cx} cy={cx} r={r} fill="none" stroke="#f1f5f9" strokeWidth={strokeWidth} />
+          <circle cx={cx} cy={cx} r={r} fill="none" stroke="#f4ece0" strokeWidth={strokeWidth} />
           {data.map((seg, i) => {
             const len    = total ? (seg.value / total) * C : 0
             const offset = -cumLen
@@ -80,7 +80,7 @@ function RingProgress({ pct, color, size = 110, strokeWidth = 12 }) {
   return (
     <svg width={size} height={size}>
       <g transform={`rotate(-90 ${cx} ${cx})`}>
-        <circle cx={cx} cy={cx} r={r} fill="none" stroke="#f1f5f9" strokeWidth={strokeWidth} />
+        <circle cx={cx} cy={cx} r={r} fill="none" stroke="#f4ece0" strokeWidth={strokeWidth} />
         <circle cx={cx} cy={cx} r={r} fill="none"
           stroke={color} strokeWidth={strokeWidth}
           strokeDasharray={`${drawn} ${C}`}
@@ -157,7 +157,7 @@ export default function StatisticsPage() {
 
   // Richness cards
   const richness = [
-    { label: 'Protocole de traitement', count: composition.has_protocol, color: '#1966f2',  ringColor: '#1966f2'  },
+    { label: 'Protocole de traitement', count: composition.has_protocol, color: '#8a4f2a',  ringColor: '#8a4f2a'  },
     { label: 'Effets secondaires',      count: composition.has_effects,  color: '#8b5cf6',  ringColor: '#8b5cf6'  },
     { label: 'Scénario patient',        count: composition.has_scenario, color: '#10b981',  ringColor: '#10b981'  },
   ]
@@ -309,7 +309,7 @@ export default function StatisticsPage() {
               <div className="space-y-3">
                 {Object.entries(modelsUsed).map(([model, count]) => {
                   const pct = Math.round(count * 100 / (totalModelQ || 1))
-                  const color = MODEL_COLORS[model] ?? '#94a3b8'
+                  const color = MODEL_COLORS[model] ?? '#a89a88'
                   return (
                     <div key={model}>
                       <div className="flex items-center justify-between mb-1">

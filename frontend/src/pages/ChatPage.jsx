@@ -20,22 +20,22 @@ const SUGGESTED = [
   {
     icon: Syringe,
     q: 'Quel est le protocole de traitement du cancer du sein ?',
-    color: '#F472B6', bg: '#FDF2F8', border: '#FBCFE8',
+    color: '#c08272', bg: '#faf3ea', border: '#FBCFE8',
   },
   {
     icon: Activity,
     q: 'Quels sont les effets secondaires de la chimiothérapie ?',
-    color: '#34D399', bg: '#F0FDF4', border: '#A7F3D0',
+    color: '#7d9b6f', bg: '#f4ece0', border: '#A7F3D0',
   },
   {
     icon: Stethoscope,
     q: "Comment se déroule le diagnostic d'un cancer ?",
-    color: '#60A5FA', bg: '#EFF6FF', border: '#BFDBFE',
+    color: '#b8824e', bg: '#faf3ea', border: '#e3cdb4',
   },
   {
     icon: ListOrdered,
     q: 'Explique le protocole AC-T pour le cancer du sein étape par étape.',
-    color: '#FBBF24', bg: '#FFFBEB', border: '#FDE68A',
+    color: '#c79a3e', bg: '#fdf7ea', border: '#FDE68A',
   },
 ]
 
@@ -76,31 +76,31 @@ export default function ChatPage({ availableModels = [] }) {
   }
 
   return (
-    <div className="flex flex-col h-full" style={{ background: '#F4F7FB' }}>
+    <div className="flex flex-col h-full" style={{ background: '#f7f1e8' }}>
 
       {/* ── Header ───────────────────────────────────────────────── */}
       <div
         className="flex items-center justify-between gap-4 px-6 py-3.5 flex-shrink-0 bg-white"
-        style={{ borderBottom: '1px solid #E8EDF2', boxShadow: '0 1px 6px rgba(0,0,0,0.05)' }}
+        style={{ borderBottom: '1px solid #ece3d6', boxShadow: '0 1px 6px rgba(0,0,0,0.05)' }}
       >
         <div className="flex items-center gap-3">
           <div
             className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
             style={{
-              background: 'linear-gradient(135deg, #080F1E 0%, #1A3A6B 100%)',
+              background: 'linear-gradient(135deg, #241a12 0%, #5a3e22 100%)',
               boxShadow: '0 4px 14px rgba(8,15,30,0.22)',
             }}
           >
-            <Bot style={{ width: 18, height: 18, color: '#93C5FD' }} />
+            <Bot style={{ width: 18, height: 18, color: '#d3ad85' }} />
           </div>
           <div>
             <h2
-              className="font-bold text-[15px] text-[#0F172A] tracking-tight"
-              style={{ fontFamily: 'Outfit, system-ui, sans-serif' }}
+              className="font-bold text-[15px] text-[#2b2520] tracking-tight"
+              style={{ fontFamily: 'Playfair Display, system-ui, sans-serif' }}
             >
               Assistant RAG Oncologique
             </h2>
-            <p className="text-xs text-[#94A3B8] mt-0.5">
+            <p className="text-xs text-[#a89a88] mt-0.5">
               Guidelines AMFROM 2024 · {Math.floor(messages.length / 2)} échanges
             </p>
           </div>
@@ -112,14 +112,14 @@ export default function ChatPage({ availableModels = [] }) {
             <button
               onClick={clearChat}
               className="p-2 rounded-xl transition-all"
-              style={{ color: '#CBD5E1' }}
+              style={{ color: '#d8ccbb' }}
               title="Effacer la conversation"
               onMouseEnter={e => {
                 e.currentTarget.style.color = '#F87171'
                 e.currentTarget.style.background = 'rgba(248,113,113,0.08)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.color = '#CBD5E1'
+                e.currentTarget.style.color = '#d8ccbb'
                 e.currentTarget.style.background = 'transparent'
               }}
             >
@@ -133,16 +133,16 @@ export default function ChatPage({ availableModels = [] }) {
               opts: STRATEGIES.map(s => ({ value: s.value, label: s.label })) },
           ].map(({ label, value, setter, opts }) => (
             <div key={label}>
-              <label className="text-[10px] font-bold text-[#94A3B8] uppercase tracking-widest block mb-1">
+              <label className="text-[10px] font-bold text-[#a89a88] uppercase tracking-widest block mb-1">
                 {label}
               </label>
               <div className="relative">
                 <select
                   value={value}
                   onChange={e => setter(e.target.value)}
-                  className="appearance-none bg-white rounded-xl pl-3 pr-8 py-1.5 text-[13px] font-semibold text-[#0F172A] cursor-pointer focus:outline-none"
+                  className="appearance-none bg-white rounded-xl pl-3 pr-8 py-1.5 text-[13px] font-semibold text-[#2b2520] cursor-pointer focus:outline-none"
                   style={{
-                    border: '1.5px solid #E8EDF2',
+                    border: '1.5px solid #ece3d6',
                     boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
                   }}
                 >
@@ -174,11 +174,11 @@ export default function ChatPage({ availableModels = [] }) {
               <div
                 className="w-20 h-20 rounded-3xl flex items-center justify-center relative z-10 animate-float"
                 style={{
-                  background: 'linear-gradient(135deg, #080F1E 0%, #1A3A6B 50%, #1e40af 100%)',
+                  background: 'linear-gradient(135deg, #241a12 0%, #5a3e22 50%, #6f3e20 100%)',
                   boxShadow: '0 24px 56px rgba(8,15,30,0.22), 0 10px 20px rgba(8,15,30,0.14), 0 2px 0 rgba(255,255,255,0.08) inset',
                 }}
               >
-                <Bot style={{ width: 38, height: 38, color: '#93C5FD' }} />
+                <Bot style={{ width: 38, height: 38, color: '#d3ad85' }} />
               </div>
               {/* Glow halo */}
               <div
@@ -191,15 +191,15 @@ export default function ChatPage({ availableModels = [] }) {
             </div>
 
             <h3
-              className="text-2xl font-black text-[#0F172A] tracking-tight mb-2"
-              style={{ fontFamily: 'Outfit, system-ui, sans-serif' }}
+              className="text-2xl font-black text-[#2b2520] tracking-tight mb-2"
+              style={{ fontFamily: 'Playfair Display, system-ui, sans-serif' }}
             >
               Comment puis-je vous aider ?
             </h3>
-            <p className="text-sm text-[#64748B] max-w-md leading-relaxed">
+            <p className="text-sm text-[#8a7c6c] max-w-md leading-relaxed">
               Posez une question sur les protocoles, diagnostics ou traitements oncologiques.
               Les réponses s'appuient uniquement sur les guidelines{' '}
-              <span className="font-semibold text-[#475569]">AMFROM 2024</span>.
+              <span className="font-semibold text-[#6b5d4f]">AMFROM 2024</span>.
             </p>
 
             {/* Suggestion cards — 2 × 2 grid */}
@@ -230,7 +230,7 @@ export default function ChatPage({ availableModels = [] }) {
                   >
                     <Icon style={{ width: 17, height: 17, color }} />
                   </div>
-                  <span className="text-[13px] font-medium text-[#0F172A] leading-snug">{q}</span>
+                  <span className="text-[13px] font-medium text-[#2b2520] leading-snug">{q}</span>
                 </button>
               ))}
             </div>
@@ -243,8 +243,8 @@ export default function ChatPage({ availableModels = [] }) {
                 border: '1px solid rgba(37,99,235,0.12)',
               }}
             >
-              <Sparkles style={{ width: 12, height: 12, color: '#2563EB' }} />
-              <span className="text-xs text-[#475569] font-medium">
+              <Sparkles style={{ width: 12, height: 12, color: '#8a4f2a' }} />
+              <span className="text-xs text-[#6b5d4f] font-medium">
                 Activez <strong>Étape par étape</strong> pour des réponses structurées numérotées
               </span>
             </div>
@@ -263,7 +263,7 @@ export default function ChatPage({ availableModels = [] }) {
       {/* ── Input bar ─────────────────────────────────────────────── */}
       <div
         className="px-6 py-4 flex-shrink-0 bg-white space-y-2.5"
-        style={{ borderTop: '1px solid #E8EDF2', boxShadow: '0 -2px 8px rgba(0,0,0,0.04)' }}
+        style={{ borderTop: '1px solid #ece3d6', boxShadow: '0 -2px 8px rgba(0,0,0,0.04)' }}
       >
         <form onSubmit={handleSubmit} className="flex gap-2.5">
           <input
@@ -276,10 +276,10 @@ export default function ChatPage({ availableModels = [] }) {
                 : 'Posez votre question oncologique…'
             }
             disabled={loading}
-            className="flex-1 rounded-2xl px-4 py-3 text-sm text-[#0F172A] font-medium focus:outline-none disabled:opacity-60"
+            className="flex-1 rounded-2xl px-4 py-3 text-sm text-[#2b2520] font-medium focus:outline-none disabled:opacity-60"
             style={{
-              background: '#F4F7FB',
-              border: `1.5px solid ${stepByStep ? '#2563EB' : '#E8EDF2'}`,
+              background: '#f7f1e8',
+              border: `1.5px solid ${stepByStep ? '#8a4f2a' : '#ece3d6'}`,
               boxShadow: stepByStep
                 ? '0 0 0 4px rgba(37,99,235,0.09)'
                 : '0 1px 3px rgba(0,0,0,0.05)',
@@ -287,12 +287,12 @@ export default function ChatPage({ availableModels = [] }) {
             }}
             onFocus={e => {
               e.target.style.background   = 'white'
-              e.target.style.borderColor  = '#2563EB'
+              e.target.style.borderColor  = '#8a4f2a'
               e.target.style.boxShadow    = '0 0 0 4px rgba(37,99,235,0.09)'
             }}
             onBlur={e => {
-              e.target.style.background   = '#F4F7FB'
-              e.target.style.borderColor  = stepByStep ? '#2563EB' : '#E8EDF2'
+              e.target.style.background   = '#f7f1e8'
+              e.target.style.borderColor  = stepByStep ? '#8a4f2a' : '#ece3d6'
               e.target.style.boxShadow    = stepByStep
                 ? '0 0 0 4px rgba(37,99,235,0.09)'
                 : '0 1px 3px rgba(0,0,0,0.05)'
@@ -303,7 +303,7 @@ export default function ChatPage({ availableModels = [] }) {
             disabled={!input.trim() || loading}
             className="flex-shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center disabled:opacity-40"
             style={{
-              background: 'linear-gradient(135deg, #1A56DB 0%, #2563EB 100%)',
+              background: 'linear-gradient(135deg, #8a4f2a 0%, #8a4f2a 100%)',
               boxShadow: '0 4px 16px rgba(26,86,219,0.38)',
               color: 'white',
               transition: 'transform 0.2s ease, box-shadow 0.2s ease',
@@ -331,9 +331,9 @@ export default function ChatPage({ availableModels = [] }) {
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all"
             style={{
               background: stepByStep
-                ? 'linear-gradient(135deg, #1A56DB, #2563EB)'
-                : '#F1F5F9',
-              color:      stepByStep ? 'white' : '#64748B',
+                ? 'linear-gradient(135deg, #8a4f2a, #8a4f2a)'
+                : '#f4ece0',
+              color:      stepByStep ? 'white' : '#8a7c6c',
               boxShadow:  stepByStep ? '0 2px 10px rgba(26,86,219,0.30)' : 'none',
             }}
           >
@@ -343,7 +343,7 @@ export default function ChatPage({ availableModels = [] }) {
           </button>
 
           {stepByStep && (
-            <span className="text-[11px] text-[#2563EB] font-semibold animate-fade-in">
+            <span className="text-[11px] text-[#8a4f2a] font-semibold animate-fade-in">
               Réponse structurée en étapes numérotées
             </span>
           )}

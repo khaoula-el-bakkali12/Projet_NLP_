@@ -8,9 +8,9 @@ import { postClassifyCancer } from '../api/client'
 // ── Display metadata ──────────────────────────────────────────────────────────
 const CANCER_META = {
   sein:       { label: 'Cancer du sein',        color: '#EC4899', emoji: '🎗️' },
-  poumon:     { label: 'Cancer du poumon',      color: '#3B82F6', emoji: '🫁' },
+  poumon:     { label: 'Cancer du poumon',      color: '#a1683a', emoji: '🫁' },
   colorectal: { label: 'Cancer colorectal',     color: '#F59E0B', emoji: '🩺' },
-  inconnu:    { label: 'Non déterminé',          color: '#94A3B8', emoji: '❔' },
+  inconnu:    { label: 'Non déterminé',          color: '#a89a88', emoji: '❔' },
 }
 
 const METHOD_LABEL = {

@@ -34,19 +34,19 @@ export default function HomePage() {
           display: 'inline-flex', alignItems: 'center', gap: 8,
           background: 'rgba(59,130,246,0.08)', border: '1px solid rgba(59,130,246,0.2)',
           borderRadius: 20, padding: '4px 14px', marginBottom: 28,
-          fontSize: 12, color: '#60a5fa', fontWeight: 500,
+          fontSize: 12, color: '#b8824e', fontWeight: 500,
         }}>
-          <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#3b82f6', display: 'inline-block' }} />
+          <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#a1683a', display: 'inline-block' }} />
           Oncologie · Maroc · RAG local
         </div>
 
-        <h1 style={{ fontSize: 40, fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 16, color: '#f1f5f9' }}>
+        <h1 style={{ fontSize: 40, fontWeight: 700, lineHeight: 1.1, letterSpacing: '-0.02em', marginBottom: 16, color: '#f4ece0' }}>
           Assistant médical
           <br />
-          <span style={{ color: '#3b82f6' }}>oncologie</span>
+          <span style={{ color: '#a1683a' }}>oncologie</span>
         </h1>
 
-        <p style={{ color: '#64748b', fontSize: 16, lineHeight: 1.6, maxWidth: 480, margin: '0 auto' }}>
+        <p style={{ color: '#8a7c6c', fontSize: 16, lineHeight: 1.6, maxWidth: 480, margin: '0 auto' }}>
           Posez vos questions cliniques. Le système retrouve les documents pertinents
           et génère une réponse via un LLM local.
         </p>
@@ -54,7 +54,7 @@ export default function HomePage() {
 
       {/* Search bar */}
       <div style={{ position: 'relative', marginBottom: 16 }}>
-        <Search size={16} style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', color: '#475569' }} />
+        <Search size={16} style={{ position: 'absolute', left: 16, top: '50%', transform: 'translateY(-50%)', color: '#6b5d4f' }} />
         <input
           value={q}
           onChange={e => setQ(e.target.value)}
@@ -63,12 +63,12 @@ export default function HomePage() {
           style={{
             width: '100%',
             boxSizing: 'border-box',
-            background: '#1a1d27',
-            border: '1px solid #1e2235',
+            background: '#2b2118',
+            border: '1px solid #3a2d1f',
             borderRadius: 10,
             padding: '14px 52px 14px 44px',
             fontSize: 15,
-            color: '#e2e8f0',
+            color: '#e7ddcf',
             outline: 'none',
           }}
         />
@@ -76,7 +76,7 @@ export default function HomePage() {
           onClick={() => submit()}
           style={{
             position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
-            background: '#3b82f6', color: '#fff', border: 'none',
+            background: '#a1683a', color: '#fff', border: 'none',
             borderRadius: 7, padding: '6px 16px', fontSize: 13, fontWeight: 600,
             cursor: 'pointer',
           }}
@@ -92,13 +92,13 @@ export default function HomePage() {
             key={ex}
             onClick={() => submit(ex)}
             style={{
-              background: '#1a1d27', border: '1px solid #1e2235',
+              background: '#2b2118', border: '1px solid #3a2d1f',
               borderRadius: 20, padding: '5px 14px',
-              fontSize: 12, color: '#94a3b8', cursor: 'pointer',
+              fontSize: 12, color: '#a89a88', cursor: 'pointer',
               transition: 'border-color 0.15s',
             }}
-            onMouseEnter={e => e.currentTarget.style.borderColor = '#3b82f6'}
-            onMouseLeave={e => e.currentTarget.style.borderColor = '#1e2235'}
+            onMouseEnter={e => e.currentTarget.style.borderColor = '#a1683a'}
+            onMouseLeave={e => e.currentTarget.style.borderColor = '#3a2d1f'}
           >
             {ex}
           </button>
@@ -109,13 +109,13 @@ export default function HomePage() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
         {stats.map(({ icon: Icon, value, label, sub }) => (
           <div key={label} style={{
-            background: '#1a1d27', border: '1px solid #1e2235',
+            background: '#2b2118', border: '1px solid #3a2d1f',
             borderRadius: 10, padding: '20px 16px',
           }}>
-            <Icon size={16} style={{ color: '#3b82f6', marginBottom: 12 }} />
-            <div style={{ fontSize: 20, fontWeight: 700, color: '#f1f5f9', marginBottom: 2 }}>{value}</div>
-            <div style={{ fontSize: 12, color: '#94a3b8', fontWeight: 500 }}>{label}</div>
-            <div style={{ fontSize: 11, color: '#475569', marginTop: 2 }}>{sub}</div>
+            <Icon size={16} style={{ color: '#a1683a', marginBottom: 12 }} />
+            <div style={{ fontSize: 20, fontWeight: 700, color: '#f4ece0', marginBottom: 2 }}>{value}</div>
+            <div style={{ fontSize: 12, color: '#a89a88', fontWeight: 500 }}>{label}</div>
+            <div style={{ fontSize: 11, color: '#6b5d4f', marginTop: 2 }}>{sub}</div>
           </div>
         ))}
       </div>

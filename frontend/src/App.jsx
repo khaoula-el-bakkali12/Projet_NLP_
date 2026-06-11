@@ -59,7 +59,7 @@ function MainApp() {
   const availableModels = (health?.available_models ?? []).map(s => s.split(' ')[0])
 
   return (
-    <div className="flex h-screen overflow-hidden" style={{ background: '#F8FAFC' }}>
+    <div className="flex h-screen overflow-hidden" style={{ background: '#faf6ef' }}>
       <Sidebar activePage={activePage} onNavigate={setActivePage} health={health} />
       <main className="flex-1 flex flex-col overflow-hidden relative">
         <PageComponent onNavigate={setActivePage} availableModels={availableModels} />
